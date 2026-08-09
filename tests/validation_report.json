@@ -1,0 +1,260 @@
+{
+  "control_document_sha256": "a477b82e36610717c9a39eee6e48de1c258194f3a91f483e1078762daf9d4a4f",
+  "passed": 32,
+  "failed": 0,
+  "report_only": 4,
+  "results": [
+    {
+      "id": "GRT-001",
+      "title": "Tower-to-tower distance equals the main span control",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "manhattan_tower..brooklyn_tower = 487.6800 m, control main_span_tower_to_tower = 487.6800 m"
+    },
+    {
+      "id": "GRT-002",
+      "title": "The origin is the midpoint of the main span",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "midpoint at x=0.0000 m, tower mean offset 0.000000 m"
+    },
+    {
+      "id": "GRT-003",
+      "title": "Approach-end stations are symmetric and span the total length control",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "manhattan_approach_end..brooklyn_approach_end = 2227.4784 m, control total_length_including_approaches = 2227.4784 m"
+    },
+    {
+      "id": "GRT-004",
+      "title": "Deck underside at mid-span equals the navigation clearance control",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "deck_underside_at_midspan = 41.1480 m, control navigation_clearance_at_center = 41.1480 m"
+    },
+    {
+      "id": "GRT-005",
+      "title": "Tower top elevation equals the tower height control",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "tower_top = 94.4880 m, control tower_height = 94.4880 m"
+    },
+    {
+      "id": "GRT-006",
+      "title": "The model carries exactly the controlled number of main cables",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "system cables has 4 parts, control main_cable_count = 4"
+    },
+    {
+      "id": "GRT-007",
+      "title": "The model carries exactly the controlled number of transit tracks, and no third or fourth",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "2 transit tracks, control = 2"
+    },
+    {
+      "id": "GRT-008",
+      "title": "The deck is divided into the controlled number of sections",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "5 deck sections present, control deck_section_count = 5"
+    },
+    {
+      "id": "GRT-009",
+      "title": "Suspender spacing on the main span matches its control",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "79 suspenders per cable on the main span, expected 79 from controls"
+    },
+    {
+      "id": "GRT-010",
+      "title": "No longitudinal gap in the deck chain from approach end to approach end",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "continuous from -1113.739 m to 1113.739 m in one unbroken interval"
+    },
+    {
+      "id": "GRT-011",
+      "title": "The sourced shoreline deck elevation falls inside the modelled deck elevation range",
+      "mode": "report_only",
+      "status": "REPORT",
+      "detail": "deck_elevation_at_shoreline = 37.186 m; modelled deck top runs 22.061 m to 53.340 m"
+    },
+    {
+      "id": "GRT-012",
+      "title": "The derived approach-end elevation is reconcilable with street level",
+      "mode": "report_only",
+      "status": "REPORT",
+      "detail": "derived approach end sits 22.06 m above mean high water; a street-level approach would be at or below 6.00 m. See OQ-006."
+    },
+    {
+      "id": "GRT-013",
+      "title": "Census of MEASURED geometry",
+      "mode": "report_only",
+      "status": "REPORT",
+      "detail": "MEASURED=0  DOCUMENTED=9  INFERRED=48  ASSUMED=0"
+    },
+    {
+      "id": "GRT-014",
+      "title": "Placeholder count has not regressed",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "6 placeholders, ratchet allows at most 6"
+    },
+    {
+      "id": "GRT-015",
+      "title": "Every part consuming a placeholder is INFERRED or ASSUMED, never DOCUMENTED",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "no part consuming a placeholder claims DOCUMENTED or MEASURED"
+    },
+    {
+      "id": "GRT-016",
+      "title": "No control value appears as a literal in any script",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "14 control values of 100 or more, none present as a literal"
+    },
+    {
+      "id": "GRT-017",
+      "title": "Every part's confidence equals the weakest link over the controls it consumes",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "57 parts graded by weakest link"
+    },
+    {
+      "id": "GRT-018",
+      "title": "Every part is assigned a material by a rule in GEOMETRY-CONTROL.md section 7",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "57 parts matched by 14 rules, no default used"
+    },
+    {
+      "id": "GRT-019",
+      "title": "The exported GLB is well-formed glTF 2.0 and carries per-part metadata",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "glTF 2.0, 66 nodes, 57 meshes, 58 carrying metadata, 1771196 bytes"
+    },
+    {
+      "id": "GRT-020",
+      "title": "HO conversion round-trips against the control values",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "HO conversion agrees for every linear control"
+    },
+    {
+      "id": "STT-001",
+      "title": "Every source cited by a control exists in the source register",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "9 sources registered"
+    },
+    {
+      "id": "STT-002",
+      "title": "Every control graded A, B or C cites at least one source",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "every A/B/C control cites a source"
+    },
+    {
+      "id": "STT-003",
+      "title": "Every placeholder control cites no source",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "6 placeholders, none sourced"
+    },
+    {
+      "id": "STT-004",
+      "title": "Every control reference on a part resolves to a control ID",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "every part control reference resolves"
+    },
+    {
+      "id": "STT-005",
+      "title": "Every open question cited by a part exists in GEOMETRY-CONTROL.md section 5",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "11 open questions registered"
+    },
+    {
+      "id": "STT-006",
+      "title": "Every part declares a non-empty source_basis",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "every part declares a source basis"
+    },
+    {
+      "id": "STT-007",
+      "title": "No part claims a drawing, photo, mesh or photogrammetry basis at Milestone 1",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "no part claims an external-source basis"
+    },
+    {
+      "id": "STT-008",
+      "title": "Every source cited by a control has been read and marked verified",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "every cited source is marked verified"
+    },
+    {
+      "id": "STT-009",
+      "title": "Every unverified registered source appears in the verification queue",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "3 unread source(s), all in the verification queue"
+    },
+    {
+      "id": "STT-010",
+      "title": "Every part is assigned to a system in the handoff taxonomy",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "57 parts in 8 systems"
+    },
+    {
+      "id": "STT-011",
+      "title": "Every part records review_status and last_modified_by_agent",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "every part records review_status and agent"
+    },
+    {
+      "id": "STT-012",
+      "title": "The parts manifest was generated from the current GEOMETRY-CONTROL.md",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "parts.json built from a477b82e3661, GEOMETRY-CONTROL.md is now a477b82e3661"
+    },
+    {
+      "id": "STT-013",
+      "title": "Every placeholder control is linked to a registered open question",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "all 6 placeholders name an open question"
+    },
+    {
+      "id": "STT-014",
+      "title": "No control cites a negative control",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "no control cites a negative control"
+    },
+    {
+      "id": "STT-015",
+      "title": "Every registered negative control is still declared",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "5 negative controls declared, at least 5 required"
+    },
+    {
+      "id": "STT-016",
+      "title": "Census of controls whose evidence is a single source",
+      "mode": "report_only",
+      "status": "REPORT",
+      "detail": "31 controls rest on a single source; citations by source: SRC-004x35, SRC-003x7, SRC-001x4"
+    }
+  ]
+}

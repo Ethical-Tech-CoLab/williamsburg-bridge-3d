@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "generated_by": "build_control_skeleton.py",
+  "control_document_sha256": "a477b82e36610717c9a39eee6e48de1c258194f3a91f483e1078762daf9d4a4f",
+  "controls_total": 43,
+  "controls_sourced": 37,
+  "placeholders": [
+    "CTL-101",
+    "CTL-102",
+    "CTL-103",
+    "CTL-104",
+    "CTL-105",
+    "CTL-106"
+  ],
+  "parts_total": 57,
+  "provenance_census": {
+    "DOCUMENTED": 9,
+    "INFERRED": 48
+  },
+  "confidence_census": {
+    "A": 7,
+    "C": 16,
+    "D": 34
+  },
+  "system_census": {
+    "reference": 11,
+    "towers": 22,
+    "anchorages": 2,
+    "cables": 4,
+    "suspenders": 4,
+    "deck_system": 10,
+    "approaches": 2,
+    "details": 2
+  },
+  "stations_m": {
+    "manhattan_approach_end": -1113.7392,
+    "manhattan_anchorage": -426.72,
+    "manhattan_tower": -243.84,
+    "main_span_midpoint": 0.0,
+    "brooklyn_tower": 243.84,
+    "brooklyn_anchorage": 426.72,
+    "brooklyn_approach_end": 1113.7392
+  },
+  "elevations_m": {
+    "mean_high_water": 0.0,
+    "tower_pier_top": 7.0104,
+    "deck_top_at_anchorage": 42.672,
+    "deck_underside_at_midspan": 41.148,
+    "deck_top_at_midspan": 53.34,
+    "main_cable_at_midspan": 57.912,
+    "tower_top": 94.488,
+    "approach_end_derived": 22.0614
+  },
+  "deck_chain_intervals_m": [
+    [
+      -1113.7392,
+      1113.7392
+    ]
+  ],
+  "suspender_count_per_cable": 79
+}

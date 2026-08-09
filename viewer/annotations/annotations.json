@@ -1,0 +1,6 @@
+{
+  "$comment": "Reader-facing annotations pinned to parts. Empty at Milestone 1 by design: an annotation is a claim, and every claim in this repository needs a registered source. Add entries only alongside a SOURCE-REGISTER.md row.",
+  "schema_version": "1.0",
+  "model": "control_skeleton",
+  "annotations": []
+}

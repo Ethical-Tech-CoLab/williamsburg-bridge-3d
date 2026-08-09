@@ -1,0 +1,311 @@
+{
+  "schema_version": "1.0",
+  "ho_scale_denominator": 87.1,
+  "control_document_sha256": "a477b82e36610717c9a39eee6e48de1c258194f3a91f483e1078762daf9d4a4f",
+  "controls": {
+    "main_span_tower_to_tower": {
+      "prototype_m": 487.68,
+      "prototype_ft": 1600.0,
+      "prototype_in": 19200.0,
+      "ho_mm": 5599.1,
+      "ho_in": 220.44,
+      "ho_ft": 18.37
+    },
+    "total_length_including_approaches": {
+      "prototype_m": 2227.4784,
+      "prototype_ft": 7308.0,
+      "prototype_in": 87696.0,
+      "ho_mm": 25573.8,
+      "ho_in": 1006.84,
+      "ho_ft": 83.9
+    },
+    "navigation_clearance_at_center": {
+      "prototype_m": 41.148,
+      "prototype_ft": 135.0,
+      "prototype_in": 1620.0,
+      "ho_mm": 472.4,
+      "ho_in": 18.6,
+      "ho_ft": 1.55
+    },
+    "main_cable_diameter": {
+      "prototype_m": 0.4572,
+      "prototype_ft": 1.5,
+      "prototype_in": 18.0,
+      "ho_mm": 5.25,
+      "ho_in": 0.207,
+      "ho_ft": 0.02
+    },
+    "tower_height": {
+      "prototype_m": 94.488,
+      "prototype_ft": 310.0,
+      "prototype_in": 3720.0,
+      "ho_mm": 1084.8,
+      "ho_in": 42.71,
+      "ho_ft": 3.56
+    },
+    "deck_width": {
+      "prototype_m": 35.9664,
+      "prototype_ft": 118.0,
+      "prototype_in": 1416.0,
+      "ho_mm": 412.9,
+      "ho_in": 16.26,
+      "ho_ft": 1.35
+    },
+    "stiffening_truss_spacing": {
+      "prototype_m": 20.4216,
+      "prototype_ft": 67.0,
+      "prototype_in": 804.0,
+      "ho_mm": 234.5,
+      "ho_in": 9.23,
+      "ho_ft": 0.77
+    },
+    "stiffening_truss_depth": {
+      "prototype_m": 12.192,
+      "prototype_ft": 40.0,
+      "prototype_in": 480.0,
+      "ho_mm": 140.0,
+      "ho_in": 5.51,
+      "ho_ft": 0.46
+    },
+    "floor_beam_depth": {
+      "prototype_m": 1.524,
+      "prototype_ft": 5.0,
+      "prototype_in": 60.0,
+      "ho_mm": 17.5,
+      "ho_in": 0.689,
+      "ho_ft": 0.06
+    },
+    "floor_beam_spacing": {
+      "prototype_m": 6.096,
+      "prototype_ft": 20.0,
+      "prototype_in": 240.0,
+      "ho_mm": 70.0,
+      "ho_in": 2.76,
+      "ho_ft": 0.23
+    },
+    "suspender_spacing_main_span": {
+      "prototype_m": 6.096,
+      "prototype_ft": 20.0,
+      "prototype_in": 240.0,
+      "ho_mm": 70.0,
+      "ho_in": 2.76,
+      "ho_ft": 0.23
+    },
+    "suspender_rope_diameter": {
+      "prototype_m": 0.04445,
+      "prototype_ft": 0.1458,
+      "prototype_in": 1.75,
+      "ho_mm": 0.51,
+      "ho_in": 0.02,
+      "ho_ft": 0.0
+    },
+    "outer_roadway_width": {
+      "prototype_m": 6.096,
+      "prototype_ft": 20.0,
+      "prototype_in": 240.0,
+      "ho_mm": 70.0,
+      "ho_in": 2.76,
+      "ho_ft": 0.23
+    },
+    "transit_track_center_spacing": {
+      "prototype_m": 3.3528,
+      "prototype_ft": 11.0,
+      "prototype_in": 132.0,
+      "ho_mm": 38.5,
+      "ho_in": 1.52,
+      "ho_ft": 0.13
+    },
+    "cable_pair_spacing_at_anchorage": {
+      "prototype_m": 10.3632,
+      "prototype_ft": 34.0,
+      "prototype_in": 408.0,
+      "ho_mm": 119.0,
+      "ho_in": 4.68,
+      "ho_ft": 0.39
+    },
+    "cable_pair_spacing_at_tower_top": {
+      "prototype_m": 6.7056,
+      "prototype_ft": 22.0,
+      "prototype_in": 264.0,
+      "ho_mm": 77.0,
+      "ho_in": 3.03,
+      "ho_ft": 0.25
+    },
+    "cable_pair_spacing_at_midspan": {
+      "prototype_m": 1.2192,
+      "prototype_ft": 4.0,
+      "prototype_in": 48.0,
+      "ho_mm": 14.0,
+      "ho_in": 0.551,
+      "ho_ft": 0.05
+    },
+    "tower_leg_center_spacing": {
+      "prototype_m": 29.718,
+      "prototype_ft": 97.5,
+      "prototype_in": 1170.0,
+      "ho_mm": 341.2,
+      "ho_in": 13.43,
+      "ho_ft": 1.12
+    },
+    "tower_leg_plan_length_we": {
+      "prototype_m": 12.192,
+      "prototype_ft": 40.0,
+      "prototype_in": 480.0,
+      "ho_mm": 140.0,
+      "ho_in": 5.51,
+      "ho_ft": 0.46
+    },
+    "tower_leg_plan_width_ns": {
+      "prototype_m": 7.3152,
+      "prototype_ft": 24.0,
+      "prototype_in": 288.0,
+      "ho_mm": 84.0,
+      "ho_in": 3.31,
+      "ho_ft": 0.28
+    },
+    "tower_pier_top_elevation": {
+      "prototype_m": 7.0104,
+      "prototype_ft": 23.0,
+      "prototype_in": 276.0,
+      "ho_mm": 80.5,
+      "ho_in": 3.17,
+      "ho_ft": 0.26
+    },
+    "tower_column_base_side": {
+      "prototype_m": 1.2192,
+      "prototype_ft": 4.0,
+      "prototype_in": 48.0,
+      "ho_mm": 14.0,
+      "ho_in": 0.551,
+      "ho_ft": 0.05
+    },
+    "tower_upper_truss_height": {
+      "prototype_m": 13.716,
+      "prototype_ft": 45.0,
+      "prototype_in": 540.0,
+      "ho_mm": 157.5,
+      "ho_in": 6.2,
+      "ho_ft": 0.52
+    },
+    "tower_top_narrowing": {
+      "prototype_m": 4.2672,
+      "prototype_ft": 14.0,
+      "prototype_in": 168.0,
+      "ho_mm": 49.0,
+      "ho_in": 1.93,
+      "ho_ft": 0.16
+    },
+    "deck_elevation_at_shoreline": {
+      "prototype_m": 37.1856,
+      "prototype_ft": 122.0,
+      "prototype_in": 1464.0,
+      "ho_mm": 426.9,
+      "ho_in": 16.81,
+      "ho_ft": 1.4
+    },
+    "main_span_cantilever_from_tower": {
+      "prototype_m": 30.48,
+      "prototype_ft": 100.0,
+      "prototype_in": 1200.0,
+      "ho_mm": 349.9,
+      "ho_in": 13.78,
+      "ho_ft": 1.15
+    },
+    "manhattan_anchorage_base_length": {
+      "prototype_m": 54.2544,
+      "prototype_ft": 178.0,
+      "prototype_in": 2136.0,
+      "ho_mm": 622.9,
+      "ho_in": 24.52,
+      "ho_ft": 2.04
+    },
+    "manhattan_anchorage_base_width": {
+      "prototype_m": 46.3296,
+      "prototype_ft": 152.0,
+      "prototype_in": 1824.0,
+      "ho_mm": 531.9,
+      "ho_in": 20.94,
+      "ho_ft": 1.75
+    },
+    "brooklyn_anchorage_base_length": {
+      "prototype_m": 55.4736,
+      "prototype_ft": 182.0,
+      "prototype_in": 2184.0,
+      "ho_mm": 636.9,
+      "ho_in": 25.07,
+      "ho_ft": 2.09
+    },
+    "brooklyn_anchorage_base_width": {
+      "prototype_m": 48.1584,
+      "prototype_ft": 158.0,
+      "prototype_in": 1896.0,
+      "ho_mm": 552.9,
+      "ho_in": 21.77,
+      "ho_ft": 1.81
+    },
+    "anchorage_height_above_street": {
+      "prototype_m": 24.384,
+      "prototype_ft": 80.0,
+      "prototype_in": 960.0,
+      "ho_mm": 280.0,
+      "ho_in": 11.02,
+      "ho_ft": 0.92
+    },
+    "anchorage_foundation_depth": {
+      "prototype_m": 12.192,
+      "prototype_ft": 40.0,
+      "prototype_in": 480.0,
+      "ho_mm": 140.0,
+      "ho_in": 5.51,
+      "ho_ft": 0.46
+    },
+    "main_cable_strand_diameter": {
+      "prototype_m": 0.0762,
+      "prototype_ft": 0.25,
+      "prototype_in": 3.0,
+      "ho_mm": 0.87,
+      "ho_in": 0.034,
+      "ho_ft": 0.0
+    },
+    "side_span_tower_to_anchorage": {
+      "prototype_m": 182.88,
+      "prototype_ft": 600.0,
+      "prototype_in": 7200.0,
+      "ho_mm": 2099.7,
+      "ho_in": 82.66,
+      "ho_ft": 6.89
+    },
+    "main_cable_elevation_at_midspan": {
+      "prototype_m": 57.912,
+      "prototype_ft": 190.0,
+      "prototype_in": 2280.0,
+      "ho_mm": 664.9,
+      "ho_in": 26.18,
+      "ho_ft": 2.18
+    },
+    "deck_elevation_at_anchorage": {
+      "prototype_m": 42.672,
+      "prototype_ft": 140.0,
+      "prototype_in": 1680.0,
+      "ho_mm": 489.9,
+      "ho_in": 19.29,
+      "ho_ft": 1.61
+    },
+    "anchorage_top_elevation": {
+      "prototype_m": 27.432,
+      "prototype_ft": 90.0,
+      "prototype_in": 1080.0,
+      "ho_mm": 314.9,
+      "ho_in": 12.4,
+      "ho_ft": 1.03
+    },
+    "tower_saddle_height": {
+      "prototype_m": 2.4384,
+      "prototype_ft": 8.0,
+      "prototype_in": 96.0,
+      "ho_mm": 28.0,
+      "ho_in": 1.1,
+      "ho_ft": 0.09
+    }
+  }
+}

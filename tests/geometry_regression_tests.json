@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0",
+  "suite": "geometry_regression",
+  "model": "control_skeleton",
+  "milestone": 1,
+  "bridge": "Williamsburg Bridge",
+  "description": "Geometry regression tests. Every assertion is measured against the built model and compared to GEOMETRY-CONTROL.md, never against a number written here. Run with: python scripts/validate_dimensions.py",
+  "runner": "scripts/validate_dimensions.py",
+  "inputs": {
+    "control_document": "GEOMETRY-CONTROL.md",
+    "parts": "viewer/metadata/parts.json",
+    "build_report": "viewer/metadata/build_report.json",
+    "scale_report": "viewer/metadata/scale_ho.json",
+    "glb": "mesh/glb/control_skeleton.glb"
+  },
+  "tolerance_m": 0.001,
+  "tests": [
+    {
+      "id": "GRT-001",
+      "title": "Tower-to-tower distance equals the main span control",
+      "kind": "station",
+      "rule": "station_separation_equals_control",
+      "stations": ["manhattan_tower", "brooklyn_tower"],
+      "control": "main_span_tower_to_tower",
+      "mode": "assert"
+    },
+    {
+      "id": "GRT-002",
+      "title": "The origin is the midpoint of the main span",
+      "kind": "station",
+      "rule": "origin_is_main_span_midpoint",
+      "mode": "assert",
+      "refs": ["AGENT-INSTRUCTIONS.md section 5.3"]
+    },
+    {
+      "id": "GRT-003",
+      "title": "Approach-end stations are symmetric and span the total length control",
+      "kind": "station",
+      "rule": "station_separation_equals_control",
+      "stations": ["manhattan_approach_end", "brooklyn_approach_end"],
+      "control": "total_length_including_approaches",
+      "mode": "assert"
+    },
+    {
+      "id": "GRT-004",
+      "title": "Deck underside at mid-span equals the navigation clearance control",
+      "kind": "elevation",
+      "rule": "elevation_equals_control",
+      "elevation": "deck_underside_at_midspan",
+      "control": "navigation_clearance_at_center",
+      "mode": "assert",
+      "rationale": "The 135 ft figure is a clearance beneath the span, not a height of the structure. SRC-004 phrases it in a way that invites the opposite reading."
+    },
+    {
+      "id": "GRT-005",
+      "title": "Tower top elevation equals the tower height control",
+      "kind": "elevation",
+      "rule": "elevation_equals_control",
+      "elevation": "tower_top",
+      "control": "tower_height",
+      "mode": "assert",
+      "refs": ["DRV-009", "OQ-004"]
+    },
+    {
+      "id": "GRT-006",
+      "title": "The model carries exactly the controlled number of main cables",
+      "kind": "census",
+      "rule": "part_count_equals_control",
+      "system": "cables",
+      "control": "main_cable_count",
+      "mode": "assert"
+    },
+    {
+      "id": "GRT-007",
+      "title": "The model carries exactly the controlled number of transit tracks, and no third or fourth",
+      "kind": "census",
+      "rule": "transit_track_negative_control",
+      "control": "transit_track_count",
+      "forbidden_part_patterns": ["*track_3*", "*track_4*", "*_track_three*", "*_track_four*"],
+      "mode": "assert",
+      "rationale": "AGENT-INSTRUCTIONS.md sections 6 and 13 inherit a four-track deck from the Manhattan Bridge. SRC-003 and SRC-004 both say two. This test turns that cross-contamination into a build failure rather than a silent error. See CNF-003 and NEG-003.",
+      "refs": ["SOURCE-REGISTER.md NEG-003", "CNF-003"]
+    },
+    {
+      "id": "GRT-008",
+      "title": "The deck is divided into the controlled number of sections",
+      "kind": "census",
+      "rule": "part_prefix_count_equals_control",
+      "prefix": "deck_",
+      "suffixes": ["outer_roadway_north", "outer_roadway_south", "inner_roadway_north", "inner_roadway_south", "transit_bay"],
+      "control": "deck_section_count",
+      "mode": "assert"
+    },
+    {
+      "id": "GRT-009",
+      "title": "Suspender spacing on the main span matches its control",
+      "kind": "derived",
+      "rule": "suspender_spacing_matches_control",
+      "count_key": "suspender_count_per_cable",
+      "span_control": "main_span_tower_to_tower",
+      "spacing_control": "suspender_spacing_main_span",
+      "mode": "assert"
+    },
+    {
+      "id": "GRT-010",
+      "title": "No longitudinal gap in the deck chain from approach end to approach end",
+      "kind": "continuity",
+      "rule": "deck_longitudinal_continuity",
+      "systems": ["deck_system", "approaches"],
+      "mode": "assert",
+      "rationale": "HOW-TO-DESIGN.md section 11: on the Manhattan Bridge, all deck geometry stopped at the anchorage face because that is where the suspended structure ends, leaving the roadway and every track terminating in mid-air. Two separate versions of that bug shipped. SRC-004 states this bridge's trusswork 'runs continuously from one anchorage to the other', and the roadway and tracks continue beyond that onto the approaches. This test was verified to fail against a deck chain truncated at the anchorages.",
+      "refs": ["HOW-TO-DESIGN.md section 11", "SOURCE-REGISTER.md SRC-004"]
+    },
+    {
+      "id": "GRT-011",
+      "title": "The sourced shoreline deck elevation falls inside the modelled deck elevation range",
+      "kind": "consistency",
+      "rule": "control_within_deck_elevation_range",
+      "control": "deck_elevation_at_shoreline",
+      "mode": "report_only",
+      "rationale": "CTL-028 is sourced but cannot be consumed as a vertex, because the shoreline station is unknown (OQ-001). Checking that it at least falls within the modelled profile is the strongest honest use of it."
+    },
+    {
+      "id": "GRT-012",
+      "title": "The derived approach-end elevation is reconcilable with street level",
+      "kind": "consistency",
+      "rule": "approach_end_reaches_street_level",
+      "elevation": "approach_end_derived",
+      "threshold_m": 6.0,
+      "mode": "report_only",
+      "rationale": "DRV-015 lands the approach ends far above street level. At least one of CTL-103, CTL-036 and the approach length implied by CTL-002 and CTL-101 is wrong. Reported rather than tuned away: tuning it would mean choosing a number to make a picture look right. See OQ-006."
+    },
+    {
+      "id": "GRT-013",
+      "title": "Census of MEASURED geometry",
+      "kind": "census",
+      "rule": "measured_census",
+      "mode": "report_only",
+      "rationale": "Expected to be zero until SRC-008 or a survey is ingested. Computed rather than hardcoded so the number changes honestly on the day that happens."
+    },
+    {
+      "id": "GRT-014",
+      "title": "Placeholder count has not regressed",
+      "kind": "ratchet",
+      "rule": "placeholder_ratchet",
+      "max_placeholders": 6,
+      "mode": "assert",
+      "rationale": "Six placeholders at Milestone 1: CTL-101 to CTL-106. Raising this number requires editing the expectation and writing the argument for it here. Lowering it is the point of Milestone 2."
+    },
+    {
+      "id": "GRT-015",
+      "title": "Every part consuming a placeholder is INFERRED or ASSUMED, never DOCUMENTED",
+      "kind": "provenance",
+      "rule": "placeholder_parts_not_documented",
+      "mode": "assert",
+      "rationale": "The single most dangerous failure available here: a part whose position rests on a made-up number presenting as documented."
+    },
+    {
+      "id": "GRT-016",
+      "title": "No control value appears as a literal in any script",
+      "kind": "hygiene",
+      "rule": "no_dimension_literals_in_scripts",
+      "min_value_checked": 100,
+      "mode": "assert",
+      "rationale": "HOW-TO-DESIGN.md section 7: if a number appears in Python, it is a bug. Only values of 100 or more are checked, because smaller integers appear legitimately as loop bounds and array indices."
+    },
+    {
+      "id": "GRT-017",
+      "title": "Every part's confidence equals the weakest link over the controls it consumes",
+      "kind": "provenance",
+      "rule": "confidence_is_weakest_link",
+      "mode": "assert",
+      "rationale": "Recomputed independently of the build so that a change to the grading rule cannot silently pass."
+    },
+    {
+      "id": "GRT-018",
+      "title": "Every part is assigned a material by a rule in GEOMETRY-CONTROL.md section 7",
+      "kind": "material",
+      "rule": "parts_have_material_rule",
+      "mode": "assert",
+      "rationale": "The material table has no default. An unmatched part must fail the build rather than render as a silent grey."
+    },
+    {
+      "id": "GRT-019",
+      "title": "The exported GLB is well-formed glTF 2.0 and carries per-part metadata",
+      "kind": "export",
+      "rule": "glb_wellformed",
+      "mode": "assert"
+    },
+    {
+      "id": "GRT-020",
+      "title": "HO conversion round-trips against the control values",
+      "kind": "scale",
+      "rule": "ho_scale_roundtrip",
+      "mode": "assert",
+      "refs": ["SCALE-HO.md"]
+    }
+  ]
+}

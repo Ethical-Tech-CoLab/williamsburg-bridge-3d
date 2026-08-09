@@ -1,0 +1,2394 @@
+{
+  "schema_version": "1.0",
+  "model": "control_skeleton",
+  "milestone": 1,
+  "bridge": "Williamsburg Bridge",
+  "generated_by": "build_control_skeleton.py",
+  "control_document": "GEOMETRY-CONTROL.md",
+  "control_document_sha256": "a477b82e36610717c9a39eee6e48de1c258194f3a91f483e1078762daf9d4a4f",
+  "units": "meters",
+  "vertical_datum": "mean high water",
+  "ho_scale_denominator": 87.1,
+  "taxonomy": [
+    "reference",
+    "anchorages",
+    "towers",
+    "cables",
+    "suspenders",
+    "deck_system",
+    "approaches",
+    "details"
+  ],
+  "controls": [
+    {
+      "control_id": "CTL-001",
+      "key": "main_span_tower_to_tower",
+      "value": 1600.0,
+      "unit": "ft",
+      "value_m": 487.68,
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "confidence": "A",
+      "is_placeholder": false,
+      "notes": "\"spans 1,600 feet between towers\" (SRC-001); \"Main span: 1,600 feet\" (SRC-003). Three sources agree. The strongest number this bridge has."
+    },
+    {
+      "control_id": "CTL-002",
+      "key": "total_length_including_approaches",
+      "value": 7308.0,
+      "unit": "ft",
+      "value_m": 2227.4784,
+      "source_ids": [
+        "SRC-003",
+        "SRC-004"
+      ],
+      "confidence": "A",
+      "is_placeholder": false,
+      "notes": "Owner's published figure. Conflicts with SRC-001's 7,200 ft \u2014 see CNF-001. Where the measurement starts and ends is not stated: OQ-006."
+    },
+    {
+      "control_id": "CTL-003",
+      "key": "navigation_clearance_at_center",
+      "value": 135.0,
+      "unit": "ft",
+      "value_m": 41.148,
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "confidence": "A",
+      "is_placeholder": false,
+      "notes": "Clearance beneath the span at mid-river, above MHW. Fixes the underside of the structure at the origin."
+    },
+    {
+      "control_id": "CTL-004",
+      "key": "main_cable_count",
+      "value": 4.0,
+      "unit": "count",
+      "value_m": 4.0,
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "confidence": "A",
+      "is_placeholder": false,
+      "notes": "\"4 main cables\" (SRC-001). Grouped in two pairs, north and south (SRC-004)."
+    },
+    {
+      "control_id": "CTL-005",
+      "key": "main_cable_diameter",
+      "value": 18.0,
+      "unit": "in",
+      "value_m": 0.4572,
+      "source_ids": [
+        "SRC-001",
+        "SRC-003"
+      ],
+      "confidence": "A",
+      "is_placeholder": false,
+      "notes": "Nominal. SRC-004 gives 18 to 18.75 in; see CNF-004."
+    },
+    {
+      "control_id": "CTL-006",
+      "key": "tower_height",
+      "value": 310.0,
+      "unit": "ft",
+      "value_m": 94.488,
+      "source_ids": [
+        "SRC-003"
+      ],
+      "confidence": "A",
+      "is_placeholder": false,
+      "notes": "Owner's figure. **Datum not stated by the source** \u2014 see CNF-002 and OQ-004. SRC-004 says 333 or 335 ft above MHW."
+    },
+    {
+      "control_id": "CTL-007",
+      "key": "transit_track_count",
+      "value": 2.0,
+      "unit": "count",
+      "value_m": 2.0,
+      "source_ids": [
+        "SRC-003",
+        "SRC-004"
+      ],
+      "confidence": "A",
+      "is_placeholder": false,
+      "notes": "\"two rapid transit tracks (J, M, and Z subway lines) sandwiched in between\" (SRC-003). **Not four** \u2014 see CNF-003 and NEG-003."
+    },
+    {
+      "control_id": "CTL-008",
+      "key": "deck_width",
+      "value": 118.0,
+      "unit": "ft",
+      "value_m": 35.9664,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "confidence": "C",
+      "is_placeholder": false,
+      "notes": "Also the length of the transverse floor beams, which is a useful internal consistency check on the figure."
+    },
+    {
+      "control_id": "CTL-009",
+      "key": "stiffening_truss_spacing",
+      "value": 67.0,
+      "unit": "ft",
+      "value_m": 20.4216,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "confidence": "C",
+      "is_placeholder": false,
+      "notes": "\"The trusses are placed 67 ft apart\". Independently reported by SRC-007 per `HOW-TO-DESIGN.md` \u00a710, but this repository has not read SRC-007, so the grade stays `C`."
+    },
+    {
+      "control_id": "CTL-010",
+      "key": "stiffening_truss_depth",
+      "value": 40.0,
+      "unit": "ft",
+      "value_m": 12.192,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "confidence": "C",
+      "is_placeholder": false,
+      "notes": "\"and measure 40 ft deep\". Three times the depth of the Brooklyn Bridge's, per the same passage."
+    },
+    {
+      "control_id": "CTL-011",
+      "key": "floor_beam_depth",
+      "value": 5.0,
+      "unit": "ft",
+      "value_m": 1.524,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "confidence": "C",
+      "is_placeholder": false,
+      "notes": "Transverse floor beams."
+    },
+    {
+      "control_id": "CTL-012",
+      "key": "floor_beam_spacing",
+      "value": 20.0,
+      "unit": "ft",
+      "value_m": 6.096,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "confidence": "C",
+      "is_placeholder": false,
+      "notes": "Equal to the suspender spacing, which is what one would expect and is stated separately."
+    },
+    {
+      "control_id": "CTL-013",
+      "key": "suspender_spacing_main_span",
+      "value": 20.0,
+      "unit": "ft",
+      "value_m": 6.096,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "confidence": "C",
+      "is_placeholder": false,
+      "notes": "\"suspender castings on the main cables, placed at intervals of 20 ft\". Stated for the main span only."
+    },
+    {
+      "control_id": "CTL-014",
+      "key": "suspender_rope_diameter",
+      "value": 1.75,
+      "unit": "in",
+      "value_m": 0.04445,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "confidence": "C",
+      "is_placeholder": false,
+      "notes": "Seven strands of rope per suspender."
+    },
+    {
+      "control_id": "CTL-015",
+      "key": "outer_roadway_width",
+      "value": 20.0,
+      "unit": "ft",
+      "value_m": 6.096,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "confidence": "C",
+      "is_placeholder": false,
+      "notes": "The outermost of the five deck sections, each side."
+    },
+    {
+      "control_id": "CTL-016",
+      "key": "deck_section_count",
+      "value": 5.0,
+      "unit": "count",
+      "value_m": 5.0,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "confidence": "C",
+      "is_placeholder": false,
+      "notes": "\"divided into five sections of roughly equal width\". \"Roughly\" is doing real work here \u2014 see OQ-007."
+    },
+    {
+      "control_id": "CTL-017",
+      "key": "transit_track_center_spacing",
+      "value": 11.0,
+      "unit": "ft",
+      "value_m": 3.3528,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "confidence": "C",
+      "is_placeholder": false,
+      "notes": "Standard gauge, centres 11 ft apart."
+    },
+    {
+      "control_id": "CTL-018",
+      "key": "cable_pair_spacing_at_anchorage",
+      "value": 34.0,
+      "unit": "ft",
+      "value_m": 10.3632,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "confidence": "C",
+      "is_placeholder": false,
+      "notes": "Spacing *within* a pair, at the anchorage."
+    },
+    {
+      "control_id": "CTL-019",
+      "key": "cable_pair_spacing_at_tower_top",
+      "value": 22.0,
+      "unit": "ft",
+      "value_m": 6.7056,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "confidence": "C",
+      "is_placeholder": false,
+      "notes": "Spacing within a pair, at the saddles."
+    },
+    {
+      "control_id": "CTL-020",
+      "key": "cable_pair_spacing_at_midspan",
+      "value": 4.0,
+      "unit": "ft",
+      "value_m": 1.2192,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "confidence": "C",
+      "is_placeholder": false,
+      "notes": "The cables are \"cradled\" together at mid-span to resist wind. This is the transverse geometry that makes this bridge look like itself."
+    },
+    {
+      "control_id": "CTL-021",
+      "key": "tower_leg_center_spacing",
+      "value": 97.5,
+      "unit": "ft",
+      "value_m": 29.718,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "confidence": "C",
+      "is_placeholder": false,
+      "notes": "Stated of the caisson pair centres. The legs stand on those foundations, so this is taken as the transverse spacing of the two legs of each tower. That step is an inference, and every part relying on it is marked accordingly."
+    },
+    {
+      "control_id": "CTL-022",
+      "key": "tower_leg_plan_length_we",
+      "value": 40.0,
+      "unit": "ft",
+      "value_m": 12.192,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "confidence": "C",
+      "is_placeholder": false,
+      "notes": "\"each leg forms a rectangle measuring 40 ft west\u2013east\"."
+    },
+    {
+      "control_id": "CTL-023",
+      "key": "tower_leg_plan_width_ns",
+      "value": 24.0,
+      "unit": "ft",
+      "value_m": 7.3152,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "confidence": "C",
+      "is_placeholder": false,
+      "notes": "\"and 24 ft north\u2013south\"."
+    },
+    {
+      "control_id": "CTL-024",
+      "key": "tower_pier_top_elevation",
+      "value": 23.0,
+      "unit": "ft",
+      "value_m": 7.0104,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "confidence": "C",
+      "is_placeholder": false,
+      "notes": "Masonry pier top, above MHW. The one solidly-datumed elevation in the whole document."
+    },
+    {
+      "control_id": "CTL-025",
+      "key": "tower_column_base_side",
+      "value": 4.0,
+      "unit": "ft",
+      "value_m": 1.2192,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "confidence": "C",
+      "is_placeholder": false,
+      "notes": "Square cross-section at the foot of each column."
+    },
+    {
+      "control_id": "CTL-026",
+      "key": "tower_upper_truss_height",
+      "value": 45.0,
+      "unit": "ft",
+      "value_m": 13.716,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "confidence": "C",
+      "is_placeholder": false,
+      "notes": "Trusses stiffening the inward-slanted upper legs above deck level."
+    },
+    {
+      "control_id": "CTL-027",
+      "key": "tower_top_narrowing",
+      "value": 14.0,
+      "unit": "ft",
+      "value_m": 4.2672,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "confidence": "C",
+      "is_placeholder": false,
+      "notes": "Tower tops are about 14 ft narrower than at deck level."
+    },
+    {
+      "control_id": "CTL-028",
+      "key": "deck_elevation_at_shoreline",
+      "value": 122.0,
+      "unit": "ft",
+      "value_m": 37.1856,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "confidence": "C",
+      "is_placeholder": false,
+      "notes": "Above MHW. **Not consumed as a vertex** \u2014 the shoreline station is unknown (OQ-001). Used by GRT-011 as a report-only sanity check on the modelled deck profile."
+    },
+    {
+      "control_id": "CTL-029",
+      "key": "main_span_cantilever_from_tower",
+      "value": 100.0,
+      "unit": "ft",
+      "value_m": 30.48,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "confidence": "C",
+      "is_placeholder": false,
+      "notes": "A 100 ft section of the centre span is cantilevered outward from either tower."
+    },
+    {
+      "control_id": "CTL-030",
+      "key": "manhattan_anchorage_base_length",
+      "value": 178.0,
+      "unit": "ft",
+      "value_m": 54.2544,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "confidence": "C",
+      "is_placeholder": false,
+      "notes": "At the base. Which axis is which is not stated: OQ-008."
+    },
+    {
+      "control_id": "CTL-031",
+      "key": "manhattan_anchorage_base_width",
+      "value": 152.0,
+      "unit": "ft",
+      "value_m": 46.3296,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "confidence": "C",
+      "is_placeholder": false,
+      "notes": "As above."
+    },
+    {
+      "control_id": "CTL-032",
+      "key": "brooklyn_anchorage_base_length",
+      "value": 182.0,
+      "unit": "ft",
+      "value_m": 55.4736,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "confidence": "C",
+      "is_placeholder": false,
+      "notes": "As above."
+    },
+    {
+      "control_id": "CTL-033",
+      "key": "brooklyn_anchorage_base_width",
+      "value": 158.0,
+      "unit": "ft",
+      "value_m": 48.1584,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "confidence": "C",
+      "is_placeholder": false,
+      "notes": "As above."
+    },
+    {
+      "control_id": "CTL-034",
+      "key": "anchorage_height_above_street",
+      "value": 80.0,
+      "unit": "ft",
+      "value_m": 24.384,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "confidence": "C",
+      "is_placeholder": false,
+      "notes": "Above *street level*, which is not an elevation this model knows: OQ-005."
+    },
+    {
+      "control_id": "CTL-035",
+      "key": "anchorage_foundation_depth",
+      "value": 40.0,
+      "unit": "ft",
+      "value_m": 12.192,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "confidence": "C",
+      "is_placeholder": false,
+      "notes": "Below street level. Not modelled; recorded for a later foundation milestone."
+    },
+    {
+      "control_id": "CTL-036",
+      "key": "approach_grade",
+      "value": 0.03,
+      "unit": "ratio",
+      "value_m": 0.03,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "confidence": "C",
+      "is_placeholder": false,
+      "notes": "\"The approach spans, between the anchorages and either end of the bridge, have a 3 percent grade.\""
+    },
+    {
+      "control_id": "CTL-037",
+      "key": "main_cable_strand_diameter",
+      "value": 3.0,
+      "unit": "in",
+      "value_m": 0.0762,
+      "source_ids": [
+        "SRC-004"
+      ],
+      "confidence": "C",
+      "is_placeholder": false,
+      "notes": "37 hexagonal strands per cable. Not modelled at Milestone 1."
+    },
+    {
+      "control_id": "CTL-101",
+      "key": "side_span_tower_to_anchorage",
+      "value": 600.0,
+      "unit": "ft",
+      "value_m": 182.88,
+      "source_ids": [],
+      "confidence": "D",
+      "is_placeholder": true,
+      "notes": "**OQ-001.** No source read by this repository states the side-span length. Deliberately round. This single number places both anchorages, both side spans, and the ends of the suspended structure \u2014 it is the highest-value unknown in the model and item 3 in the verification queue. Do not quote it."
+    },
+    {
+      "control_id": "CTL-102",
+      "key": "main_cable_elevation_at_midspan",
+      "value": 190.0,
+      "unit": "ft",
+      "value_m": 57.912,
+      "source_ids": [],
+      "confidence": "D",
+      "is_placeholder": true,
+      "notes": "**OQ-002.** No source read states the cable sag. Chosen only to clear the deck: it must sit above the deck top, which derivation DRV-007 puts at 175 ft. The main cable profile is therefore `ASSUMED` in Z even though the cable's existence and count are grade `A`."
+    },
+    {
+      "control_id": "CTL-103",
+      "key": "deck_elevation_at_anchorage",
+      "value": 140.0,
+      "unit": "ft",
+      "value_m": 42.672,
+      "source_ids": [],
+      "confidence": "D",
+      "is_placeholder": true,
+      "notes": "**OQ-006.** No source read gives the deck elevation where the suspended structure meets the anchorage."
+    },
+    {
+      "control_id": "CTL-104",
+      "key": "anchorage_top_elevation",
+      "value": 90.0,
+      "unit": "ft",
+      "value_m": 27.432,
+      "source_ids": [],
+      "confidence": "D",
+      "is_placeholder": true,
+      "notes": "**OQ-005.** CTL-034 gives 80 ft above *street level*, and this model does not know street level at either anchorage. Deliberately round."
+    },
+    {
+      "control_id": "CTL-105",
+      "key": "intermediate_towers_per_side_span",
+      "value": 1.0,
+      "unit": "count",
+      "value_m": 1.0,
+      "source_ids": [],
+      "confidence": "D",
+      "is_placeholder": true,
+      "notes": "**OQ-003.** SRC-004 states intermediate towers support both side spans and describes their form, but states neither how many there are nor where they stand."
+    },
+    {
+      "control_id": "CTL-106",
+      "key": "tower_saddle_height",
+      "value": 8.0,
+      "unit": "ft",
+      "value_m": 2.4384,
+      "source_ids": [],
+      "confidence": "D",
+      "is_placeholder": true,
+      "notes": "**OQ-009.** SRC-004 gives saddle plan dimensions (7.67 by 19 by 4 ft) but this repository has not established which figure is the height as installed."
+    }
+  ],
+  "parts": [
+    {
+      "part_id": "reference_axis_longitudinal",
+      "system": "reference",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-002"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [],
+      "confidence": "A",
+      "provenance": "DOCUMENTED",
+      "material": "reference",
+      "material_id": "MAT-001",
+      "material_confidence": "D",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Bridge centreline from approach end to approach end. Z=0 is mean high water."
+    },
+    {
+      "part_id": "reference_axis_transverse",
+      "system": "reference",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-008"
+      ],
+      "source_ids": [
+        "SRC-004"
+      ],
+      "open_questions": [],
+      "confidence": "C",
+      "provenance": "DOCUMENTED",
+      "material": "reference",
+      "material_id": "MAT-001",
+      "material_confidence": "D",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Deck width axis at the origin."
+    },
+    {
+      "part_id": "reference_axis_vertical",
+      "system": "reference",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-006"
+      ],
+      "source_ids": [
+        "SRC-003"
+      ],
+      "open_questions": [],
+      "confidence": "A",
+      "provenance": "DOCUMENTED",
+      "material": "reference",
+      "material_id": "MAT-001",
+      "material_confidence": "D",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Vertical axis at the origin, from mean high water to the tower top elevation."
+    },
+    {
+      "part_id": "reference_station_manhattan_approach_end",
+      "system": "reference",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-002"
+      ],
+      "source_ids": [
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [],
+      "confidence": "A",
+      "provenance": "DOCUMENTED",
+      "material": "reference",
+      "material_id": "MAT-001",
+      "material_confidence": "D",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Station marker, DRV-006."
+    },
+    {
+      "part_id": "reference_station_manhattan_anchorage",
+      "system": "reference",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-101"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-001"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "reference",
+      "material_id": "MAT-001",
+      "material_confidence": "D",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Station marker, DRV-004."
+    },
+    {
+      "part_id": "reference_station_manhattan_tower",
+      "system": "reference",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-001"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [],
+      "confidence": "A",
+      "provenance": "DOCUMENTED",
+      "material": "reference",
+      "material_id": "MAT-001",
+      "material_confidence": "D",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Station marker, DRV-002."
+    },
+    {
+      "part_id": "reference_station_main_span_midpoint",
+      "system": "reference",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-001"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [],
+      "confidence": "A",
+      "provenance": "DOCUMENTED",
+      "material": "reference",
+      "material_id": "MAT-001",
+      "material_confidence": "D",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Station marker, DRV-001."
+    },
+    {
+      "part_id": "reference_station_brooklyn_tower",
+      "system": "reference",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-001"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [],
+      "confidence": "A",
+      "provenance": "DOCUMENTED",
+      "material": "reference",
+      "material_id": "MAT-001",
+      "material_confidence": "D",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Station marker, DRV-003."
+    },
+    {
+      "part_id": "reference_station_brooklyn_anchorage",
+      "system": "reference",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-101"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-001"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "reference",
+      "material_id": "MAT-001",
+      "material_confidence": "D",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Station marker, DRV-005."
+    },
+    {
+      "part_id": "reference_station_brooklyn_approach_end",
+      "system": "reference",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-002"
+      ],
+      "source_ids": [
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [],
+      "confidence": "A",
+      "provenance": "DOCUMENTED",
+      "material": "reference",
+      "material_id": "MAT-001",
+      "material_confidence": "D",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Station marker, DRV-006."
+    },
+    {
+      "part_id": "reference_water_plane",
+      "system": "reference",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-002",
+        "CTL-008"
+      ],
+      "source_ids": [
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [],
+      "confidence": "C",
+      "provenance": "DOCUMENTED",
+      "material": "reference",
+      "material_id": "MAT-001",
+      "material_confidence": "D",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Mean high water plane, the vertical datum of this model."
+    },
+    {
+      "part_id": "tower_manhattan_pier_north",
+      "system": "towers",
+      "source_basis": [
+        "control_dimension",
+        "inferred"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-021",
+        "CTL-022",
+        "CTL-023",
+        "CTL-024"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-003"
+      ],
+      "confidence": "C",
+      "provenance": "INFERRED",
+      "material": "masonry",
+      "material_id": "MAT-003",
+      "material_confidence": "C",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Masonry pier rising to 23 ft above mean high water (CTL-024). Its transverse position is taken from the caisson pair spacing (CTL-021), which is an inference, not a statement about the pier."
+    },
+    {
+      "part_id": "tower_manhattan_leg_north_lower",
+      "system": "towers",
+      "source_basis": [
+        "control_dimension",
+        "inferred"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-021",
+        "CTL-022",
+        "CTL-023",
+        "CTL-025"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [],
+      "confidence": "C",
+      "provenance": "INFERRED",
+      "material": "steel_structural",
+      "material_id": "MAT-006",
+      "material_confidence": "A",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Four diagonally braced columns per leg; modelled here as the leg envelope from the pier top to deck level. Transverse position inferred from CTL-021."
+    },
+    {
+      "part_id": "tower_manhattan_leg_north_upper",
+      "system": "towers",
+      "source_basis": [
+        "control_dimension",
+        "inferred"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-006",
+        "CTL-021",
+        "CTL-022",
+        "CTL-023",
+        "CTL-027"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-004"
+      ],
+      "confidence": "C",
+      "provenance": "INFERRED",
+      "material": "steel_structural",
+      "material_id": "MAT-006",
+      "material_confidence": "A",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Upper leg, slanted inward and narrowing by CTL-027 at the top. The tower top elevation rests on CTL-006, whose datum is unstated (OQ-004)."
+    },
+    {
+      "part_id": "tower_manhattan_pier_south",
+      "system": "towers",
+      "source_basis": [
+        "control_dimension",
+        "inferred"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-021",
+        "CTL-022",
+        "CTL-023",
+        "CTL-024"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-003"
+      ],
+      "confidence": "C",
+      "provenance": "INFERRED",
+      "material": "masonry",
+      "material_id": "MAT-003",
+      "material_confidence": "C",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Masonry pier rising to 23 ft above mean high water (CTL-024). Its transverse position is taken from the caisson pair spacing (CTL-021), which is an inference, not a statement about the pier."
+    },
+    {
+      "part_id": "tower_manhattan_leg_south_lower",
+      "system": "towers",
+      "source_basis": [
+        "control_dimension",
+        "inferred"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-021",
+        "CTL-022",
+        "CTL-023",
+        "CTL-025"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [],
+      "confidence": "C",
+      "provenance": "INFERRED",
+      "material": "steel_structural",
+      "material_id": "MAT-006",
+      "material_confidence": "A",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Four diagonally braced columns per leg; modelled here as the leg envelope from the pier top to deck level. Transverse position inferred from CTL-021."
+    },
+    {
+      "part_id": "tower_manhattan_leg_south_upper",
+      "system": "towers",
+      "source_basis": [
+        "control_dimension",
+        "inferred"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-006",
+        "CTL-021",
+        "CTL-022",
+        "CTL-023",
+        "CTL-027"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-004"
+      ],
+      "confidence": "C",
+      "provenance": "INFERRED",
+      "material": "steel_structural",
+      "material_id": "MAT-006",
+      "material_confidence": "A",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Upper leg, slanted inward and narrowing by CTL-027 at the top. The tower top elevation rests on CTL-006, whose datum is unstated (OQ-004)."
+    },
+    {
+      "part_id": "tower_manhattan_portal_truss",
+      "system": "towers",
+      "source_basis": [
+        "control_dimension",
+        "inferred"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-006",
+        "CTL-021",
+        "CTL-026"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-004"
+      ],
+      "confidence": "C",
+      "provenance": "INFERRED",
+      "material": "steel_structural",
+      "material_id": "MAT-006",
+      "material_confidence": "A",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Pair of trusses stiffening the upper legs, CTL-026 high."
+    },
+    {
+      "part_id": "tower_manhattan_saddle_north_main_cable_inner",
+      "system": "towers",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-006",
+        "CTL-019",
+        "CTL-106"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-009"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "steel_wire",
+      "material_id": "MAT-004",
+      "material_confidence": "A",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Cable saddle at the tower top. Installed height is a placeholder."
+    },
+    {
+      "part_id": "tower_manhattan_saddle_north_main_cable_outer",
+      "system": "towers",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-006",
+        "CTL-019",
+        "CTL-106"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-009"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "steel_wire",
+      "material_id": "MAT-004",
+      "material_confidence": "A",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Cable saddle at the tower top. Installed height is a placeholder."
+    },
+    {
+      "part_id": "tower_manhattan_saddle_south_main_cable_inner",
+      "system": "towers",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-006",
+        "CTL-019",
+        "CTL-106"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-009"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "steel_wire",
+      "material_id": "MAT-004",
+      "material_confidence": "A",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Cable saddle at the tower top. Installed height is a placeholder."
+    },
+    {
+      "part_id": "tower_manhattan_saddle_south_main_cable_outer",
+      "system": "towers",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-006",
+        "CTL-019",
+        "CTL-106"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-009"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "steel_wire",
+      "material_id": "MAT-004",
+      "material_confidence": "A",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Cable saddle at the tower top. Installed height is a placeholder."
+    },
+    {
+      "part_id": "tower_brooklyn_pier_north",
+      "system": "towers",
+      "source_basis": [
+        "control_dimension",
+        "inferred"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-021",
+        "CTL-022",
+        "CTL-023",
+        "CTL-024"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-003"
+      ],
+      "confidence": "C",
+      "provenance": "INFERRED",
+      "material": "masonry",
+      "material_id": "MAT-003",
+      "material_confidence": "C",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Masonry pier rising to 23 ft above mean high water (CTL-024). Its transverse position is taken from the caisson pair spacing (CTL-021), which is an inference, not a statement about the pier."
+    },
+    {
+      "part_id": "tower_brooklyn_leg_north_lower",
+      "system": "towers",
+      "source_basis": [
+        "control_dimension",
+        "inferred"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-021",
+        "CTL-022",
+        "CTL-023",
+        "CTL-025"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [],
+      "confidence": "C",
+      "provenance": "INFERRED",
+      "material": "steel_structural",
+      "material_id": "MAT-006",
+      "material_confidence": "A",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Four diagonally braced columns per leg; modelled here as the leg envelope from the pier top to deck level. Transverse position inferred from CTL-021."
+    },
+    {
+      "part_id": "tower_brooklyn_leg_north_upper",
+      "system": "towers",
+      "source_basis": [
+        "control_dimension",
+        "inferred"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-006",
+        "CTL-021",
+        "CTL-022",
+        "CTL-023",
+        "CTL-027"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-004"
+      ],
+      "confidence": "C",
+      "provenance": "INFERRED",
+      "material": "steel_structural",
+      "material_id": "MAT-006",
+      "material_confidence": "A",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Upper leg, slanted inward and narrowing by CTL-027 at the top. The tower top elevation rests on CTL-006, whose datum is unstated (OQ-004)."
+    },
+    {
+      "part_id": "tower_brooklyn_pier_south",
+      "system": "towers",
+      "source_basis": [
+        "control_dimension",
+        "inferred"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-021",
+        "CTL-022",
+        "CTL-023",
+        "CTL-024"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-003"
+      ],
+      "confidence": "C",
+      "provenance": "INFERRED",
+      "material": "masonry",
+      "material_id": "MAT-003",
+      "material_confidence": "C",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Masonry pier rising to 23 ft above mean high water (CTL-024). Its transverse position is taken from the caisson pair spacing (CTL-021), which is an inference, not a statement about the pier."
+    },
+    {
+      "part_id": "tower_brooklyn_leg_south_lower",
+      "system": "towers",
+      "source_basis": [
+        "control_dimension",
+        "inferred"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-021",
+        "CTL-022",
+        "CTL-023",
+        "CTL-025"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [],
+      "confidence": "C",
+      "provenance": "INFERRED",
+      "material": "steel_structural",
+      "material_id": "MAT-006",
+      "material_confidence": "A",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Four diagonally braced columns per leg; modelled here as the leg envelope from the pier top to deck level. Transverse position inferred from CTL-021."
+    },
+    {
+      "part_id": "tower_brooklyn_leg_south_upper",
+      "system": "towers",
+      "source_basis": [
+        "control_dimension",
+        "inferred"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-006",
+        "CTL-021",
+        "CTL-022",
+        "CTL-023",
+        "CTL-027"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-004"
+      ],
+      "confidence": "C",
+      "provenance": "INFERRED",
+      "material": "steel_structural",
+      "material_id": "MAT-006",
+      "material_confidence": "A",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Upper leg, slanted inward and narrowing by CTL-027 at the top. The tower top elevation rests on CTL-006, whose datum is unstated (OQ-004)."
+    },
+    {
+      "part_id": "tower_brooklyn_portal_truss",
+      "system": "towers",
+      "source_basis": [
+        "control_dimension",
+        "inferred"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-006",
+        "CTL-021",
+        "CTL-026"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-004"
+      ],
+      "confidence": "C",
+      "provenance": "INFERRED",
+      "material": "steel_structural",
+      "material_id": "MAT-006",
+      "material_confidence": "A",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Pair of trusses stiffening the upper legs, CTL-026 high."
+    },
+    {
+      "part_id": "tower_brooklyn_saddle_north_main_cable_inner",
+      "system": "towers",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-006",
+        "CTL-019",
+        "CTL-106"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-009"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "steel_wire",
+      "material_id": "MAT-004",
+      "material_confidence": "A",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Cable saddle at the tower top. Installed height is a placeholder."
+    },
+    {
+      "part_id": "tower_brooklyn_saddle_north_main_cable_outer",
+      "system": "towers",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-006",
+        "CTL-019",
+        "CTL-106"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-009"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "steel_wire",
+      "material_id": "MAT-004",
+      "material_confidence": "A",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Cable saddle at the tower top. Installed height is a placeholder."
+    },
+    {
+      "part_id": "tower_brooklyn_saddle_south_main_cable_inner",
+      "system": "towers",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-006",
+        "CTL-019",
+        "CTL-106"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-009"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "steel_wire",
+      "material_id": "MAT-004",
+      "material_confidence": "A",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Cable saddle at the tower top. Installed height is a placeholder."
+    },
+    {
+      "part_id": "tower_brooklyn_saddle_south_main_cable_outer",
+      "system": "towers",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-006",
+        "CTL-019",
+        "CTL-106"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-009"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "steel_wire",
+      "material_id": "MAT-004",
+      "material_confidence": "A",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Cable saddle at the tower top. Installed height is a placeholder."
+    },
+    {
+      "part_id": "manhattan_anchorage",
+      "system": "anchorages",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-101",
+        "CTL-104",
+        "CTL-030",
+        "CTL-031"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-001",
+        "OQ-005",
+        "OQ-008"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "masonry",
+      "material_id": "MAT-002",
+      "material_confidence": "C",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Masonry anchorage. Base rectangle is sourced; which axis runs along the bridge is not (OQ-008), and its station rests on the side-span placeholder (OQ-001)."
+    },
+    {
+      "part_id": "brooklyn_anchorage",
+      "system": "anchorages",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-101",
+        "CTL-104",
+        "CTL-032",
+        "CTL-033"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-001",
+        "OQ-005",
+        "OQ-008"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "masonry",
+      "material_id": "MAT-002",
+      "material_confidence": "C",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Masonry anchorage. Base rectangle is sourced; which axis runs along the bridge is not (OQ-008), and its station rests on the side-span placeholder (OQ-001)."
+    },
+    {
+      "part_id": "north_main_cable_inner",
+      "system": "cables",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-004",
+        "CTL-005",
+        "CTL-018",
+        "CTL-019",
+        "CTL-020",
+        "CTL-102",
+        "CTL-104"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-002",
+        "OQ-001"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "steel_wire",
+      "material_id": "MAT-004",
+      "material_confidence": "A",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "One of four main cables. Count and diameter are grade A and the transverse cradling is sourced; the vertical profile rests on a placeholder sag (CTL-102), so this part is not DOCUMENTED."
+    },
+    {
+      "part_id": "north_main_cable_outer",
+      "system": "cables",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-004",
+        "CTL-005",
+        "CTL-018",
+        "CTL-019",
+        "CTL-020",
+        "CTL-102",
+        "CTL-104"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-002",
+        "OQ-001"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "steel_wire",
+      "material_id": "MAT-004",
+      "material_confidence": "A",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "One of four main cables. Count and diameter are grade A and the transverse cradling is sourced; the vertical profile rests on a placeholder sag (CTL-102), so this part is not DOCUMENTED."
+    },
+    {
+      "part_id": "south_main_cable_inner",
+      "system": "cables",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-004",
+        "CTL-005",
+        "CTL-018",
+        "CTL-019",
+        "CTL-020",
+        "CTL-102",
+        "CTL-104"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-002",
+        "OQ-001"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "steel_wire",
+      "material_id": "MAT-004",
+      "material_confidence": "A",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "One of four main cables. Count and diameter are grade A and the transverse cradling is sourced; the vertical profile rests on a placeholder sag (CTL-102), so this part is not DOCUMENTED."
+    },
+    {
+      "part_id": "south_main_cable_outer",
+      "system": "cables",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-004",
+        "CTL-005",
+        "CTL-018",
+        "CTL-019",
+        "CTL-020",
+        "CTL-102",
+        "CTL-104"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-002",
+        "OQ-001"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "steel_wire",
+      "material_id": "MAT-004",
+      "material_confidence": "A",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "One of four main cables. Count and diameter are grade A and the transverse cradling is sourced; the vertical profile rests on a placeholder sag (CTL-102), so this part is not DOCUMENTED."
+    },
+    {
+      "part_id": "suspender_set_north_main_cable_inner",
+      "system": "suspenders",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-013",
+        "CTL-014",
+        "CTL-102"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-002"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "steel_wire",
+      "material_id": "MAT-004",
+      "material_confidence": "A",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "79 suspenders at CTL-013 spacing on the main span. Lengths follow the placeholder cable profile and are not dimensions."
+    },
+    {
+      "part_id": "suspender_set_north_main_cable_outer",
+      "system": "suspenders",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-013",
+        "CTL-014",
+        "CTL-102"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-002"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "steel_wire",
+      "material_id": "MAT-004",
+      "material_confidence": "A",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "79 suspenders at CTL-013 spacing on the main span. Lengths follow the placeholder cable profile and are not dimensions."
+    },
+    {
+      "part_id": "suspender_set_south_main_cable_inner",
+      "system": "suspenders",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-013",
+        "CTL-014",
+        "CTL-102"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-002"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "steel_wire",
+      "material_id": "MAT-004",
+      "material_confidence": "A",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "79 suspenders at CTL-013 spacing on the main span. Lengths follow the placeholder cable profile and are not dimensions."
+    },
+    {
+      "part_id": "suspender_set_south_main_cable_outer",
+      "system": "suspenders",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-001",
+        "CTL-013",
+        "CTL-014",
+        "CTL-102"
+      ],
+      "source_ids": [
+        "SRC-001",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-002"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "steel_wire",
+      "material_id": "MAT-004",
+      "material_confidence": "A",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "79 suspenders at CTL-013 spacing on the main span. Lengths follow the placeholder cable profile and are not dimensions."
+    },
+    {
+      "part_id": "deck_outer_roadway_south",
+      "system": "deck_system",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-002",
+        "CTL-003",
+        "CTL-008",
+        "CTL-010",
+        "CTL-036",
+        "CTL-101",
+        "CTL-103",
+        "CTL-015",
+        "CTL-016"
+      ],
+      "source_ids": [
+        "SRC-003",
+        "SRC-004",
+        "SRC-001"
+      ],
+      "open_questions": [
+        "OQ-006",
+        "OQ-007",
+        "OQ-001"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "roadway_surface",
+      "material_id": "MAT-007",
+      "material_confidence": "C",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "One of the five deck sections. Only the outermost width is sourced; the interior division is reasoned (OQ-007). Runs unbroken from approach end to approach end."
+    },
+    {
+      "part_id": "deck_inner_roadway_south",
+      "system": "deck_system",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-002",
+        "CTL-003",
+        "CTL-008",
+        "CTL-010",
+        "CTL-036",
+        "CTL-101",
+        "CTL-103",
+        "CTL-015",
+        "CTL-016"
+      ],
+      "source_ids": [
+        "SRC-003",
+        "SRC-004",
+        "SRC-001"
+      ],
+      "open_questions": [
+        "OQ-006",
+        "OQ-007",
+        "OQ-001"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "roadway_surface",
+      "material_id": "MAT-007",
+      "material_confidence": "C",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "One of the five deck sections. Only the outermost width is sourced; the interior division is reasoned (OQ-007). Runs unbroken from approach end to approach end."
+    },
+    {
+      "part_id": "deck_transit_bay",
+      "system": "deck_system",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-002",
+        "CTL-003",
+        "CTL-008",
+        "CTL-010",
+        "CTL-036",
+        "CTL-101",
+        "CTL-103",
+        "CTL-015",
+        "CTL-016"
+      ],
+      "source_ids": [
+        "SRC-003",
+        "SRC-004",
+        "SRC-001"
+      ],
+      "open_questions": [
+        "OQ-006",
+        "OQ-007",
+        "OQ-001"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "steel_structural",
+      "material_id": "MAT-014",
+      "material_confidence": "C",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "One of the five deck sections. Only the outermost width is sourced; the interior division is reasoned (OQ-007). Runs unbroken from approach end to approach end."
+    },
+    {
+      "part_id": "deck_inner_roadway_north",
+      "system": "deck_system",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-002",
+        "CTL-003",
+        "CTL-008",
+        "CTL-010",
+        "CTL-036",
+        "CTL-101",
+        "CTL-103",
+        "CTL-015",
+        "CTL-016"
+      ],
+      "source_ids": [
+        "SRC-003",
+        "SRC-004",
+        "SRC-001"
+      ],
+      "open_questions": [
+        "OQ-006",
+        "OQ-007",
+        "OQ-001"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "roadway_surface",
+      "material_id": "MAT-007",
+      "material_confidence": "C",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "One of the five deck sections. Only the outermost width is sourced; the interior division is reasoned (OQ-007). Runs unbroken from approach end to approach end."
+    },
+    {
+      "part_id": "deck_outer_roadway_north",
+      "system": "deck_system",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-002",
+        "CTL-003",
+        "CTL-008",
+        "CTL-010",
+        "CTL-036",
+        "CTL-101",
+        "CTL-103",
+        "CTL-015",
+        "CTL-016"
+      ],
+      "source_ids": [
+        "SRC-003",
+        "SRC-004",
+        "SRC-001"
+      ],
+      "open_questions": [
+        "OQ-006",
+        "OQ-007",
+        "OQ-001"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "roadway_surface",
+      "material_id": "MAT-007",
+      "material_confidence": "C",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "One of the five deck sections. Only the outermost width is sourced; the interior division is reasoned (OQ-007). Runs unbroken from approach end to approach end."
+    },
+    {
+      "part_id": "transit_track_1",
+      "system": "deck_system",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-007",
+        "CTL-017",
+        "CTL-002",
+        "CTL-003",
+        "CTL-008",
+        "CTL-010",
+        "CTL-036",
+        "CTL-101",
+        "CTL-103"
+      ],
+      "source_ids": [
+        "SRC-003",
+        "SRC-004",
+        "SRC-001"
+      ],
+      "open_questions": [
+        "OQ-006",
+        "OQ-001"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "steel_structural",
+      "material_id": "MAT-009",
+      "material_confidence": "A",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Rapid transit track, J/M/Z services. The bridge carries two tracks, not the four in the inherited taxonomy of AGENT-INSTRUCTIONS.md section 6 (CNF-003)."
+    },
+    {
+      "part_id": "transit_track_2",
+      "system": "deck_system",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-007",
+        "CTL-017",
+        "CTL-002",
+        "CTL-003",
+        "CTL-008",
+        "CTL-010",
+        "CTL-036",
+        "CTL-101",
+        "CTL-103"
+      ],
+      "source_ids": [
+        "SRC-003",
+        "SRC-004",
+        "SRC-001"
+      ],
+      "open_questions": [
+        "OQ-006",
+        "OQ-001"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "steel_structural",
+      "material_id": "MAT-009",
+      "material_confidence": "A",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Rapid transit track, J/M/Z services. The bridge carries two tracks, not the four in the inherited taxonomy of AGENT-INSTRUCTIONS.md section 6 (CNF-003)."
+    },
+    {
+      "part_id": "stiffening_truss_north",
+      "system": "deck_system",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-009",
+        "CTL-010",
+        "CTL-003",
+        "CTL-101",
+        "CTL-103",
+        "CTL-001"
+      ],
+      "source_ids": [
+        "SRC-004",
+        "SRC-001",
+        "SRC-003"
+      ],
+      "open_questions": [
+        "OQ-001",
+        "OQ-011"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "steel_structural",
+      "material_id": "MAT-010",
+      "material_confidence": "C",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Top and bottom chords of one stiffening truss, 67 ft from its partner and 40 ft deep. Runs continuously from one anchorage to the other and is not rigidly connected to the towers or anchorages (SRC-004). Web members are not modelled at this milestone."
+    },
+    {
+      "part_id": "stiffening_truss_south",
+      "system": "deck_system",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-009",
+        "CTL-010",
+        "CTL-003",
+        "CTL-101",
+        "CTL-103",
+        "CTL-001"
+      ],
+      "source_ids": [
+        "SRC-004",
+        "SRC-001",
+        "SRC-003"
+      ],
+      "open_questions": [
+        "OQ-001",
+        "OQ-011"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "steel_structural",
+      "material_id": "MAT-010",
+      "material_confidence": "C",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Top and bottom chords of one stiffening truss, 67 ft from its partner and 40 ft deep. Runs continuously from one anchorage to the other and is not rigidly connected to the towers or anchorages (SRC-004). Web members are not modelled at this milestone."
+    },
+    {
+      "part_id": "deck_floor_beam_set",
+      "system": "deck_system",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-008",
+        "CTL-011",
+        "CTL-012",
+        "CTL-003",
+        "CTL-101",
+        "CTL-103"
+      ],
+      "source_ids": [
+        "SRC-004",
+        "SRC-001",
+        "SRC-003"
+      ],
+      "open_questions": [
+        "OQ-001"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "steel_structural",
+      "material_id": "MAT-011",
+      "material_confidence": "C",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "139 transverse floor beams, CTL-011 deep and CTL-008 long, at CTL-012 spacing. The deck sits above them and they hang from the suspenders."
+    },
+    {
+      "part_id": "manhattan_approach",
+      "system": "approaches",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-002",
+        "CTL-036",
+        "CTL-008",
+        "CTL-101",
+        "CTL-103"
+      ],
+      "source_ids": [
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-006",
+        "OQ-001"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "steel_structural",
+      "material_id": "MAT-013",
+      "material_confidence": "C",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Approach viaduct at CTL-036 grade. DRV-015 puts its far end well above street level, which the model does not believe: see OQ-006."
+    },
+    {
+      "part_id": "brooklyn_approach",
+      "system": "approaches",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-002",
+        "CTL-036",
+        "CTL-008",
+        "CTL-101",
+        "CTL-103"
+      ],
+      "source_ids": [
+        "SRC-003",
+        "SRC-004"
+      ],
+      "open_questions": [
+        "OQ-006",
+        "OQ-001"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "steel_structural",
+      "material_id": "MAT-013",
+      "material_confidence": "C",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Approach viaduct at CTL-036 grade. DRV-015 puts its far end well above street level, which the model does not believe: see OQ-006."
+    },
+    {
+      "part_id": "deck_railing_north",
+      "system": "details",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-008",
+        "CTL-002",
+        "CTL-103",
+        "CTL-101"
+      ],
+      "source_ids": [
+        "SRC-004",
+        "SRC-003"
+      ],
+      "open_questions": [
+        "OQ-006"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "steel_structural",
+      "material_id": "MAT-012",
+      "material_confidence": "C",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Heavy lattice railing on the deck edge (SRC-004). Height is not sourced, so this is a line, not a dimensioned member."
+    },
+    {
+      "part_id": "deck_railing_south",
+      "system": "details",
+      "source_basis": [
+        "control_dimension"
+      ],
+      "control_refs": [
+        "CTL-008",
+        "CTL-002",
+        "CTL-103",
+        "CTL-101"
+      ],
+      "source_ids": [
+        "SRC-004",
+        "SRC-003"
+      ],
+      "open_questions": [
+        "OQ-006"
+      ],
+      "confidence": "D",
+      "provenance": "INFERRED",
+      "material": "steel_structural",
+      "material_id": "MAT-012",
+      "material_confidence": "C",
+      "prototype_units": "meters",
+      "ho_scale_units": "millimeters",
+      "last_modified_by_agent": "build_control_skeleton.py",
+      "review_status": "machine_generated",
+      "notes": "Heavy lattice railing on the deck edge (SRC-004). Height is not sourced, so this is a line, not a dimensioned member."
+    }
+  ]
+}

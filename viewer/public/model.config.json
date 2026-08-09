@@ -1,0 +1,35 @@
+{
+  "$comment": "Everything the viewer needs to render a source-governed digital twin. Swap this file to point the same viewer at another bridge; nothing about the Williamsburg Bridge is compiled into the code.",
+  "modelId": "williamsburg-bridge-control-skeleton",
+  "title": "Williamsburg Bridge",
+  "subtitle": "Control skeleton — Milestone 1",
+  "asset": "./control_skeleton.glb",
+  "parts": "./parts.json",
+  "units": "meters",
+  "verticalDatum": "mean high water",
+  "hoScaleDenominator": 87.1,
+  "upAxis": "Y",
+  "camera": {
+    "position": [-620, 260, 900],
+    "target": [0, 60, 0],
+    "near": 1,
+    "far": 12000
+  },
+  "provenance": {
+    "MEASURED": { "label": "Measured", "opacity": 1.0, "outline": "solid", "dimensionable": true },
+    "DOCUMENTED": { "label": "Documented", "opacity": 1.0, "outline": "solid", "dimensionable": true },
+    "INFERRED": { "label": "Inferred", "opacity": 0.5, "outline": "dashed", "dimensionable": false },
+    "ASSUMED": { "label": "Assumed", "opacity": 0.22, "outline": "dotted", "dimensionable": false }
+  },
+  "confidence": {
+    "A": { "label": "A — official or archival", "color": "#3fa66b" },
+    "B": { "label": "B — corroborated", "color": "#7fb03f" },
+    "C": { "label": "C — tertiary or aligned", "color": "#d8a13a" },
+    "D": { "label": "D — placeholder", "color": "#c4553c" }
+  },
+  "documents": {
+    "control": "GEOMETRY-CONTROL.md",
+    "sources": "SOURCE-REGISTER.md",
+    "confidence": "CONFIDENCE-MODEL.md"
+  }
+}
