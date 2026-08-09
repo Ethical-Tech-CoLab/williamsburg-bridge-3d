@@ -8,7 +8,10 @@ export default defineConfig({
   base: './',
   plugins: [react()],
   server: {
-    port: 5174,
+    // 5173 is the Manhattan Bridge viewer and 5174 the Brooklyn Bridge viewer. These repos sit
+    // side by side and get run together, so each bridge owns its own port and strictPort makes a
+    // collision fail loudly rather than silently serving a different bridge on the URL you expect.
+    port: 5175,
     strictPort: true,
   },
   build: {

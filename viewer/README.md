@@ -6,10 +6,15 @@ model built to the same contract.
 
 ```bash
 npm install
-npm run dev        # http://localhost:5174
+npm run dev        # http://localhost:5175
 npm run build      # typecheck + production build into dist/
 npm run typecheck
 ```
+
+**Port 5175 is this bridge's.** The sibling repos run alongside it — `manhattan-bridge-3d` on 5173
+and `brooklyn-bridge-3d` on 5174 — so each owns a fixed port and `strictPort` makes a collision fail
+loudly. Without that you get the confusing failure of loading a URL and being shown a different
+bridge; check the title bar, which always names the model it loaded.
 
 The dev server needs `public/control_skeleton.glb` and `public/parts.json`, both written by
 `python scripts/build_control_skeleton.py` from the repository root. If the page reports that it

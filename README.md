@@ -10,8 +10,12 @@ real answer, including "we do not".
 ```
 python scripts/build_control_skeleton.py     # read the control document, emit GLB + metadata
 python scripts/validate_dimensions.py        # run both test suites
-cd viewer && npm install && npm run dev      # browser viewer on http://localhost:5174
+cd viewer && npm install && npm run dev      # browser viewer on http://localhost:5175
 ```
+
+The viewer runs on **port 5175**, alongside `manhattan-bridge-3d` on 5173 and `brooklyn-bridge-3d`
+on 5174. The header always names the bridge and the control-document hash it loaded, so you can see
+at a glance which model is in front of you.
 
 ---
 
