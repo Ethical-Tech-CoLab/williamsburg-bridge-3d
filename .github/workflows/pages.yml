@@ -1,0 +1,96 @@
+name: Publish viewer to GitHub Pages
+
+# The published site is rebuilt from GEOMETRY-CONTROL.md on every push, and the deploy is gated on
+# the validation suites. That is deliberate: a site built from a stale control document, or one
+# carrying geometry that fails its own traceability tests, would be exactly the confident-wrong-
+# number failure this repository exists to prevent. If the tests fail, nothing is published.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a running deploy finish rather than cancelling it, so the live site is never left half-updated.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Rebuild the model from the control document
+        run: python scripts/build_control_skeleton.py
+
+      - name: Fail the deploy if the committed artifacts are stale
+        # STT-012 catches this too, but failing here names the problem precisely: someone edited
+        # GEOMETRY-CONTROL.md and did not rebuild, so the committed GLB and parts.json disagree
+        # with the document they claim to come from.
+        #
+        # The paths are listed individually rather than as directories on purpose. viewer/public
+        # also holds model.config.json, which is hand-authored and never written by the build; a
+        # directory-wide check would flag an honest edit to it as a stale artifact.
+        run: |
+          GENERATED="
+            mesh/glb/control_skeleton.glb
+            mesh/glb/control_skeleton_ho.glb
+            viewer/public/control_skeleton.glb
+            viewer/public/parts.json
+            viewer/metadata/parts.json
+            viewer/metadata/build_report.json
+            viewer/metadata/scale_ho.json
+          "
+          if ! git diff --quiet -- $GENERATED; then
+            echo "::error::Committed build artifacts differ from a fresh build of GEOMETRY-CONTROL.md."
+            echo "Run: python scripts/build_control_skeleton.py, then commit the result."
+            git --no-pager diff --stat -- $GENERATED
+            exit 1
+          fi
+          echo "Committed artifacts match a fresh build."
+
+      - name: Run the geometry regression and source traceability suites
+        run: python scripts/validate_dimensions.py
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: viewer/package-lock.json
+
+      - name: Install viewer dependencies
+        run: npm ci
+        working-directory: viewer
+
+      - name: Build the viewer
+        run: npm run build
+        working-directory: viewer
+
+      - name: Disable Jekyll processing
+        run: touch viewer/dist/.nojekyll
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: viewer/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

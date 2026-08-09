@@ -1,5 +1,7 @@
 # Viewer
 
+**▶ Published: https://ethical-tech-colab.github.io/williamsburg-bridge-3d/**
+
 A minimal, config-driven browser viewer for source-governed GLB digital twins. Nothing about the
 Williamsburg Bridge is compiled into it — swap `public/model.config.json` and it will render another
 model built to the same contract.
@@ -15,6 +17,22 @@ npm run typecheck
 and `brooklyn-bridge-3d` on 5174 — so each owns a fixed port and `strictPort` makes a collision fail
 loudly. Without that you get the confusing failure of loading a URL and being shown a different
 bridge; check the title bar, which always names the model it loaded.
+
+## Deployment
+
+`.github/workflows/pages.yml` rebuilds the model from `GEOMETRY-CONTROL.md`, verifies the committed
+artifacts match that rebuild, runs both validation suites, and only then builds and publishes. The
+site cannot be updated with geometry that fails its own tests.
+
+`base: './'` in `vite.config.ts` and document-relative URL resolution in `src/model.ts` are what let
+one build work at a domain root, under a project-pages subpath, and co-served inside a district
+site. Both layouts were verified before the first deploy.
+
+## Full screen
+
+The **Fullscreen** button, or the `f` key, takes the whole document fullscreen — panels included.
+That is deliberate: the provenance tally and the metadata locus are part of reading this bridge
+honestly, not chrome to be discarded for a prettier picture. Escape leaves.
 
 The dev server needs `public/control_skeleton.glb` and `public/parts.json`, both written by
 `python scripts/build_control_skeleton.py` from the repository root. If the page reports that it

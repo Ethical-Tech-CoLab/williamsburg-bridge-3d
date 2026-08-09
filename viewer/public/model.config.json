@@ -9,6 +9,7 @@
   "verticalDatum": "mean high water",
   "hoScaleDenominator": 87.1,
   "upAxis": "Y",
+  "repository": "https://github.com/Ethical-Tech-CoLab/williamsburg-bridge-3d",
   "camera": {
     "position": [-620, 260, 900],
     "target": [0, 60, 0],

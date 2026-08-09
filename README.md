@@ -1,5 +1,7 @@
 # Williamsburg Bridge — source-governed digital twin
 
+**▶ View it live: https://ethical-tech-colab.github.io/williamsburg-bridge-3d/**
+
 A browser-renderable, part-addressable 3D model of the Williamsburg Bridge in which **every part
 carries its provenance**, so a reader can ask of any surface — *how do you know that?* — and get a
 real answer, including "we do not".
@@ -7,15 +9,22 @@ real answer, including "we do not".
 **Milestone 1: control skeleton and viewer.** 57 parts, 43 controls, 9 sources, 11 open questions,
 8 registered conflicts, 32 tests passing.
 
+To run it locally instead:
+
 ```
 python scripts/build_control_skeleton.py     # read the control document, emit GLB + metadata
 python scripts/validate_dimensions.py        # run both test suites
 cd viewer && npm install && npm run dev      # browser viewer on http://localhost:5175
 ```
 
-The viewer runs on **port 5175**, alongside `manhattan-bridge-3d` on 5173 and `brooklyn-bridge-3d`
-on 5174. The header always names the bridge and the control-document hash it loaded, so you can see
-at a glance which model is in front of you.
+The local viewer runs on **port 5175**, alongside `manhattan-bridge-3d` on 5173 and
+`brooklyn-bridge-3d` on 5174. The header always names the bridge and the control-document hash it
+loaded, so you can see at a glance which model is in front of you.
+
+The published site is rebuilt from `GEOMETRY-CONTROL.md` on every push to `main` and **the deploy is
+gated on the validation suites** — see [.github/workflows/pages.yml](.github/workflows/pages.yml). A
+model that fails its own traceability tests, or whose committed artifacts disagree with the control
+document, does not reach the web.
 
 ---
 

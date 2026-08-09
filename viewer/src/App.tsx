@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { BridgeViewer } from './BridgeViewer';
 import { ConfidenceLegend } from '../components/ConfidenceLegend';
 import { MetadataPanel, type ControlRow } from '../components/MetadataPanel';
@@ -32,6 +32,33 @@ export function App() {
   );
   const [showOutlines, setShowOutlines] = useState(true);
   const [showHo, setShowHo] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
+
+  // Fullscreen is driven from the document element so the panels come along with the model — the
+  // provenance tally and the metadata locus are part of reading this bridge honestly, not chrome
+  // to be discarded. `f` toggles; Escape is handled by the browser.
+  const toggleFullscreen = useCallback(() => {
+    if (document.fullscreenElement) void document.exitFullscreen();
+    else void document.documentElement.requestFullscreen().catch(() => undefined);
+  }, []);
+
+  useEffect(() => {
+    const onChange = () => setIsFullscreen(Boolean(document.fullscreenElement));
+    const onKey = (e: KeyboardEvent) => {
+      const el = e.target as HTMLElement | null;
+      if (el && ['INPUT', 'TEXTAREA', 'SELECT'].includes(el.tagName)) return;
+      if (e.key === 'f' || e.key === 'F') {
+        e.preventDefault();
+        toggleFullscreen();
+      }
+    };
+    document.addEventListener('fullscreenchange', onChange);
+    window.addEventListener('keydown', onKey);
+    return () => {
+      document.removeEventListener('fullscreenchange', onChange);
+      window.removeEventListener('keydown', onKey);
+    };
+  }, [toggleFullscreen]);
 
   useEffect(() => {
     loadModel()
@@ -100,9 +127,16 @@ export function App() {
             {config.verticalDatum}
           </p>
         </div>
-        <div className="build-id" title="The control document this model was built from">
-          <span>{config.documents.control}</span>
-          <code>{parts.control_document_sha256.slice(0, 12)}</code>
+        <div className="header-right">
+          {config.repository && (
+            <a className="repo-link" href={config.repository} target="_blank" rel="noreferrer">
+              Sources and method on GitHub
+            </a>
+          )}
+          <div className="build-id" title="The control document this model was built from">
+            <span>{config.documents.control}</span>
+            <code>{parts.control_document_sha256.slice(0, 12)}</code>
+          </div>
         </div>
       </header>
 
@@ -132,6 +166,8 @@ export function App() {
           onToggleOutlines={() => setShowOutlines((v) => !v)}
           showHo={showHo}
           onToggleHo={() => setShowHo((v) => !v)}
+          isFullscreen={isFullscreen}
+          onToggleFullscreen={toggleFullscreen}
           provenanceCensus={provenanceCensus}
         />
         <PartTree

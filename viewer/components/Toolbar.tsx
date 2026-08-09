@@ -19,6 +19,8 @@ export function Toolbar(props: {
   onToggleOutlines: () => void;
   showHo: boolean;
   onToggleHo: () => void;
+  isFullscreen: boolean;
+  onToggleFullscreen: () => void;
   provenanceCensus: Record<Provenance, number>;
 }) {
   return (
@@ -83,6 +85,15 @@ export function Toolbar(props: {
             aria-pressed={props.showHo}
           >
             HO 1:{props.config.hoScaleDenominator}
+          </button>
+          <button
+            type="button"
+            className={props.isFullscreen ? 'chip on' : 'chip'}
+            onClick={props.onToggleFullscreen}
+            aria-pressed={props.isFullscreen}
+            title="Fullscreen (F). Press Escape to leave."
+          >
+            {props.isFullscreen ? 'Exit fullscreen' : 'Fullscreen'}
           </button>
         </div>
       </section>

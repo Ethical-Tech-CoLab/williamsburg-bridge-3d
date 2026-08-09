@@ -58,6 +58,7 @@ export interface ModelConfig {
   verticalDatum: string;
   hoScaleDenominator: number;
   upAxis: string;
+  repository?: string;
   camera: { position: [number, number, number]; target: [number, number, number]; near: number; far: number };
   provenance: Record<Provenance, ProvenanceStyle>;
   confidence: Record<Confidence, { label: string; color: string }>;

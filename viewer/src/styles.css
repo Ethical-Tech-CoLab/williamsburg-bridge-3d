@@ -49,6 +49,13 @@ header h1 { font-size: 17px; margin: 0; font-weight: 600; letter-spacing: 0.01em
 .build-id { text-align: right; color: var(--muted); font-size: 11px; }
 .build-id code { display: block; color: var(--accent); }
 
+.header-right { display: flex; align-items: center; gap: 16px; }
+.repo-link {
+  color: var(--muted); font-size: 11.5px; text-decoration: none;
+  border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px; white-space: nowrap;
+}
+.repo-link:hover { color: var(--text); border-color: var(--accent); }
+
 aside.left, aside.right {
   background: var(--panel);
   overflow-y: auto;
