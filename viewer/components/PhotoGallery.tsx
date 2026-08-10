@@ -129,7 +129,11 @@ export function PhotoGallery(props: {
               aria-selected={p.id === selectedId}
               role="option"
             >
-              <img src={p.file} alt={p.caption} loading="lazy" />
+              {/* Not lazy: the rail only mounts when the reader opens it, and all nine thumbnails
+                  are visible at once, so deferring gains nothing. It also costs something — headless
+                  Chromium defers lazy images even inside the viewport, which makes the gallery look
+                  broken under test for a reason that has nothing to do with the gallery. */}
+              <img src={p.file} alt={p.caption} />
               <span className="thumb-id">{p.id.replace('NY-128-', '')}</span>
             </button>
           ))}
