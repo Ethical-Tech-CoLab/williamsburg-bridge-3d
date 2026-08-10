@@ -21,6 +21,9 @@ export function Toolbar(props: {
   onToggleHo: () => void;
   isFullscreen: boolean;
   onToggleFullscreen: () => void;
+  showPhotos: boolean;
+  hasPhotos: boolean;
+  onTogglePhotos: () => void;
   provenanceCensus: Record<Provenance, number>;
 }) {
   return (
@@ -94,6 +97,20 @@ export function Toolbar(props: {
             title="Fullscreen (F). Press Escape to leave."
           >
             {props.isFullscreen ? 'Exit fullscreen' : 'Fullscreen'}
+          </button>
+          <button
+            type="button"
+            className={props.showPhotos ? 'chip on' : 'chip'}
+            onClick={props.onTogglePhotos}
+            aria-pressed={props.showPhotos}
+            disabled={!props.hasPhotos}
+            title={
+              props.hasPhotos
+                ? 'Historic photographs of the bridge, shown beside the model for comparison'
+                : 'No photograph manifest was found'
+            }
+          >
+            Historic photos
           </button>
         </div>
       </section>

@@ -194,6 +194,15 @@
       "rule": "ho_scale_roundtrip",
       "mode": "assert",
       "refs": ["SCALE-HO.md"]
+    },
+    {
+      "id": "GRT-021",
+      "title": "Every reference photograph declared in the manifest resolves to a real image",
+      "kind": "export",
+      "rule": "photo_manifest_resolves",
+      "manifest": "viewer/public/photos/photos.json",
+      "mode": "assert",
+      "rationale": "A dev server and GitHub Pages both answer a missing asset with index.html and HTTP 200, not a 404, so a wrong path in the manifest renders as a blank frame while every network check reports success. That is exactly how this shipped broken once: the manifest resolved to /photos/photos/... and the page looked fine. Verified to fail against that doubled path."
     }
   ]
 }

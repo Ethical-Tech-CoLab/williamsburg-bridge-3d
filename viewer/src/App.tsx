@@ -3,6 +3,7 @@ import { BridgeViewer } from './BridgeViewer';
 import { ConfidenceLegend } from '../components/ConfidenceLegend';
 import { MetadataPanel, type ControlRow } from '../components/MetadataPanel';
 import { PartTree } from '../components/PartTree';
+import { PhotoGallery, usePhotoManifest } from '../components/PhotoGallery';
 import { Toolbar } from '../components/Toolbar';
 import {
   CONFIDENCE_ORDER,
@@ -33,6 +34,9 @@ export function App() {
   const [showOutlines, setShowOutlines] = useState(true);
   const [showHo, setShowHo] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [showPhotos, setShowPhotos] = useState(false);
+  const [selectedPhoto, setSelectedPhoto] = useState<string | null>(null);
+  const photoManifest = usePhotoManifest();
 
   // Fullscreen is driven from the document element so the panels come along with the model — the
   // provenance tally and the metadata locus are part of reading this bridge honestly, not chrome
@@ -168,6 +172,14 @@ export function App() {
           onToggleHo={() => setShowHo((v) => !v)}
           isFullscreen={isFullscreen}
           onToggleFullscreen={toggleFullscreen}
+          showPhotos={showPhotos}
+          hasPhotos={Boolean(photoManifest)}
+          onTogglePhotos={() => {
+            setShowPhotos((v) => {
+              if (v) setSelectedPhoto(null);
+              return !v;
+            });
+          }}
           provenanceCensus={provenanceCensus}
         />
         <PartTree
@@ -179,7 +191,16 @@ export function App() {
         />
       </aside>
 
-      <main>
+      <main
+        className={
+          [
+            showPhotos && photoManifest ? 'photos-open' : '',
+            showPhotos && photoManifest && selectedPhoto ? 'photo-open' : '',
+          ]
+            .filter(Boolean)
+            .join(' ') || undefined
+        }
+      >
         <BridgeViewer
           config={config}
           assetUrl={loaded.assetUrl}
@@ -204,6 +225,13 @@ export function App() {
           provenanceCensus={provenanceCensus}
           confidenceCensus={confidenceCensus}
         />
+        {showPhotos && photoManifest && (
+          <PhotoGallery
+            manifest={photoManifest}
+            selectedId={selectedPhoto}
+            onSelect={setSelectedPhoto}
+          />
+        )}
       </main>
 
       <aside className="right">

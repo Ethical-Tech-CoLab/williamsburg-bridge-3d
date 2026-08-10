@@ -1,6 +1,6 @@
 {
   "control_document_sha256": "224bb2584e6840058aee29c56a6d5c5118242e9fa69abe5c520d5278537bf1fb",
-  "passed": 33,
+  "passed": 34,
   "failed": 0,
   "report_only": 4,
   "results": [
@@ -143,6 +143,13 @@
       "mode": "assert",
       "status": "PASS",
       "detail": "HO conversion agrees for every linear control"
+    },
+    {
+      "id": "GRT-021",
+      "title": "Every reference photograph declared in the manifest resolves to a real image",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "9 photographs resolve, all JPEG, all credited"
     },
     {
       "id": "STT-001",

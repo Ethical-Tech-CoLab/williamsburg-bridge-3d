@@ -34,6 +34,34 @@ The **Fullscreen** button, or the `f` key, takes the whole document fullscreen �
 That is deliberate: the provenance tally and the metadata locus are part of reading this bridge
 honestly, not chrome to be discarded for a prettier picture. Escape leaves.
 
+## Reference photographs
+
+**Historic photos** opens the nine HAER photographs beside the model, with a thumbnail rail and
+arrow-key navigation. Every frame carries its caption, photographer and date, transcribed from the
+HAER index to photographs rather than paraphrased, and credits both the Library of Congress and the
+[historic-structures.com page](https://www.historic-structures.com/ny/new_york/historic-williamsburg-bridge/)
+that surfaced them.
+
+Two deliberate limits:
+
+- **The photograph is shown beside the model, never overlaid on it.** No camera pose is known for any
+  of these frames, so an overlay or a "match this view" button would imply a registration this
+  project does not have.
+- **They grade nothing.** `SOURCE-REGISTER.md` marks the HAER photographs visual-only and test
+  STT-017 fails the build if one is ever cited by a control dimension. The rail says so on screen.
+
+### A third trap, found here
+
+**A missing asset does not necessarily give you a 404.** The manifest first shipped pointing at
+`/photos/photos/…`, a doubled path. Both the Vite dev server and GitHub Pages answer an unmatched
+path with `index.html` and **HTTP 200**, so the browser cheerfully loaded 608 bytes of HTML into an
+`<img>`, drew nothing, and every network check reported success. It was caught by asking the image
+for its `naturalWidth`, which was `0`.
+
+Test **GRT-021** now resolves every manifest entry the way a browser would — relative to the
+manifest's own URL — and checks the bytes really begin with a JPEG signature. It was verified to
+fail against the doubled path.
+
 The dev server needs `public/control_skeleton.glb` and `public/parts.json`, both written by
 `python scripts/build_control_skeleton.py` from the repository root. If the page reports that it
 could not load the model, run that first.

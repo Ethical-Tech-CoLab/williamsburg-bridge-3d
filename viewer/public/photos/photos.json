@@ -1,0 +1,91 @@
+{
+  "$comment": "Reference photographs shown alongside the model. These are visual reference ONLY: SOURCE-REGISTER.md marks SRC-002 visual-only, and test STT-017 fails the build if any of them is ever cited by a control dimension. Captions are transcribed from the HAER index to photographs (ny1263cap.pdf), not paraphrased.",
+  "schema_version": "1.0",
+  "collection": "HAER No. NY-128",
+  "sourceId": "SRC-002",
+  "archive": {
+    "title": "Historic American Engineering Record, Williamsburg Bridge, HAER No. NY-128",
+    "repository": "Library of Congress, Prints and Photographs Division",
+    "url": "https://www.loc.gov/item/ny1263/",
+    "rights": "Public domain. Works of the United States Government; no known restrictions on publication."
+  },
+  "foundVia": {
+    "title": "historic-structures.com — The Historic Williamsburg Bridge in NYC",
+    "url": "https://www.historic-structures.com/ny/new_york/historic-williamsburg-bridge/",
+    "note": "This page surfaced the photographs and carries many more. The images here were retrieved from the Library of Congress originals at full resolution rather than copied from it."
+  },
+  "photos": [
+    {
+      "id": "NY-128-9",
+      "file": "./haer-ny128-9.jpg",
+      "caption": "Williamsburg Bridge, looking northwest, Manhattan tower",
+      "photographer": "Jet Lowe",
+      "date": "October 1991",
+      "compare": "The clearest view of what this model calls the Manhattan tower: two legs on two separate masonry piers, the upper legs slanted inward, and the deck passing between them."
+    },
+    {
+      "id": "NY-128-6",
+      "file": "./haer-ny128-6.jpg",
+      "caption": "Williamsburg Bridge from Brooklyn to Manhattan, bridge in perspective",
+      "photographer": "Jet Lowe",
+      "date": "October 1991",
+      "compare": "Whole structure end to end. The side span and its intermediate supports are visible on the left — the geometry behind OQ-001 and OQ-003, both still open."
+    },
+    {
+      "id": "NY-128-5",
+      "file": "./haer-ny128-5.jpg",
+      "caption": "Williamsburg Bridge over the East River looking south towards Brooklyn on the left and Manhattan on the right",
+      "photographer": "Jet Lowe",
+      "date": "October 1991",
+      "compare": "The main span in elevation, with the cable profile against the sky. The model's cable sag is a placeholder (CTL-102) and this photograph cannot fix it — no scale, no camera."
+    },
+    {
+      "id": "NY-128-8",
+      "file": "./haer-ny128-8.jpg",
+      "caption": "Williamsburg Bridge, roadway and Manhattan skyline",
+      "photographer": "Jet Lowe",
+      "date": "October 1991",
+      "compare": "Deck level. The five-section division the model uses is sourced only at its outermost width; the interior split is reasoned (OQ-007)."
+    },
+    {
+      "id": "NY-128-7",
+      "file": "./haer-ny128-7.jpg",
+      "caption": "Williamsburg Bridge from Williamsburg community looking southwest towards Manhattan",
+      "photographer": "Jet Lowe",
+      "date": "October 1991",
+      "compare": "The Brooklyn approach running inland, at the 3 percent grade of CTL-036."
+    },
+    {
+      "id": "NY-128-1",
+      "file": "./haer-ny128-1.jpg",
+      "caption": "View from Manhattan with Brooklyn in right background",
+      "photographer": "Jack Boucher",
+      "date": "1978",
+      "compare": "Before the 1980s and 1990s reconstruction, which replaced both roadways with orthotropic decks."
+    },
+    {
+      "id": "NY-128-2",
+      "file": "./haer-ny128-2.jpg",
+      "caption": "View from Manhattan with Queens in left background",
+      "photographer": "Jack Boucher",
+      "date": "1978",
+      "compare": ""
+    },
+    {
+      "id": "NY-128-3",
+      "file": "./haer-ny128-3.jpg",
+      "caption": "View with bridge in foreground and midtown Manhattan in right background",
+      "photographer": "Jack Boucher",
+      "date": "1978",
+      "compare": ""
+    },
+    {
+      "id": "NY-128-4",
+      "file": "./haer-ny128-4.jpg",
+      "caption": "View with bridge in foreground and World Trade Center in background",
+      "photographer": "Jack Boucher",
+      "date": "1978",
+      "compare": ""
+    }
+  ]
+}

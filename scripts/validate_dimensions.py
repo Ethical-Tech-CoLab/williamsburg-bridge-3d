@@ -362,6 +362,46 @@ def _m_glb(ctx: Context, _spec: dict[str, Any]) -> tuple[bool, str]:
     )
 
 
+@measure("photo_manifest_resolves")
+def _m_photos(ctx: Context, spec: dict[str, Any]) -> tuple[bool, str]:
+    """Every photograph in the manifest exists on disk and starts with a JPEG signature.
+
+    Resolution is done the way the browser does it — relative to the manifest's own URL — because
+    that is where the bug was. Checking only that the files exist would have passed while the
+    viewer requested a doubled path and got index.html back with a 200.
+    """
+    manifest_path = REPO / spec["manifest"]
+    if not manifest_path.exists():
+        return False, f"{spec['manifest']} is missing"
+    doc = json.loads(manifest_path.read_text(encoding="utf-8"))
+    photos = doc.get("photos", [])
+    if not photos:
+        return False, "the photo manifest declares no photographs"
+    problems: list[str] = []
+    for photo in photos:
+        rel = str(photo.get("file", ""))
+        if rel.startswith(("http://", "https://", "/")):
+            problems.append(f"{photo.get('id')} uses a non-relative path {rel!r}")
+            continue
+        resolved = (manifest_path.parent / rel).resolve()
+        if not resolved.is_file():
+            problems.append(f"{photo.get('id')} -> {rel} does not resolve to a file")
+            continue
+        with resolved.open("rb") as handle:
+            if handle.read(2) != b"\xff\xd8":
+                problems.append(f"{photo.get('id')} -> {rel} is not a JPEG")
+        for field in ("caption", "photographer", "date"):
+            if not photo.get(field):
+                problems.append(f"{photo.get('id')} has no {field}")
+    if not doc.get("archive", {}).get("url") or not doc.get("foundVia", {}).get("url"):
+        problems.append("the manifest is missing an archive or finding-aid attribution URL")
+    return not problems, (
+        "; ".join(problems)
+        if problems
+        else f"{len(photos)} photographs resolve, all JPEG, all credited"
+    )
+
+
 @measure("ho_scale_roundtrip")
 def _m_ho(ctx: Context, _spec: dict[str, Any]) -> tuple[bool, str]:
     bad = []

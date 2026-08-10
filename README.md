@@ -7,7 +7,7 @@ carries its provenance**, so a reader can ask of any surface — *how do you kno
 real answer, including "we do not".
 
 **Milestone 1: control skeleton and viewer.** 57 parts, 43 controls, 11 sources, 11 open questions,
-14 registered conflicts, 33 tests passing.
+14 registered conflicts, 34 tests passing.
 
 To run it locally instead:
 
@@ -25,6 +25,15 @@ The published site is rebuilt from `GEOMETRY-CONTROL.md` on every push to `main`
 gated on the validation suites** — see [.github/workflows/pages.yml](.github/workflows/pages.yml). A
 model that fails its own traceability tests, or whose committed artifacts disagree with the control
 document, does not reach the web.
+
+### Comparing the model with the bridge
+
+The viewer carries the nine **HAER photographs** of the bridge (Library of Congress, public domain),
+shown beside the model so the two can be read against each other. They are reference imagery and
+nothing more: no camera pose is known for any of them, so they are never overlaid on the geometry,
+and test STT-017 fails the build if one is ever cited by a dimension. They were surfaced by
+[historic-structures.com](https://www.historic-structures.com/ny/new_york/historic-williamsburg-bridge/),
+which is credited in the viewer and carries many more.
 
 ---
 
@@ -197,6 +206,7 @@ reports success both before and after a fix is worse than no guard at all.
 |---|---|
 | **GRT-010** no longitudinal gap in the deck chain | Truncating the deck at the anchorage faces — the bug that shipped twice on the Manhattan Bridge, leaving the roadway and every track terminating in mid-air. Fails with the exact gap reported. |
 | **GRT-007** two transit tracks, no third or fourth | Setting the track count to four. Fails naming `transit_track_3` and `transit_track_4`. |
+| **GRT-021** every reference photograph resolves | Restoring the doubled `/photos/photos/…` path that shipped once. Fails naming all nine. |
 | **STT-012** the manifest matches the control document | Editing `GEOMETRY-CONTROL.md` without rebuilding. Fails with both hashes. |
 | **STT-017** no visual-only source grades a dimension | Letting a watermarked 960×540 stock video grade the deck width. Fails naming the control and the source. |
 
