@@ -1,6 +1,6 @@
 {
   "control_document_sha256": "7af4357587ba15809d4b4ca0e31b1a26603cb78aa05fdbde5daaa70481d9df1e",
-  "passed": 34,
+  "passed": 35,
   "failed": 0,
   "report_only": 4,
   "results": [
@@ -150,6 +150,13 @@
       "mode": "assert",
       "status": "PASS",
       "detail": "9 photographs resolve, all JPEG, all credited"
+    },
+    {
+      "id": "GRT-022",
+      "title": "No tracked file is a collapsed filesystem path written into the repository root",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "87 tracked files, none matching a collapsed-path shape"
     },
     {
       "id": "STT-001",

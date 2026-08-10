@@ -362,6 +362,44 @@ def _m_glb(ctx: Context, _spec: dict[str, Any]) -> tuple[bool, str]:
     )
 
 
+@measure("no_stray_path_files")
+def _m_stray(ctx: Context, spec: dict[str, Any]) -> tuple[bool, str]:
+    """No tracked file looks like a collapsed absolute path dumped into the repository root.
+
+    Checks what git actually tracks rather than what is on disk, because the failure being guarded
+    against is a commit, not a stray working file.
+    """
+    import subprocess
+
+    try:
+        tracked = subprocess.run(
+            ["git", "ls-files"],
+            cwd=REPO,
+            capture_output=True,
+            text=True,
+            check=True,
+        ).stdout.splitlines()
+    except (subprocess.CalledProcessError, FileNotFoundError) as exc:
+        return False, f"could not list tracked files: {exc}"
+
+    patterns = spec["patterns"]
+    binary_ext = tuple(spec["root_only_extensions"])
+    offenders: list[str] = []
+    for path in tracked:
+        name = path.split("/")[-1]
+        if any(fnmatch.fnmatchcase(name, p) for p in patterns):
+            offenders.append(path)
+        elif "/" not in path and path.lower().endswith(binary_ext):
+            # A binary asset directly in the repository root is not part of this layout and is the
+            # shape a collapsed path takes.
+            offenders.append(path)
+    return not offenders, (
+        f"{len(offenders)} stray file(s) tracked, e.g. {offenders[:3]}"
+        if offenders
+        else f"{len(tracked)} tracked files, none matching a collapsed-path shape"
+    )
+
+
 @measure("photo_manifest_resolves")
 def _m_photos(ctx: Context, spec: dict[str, Any]) -> tuple[bool, str]:
     """Every photograph in the manifest exists on disk and starts with a JPEG signature.

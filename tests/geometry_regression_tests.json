@@ -203,6 +203,16 @@
       "manifest": "viewer/public/photos/photos.json",
       "mode": "assert",
       "rationale": "A dev server and GitHub Pages both answer a missing asset with index.html and HTTP 200, not a 404, so a wrong path in the manifest renders as a blank frame while every network check reports success. That is exactly how this shipped broken once: the manifest resolved to /photos/photos/... and the page looked fine. Verified to fail against that doubled path."
+    },
+    {
+      "id": "GRT-022",
+      "title": "No tracked file is a collapsed filesystem path written into the repository root",
+      "kind": "hygiene",
+      "rule": "no_stray_path_files",
+      "patterns": ["Users*", "C[A-Z]Users*", "*AppData*", "*ProgramFiles*", "home*"],
+      "root_only_extensions": [".jpg", ".jpeg", ".png", ".pdf", ".mp4", ".tif", ".tiff"],
+      "mode": "assert",
+      "rationale": "curl strips the backslashes in a -K config's quoted output value, so an absolute Windows path collapses into a single filename written to the current working directory. Run from the repository root, that dropped 684 third-party copyrighted images into the repo, and `git add -A` committed and pushed them to a public remote before anyone noticed. HOW-TO-DESIGN.md section 11 already records the same trap with a relative `curl -o` loop and the instruction to use absolute output paths; this test makes the trap fail loudly instead of silently. Verified to fail against a file named like the collapsed path."
     }
   ]
 }
