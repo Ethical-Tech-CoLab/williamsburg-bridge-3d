@@ -14,8 +14,14 @@ sources/dot_bridgereport15.pdf
 sources/*.html
 sources/videos/*
 !sources/videos/.gitkeep
-sources/photos/*
-!sources/photos/.gitkeep
+# Image BYTES are never stored. Metadata is: the photo-survey corpus is a list of URLs,
+# licences and attributions with no third-party pixels in it, and the review sheet
+# hotlinks rather than copies. So block the bytes precisely rather than the folder.
+sources/photos/*.jpg
+sources/photos/*.jpeg
+sources/photos/*.png
+sources/photos/*.tif
+sources/photos/*.tiff
 
 # Tavily search results. Leads, not sources - registration happens by hand in SOURCE-REGISTER.md.
 data/leads/

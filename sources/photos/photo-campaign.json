@@ -1,0 +1,171 @@
+{
+  "module_id": "williamsburg-bridge-3d",
+  "campaign_name": "Williamsburg Bridge — vertical arrangement evidence",
+  "purpose": "Every remaining placeholder in this model is an ELEVATION. CTL-102 main cable elevation at midspan, CTL-103 deck elevation at anchorage, CTL-104 anchorage top elevation, CTL-106 saddle height. The plan is sourced end to end since SRC-007 gave the side spans, the intermediate towers and both approach lengths; the vertical is still guesswork. A photograph CANNOT measure any of those - the grant vocabulary has no 'dimension' for exactly that reason, and a sag figure has to come from a period engineering document. What a photograph CAN do is settle the ARRANGEMENT those placeholders assume, and several of those assumptions are currently untested. Does the cable low point at midspan sit above or below the top of the stiffening truss? The model places it 15 ft above; nothing sourced says so. Do the four cables visibly cradle together at midspan, as SRC-004 describes? Where does a cable enter the anchorage relative to the deck? A reviewer answering those turns four assumptions into either confirmations or contradictions, and a contradiction is worth more than the placeholder it kills. This campaign is also expected to FAIL to answer the sag itself; per the tooling's own warning, an empty category is a measurement, and that result should be reported rather than hidden.",
+  "user_agent": "williamsburg-bridge-3d/1.0 (https://github.com/Ethical-Tech-CoLab/williamsburg-bridge-3d; openly-licensed imagery survey) Python-urllib/3.12",
+  "per_shot_limit": 60,
+  "area": {
+    "lat": 40.71356,
+    "lon": -73.97197,
+    "radius_m": 1400,
+    "note": "Roughly the middle of the main span. A 1.4 km radius reaches both towers, both anchorages and the inner approaches. SEARCH ONLY, and never a control: OQ-010 records that this repository has no sourced coordinate for this bridge, and SOURCE-REGISTER.md NEG-005 forbids our own outputs being read back as corroboration. This figure came from a Wikipedia infobox and is not registered as a source."
+  },
+  "area_informs": [
+    "bridge"
+  ],
+  "categories": [
+    {
+      "id": "cable_profile",
+      "label": "cable profile",
+      "grants": "arrangement",
+      "help": "An elevation view along the bridge showing a main cable running tower to tower. CTL-102 is a PLACEHOLDER: the model puts the cable low point 15 ft above the top of the stiffening truss and no source says that. Tick this when the frame shows the cable and the deck together clearly enough to see which is higher at midspan. This cannot measure the sag - it can only confirm or contradict the arrangement the placeholder assumes."
+    },
+    {
+      "id": "cable_cradling",
+      "label": "cable cradling",
+      "grants": "arrangement",
+      "help": "The four cables converging toward each other near midspan. SRC-004 says the pairs narrow from 34 ft apart at the anchorages to 4 ft at midspan, and the model draws exactly that. It is the feature that makes this bridge look like itself, and it is currently drawn on one tertiary source alone."
+    },
+    {
+      "id": "saddle",
+      "label": "tower top and saddle",
+      "grants": "arrangement",
+      "help": "The top of a main tower where the cables cross it. CTL-106 saddle height is a placeholder. SRC-004 gives plan dimensions and Structure Magazine says the saddles are 19 ft long, but nothing read states how tall one stands above the tower top, and the model guesses. A photograph settles how much saddle is visible above the steelwork."
+    },
+    {
+      "id": "anchorage_face",
+      "label": "anchorage",
+      "grants": "arrangement",
+      "help": "Where a main cable enters an anchorage. CTL-103 and CTL-104 are both placeholders: the deck elevation at the anchorage and the anchorage top elevation are guesses. A view showing the cable, the anchorage top and the deck in one frame constrains both, without measuring either."
+    },
+    {
+      "id": "truss_elevation",
+      "label": "stiffening truss in elevation",
+      "grants": "arrangement",
+      "help": "A side-on view of the stiffening truss. SRC-007 gives 67 ft wide and about 40 ft deep and says it is pinned at each main tower (OQ-011). The model draws top and bottom chords only, with no web members, and nothing has confirmed the truss form."
+    },
+    {
+      "id": "intermediate_tower",
+      "label": "side span intermediate tower",
+      "grants": "arrangement",
+      "help": "The side span between a main tower and its anchorage. SRC-007 says three intermediate towers per side span, now CTL-039 at grade A, but the model does not draw them yet. CNF-013 is still open: SRC-010 calls these 'steel arches' and SRC-004 calls them trusswork on intermediate towers. This is the category that settles which."
+    },
+    {
+      "id": "material",
+      "label": "material close-up",
+      "grants": "material",
+      "help": "Riveted steel, masonry pier facing, cable wrapping, deck surface. Several MAT- rules still rest on a single tertiary source."
+    },
+    {
+      "id": "period",
+      "label": "period or construction view",
+      "grants": "existence",
+      "help": "Anything showing the bridge under construction or before the 1990s reconstruction. The cable profile TODAY is not the profile as built: SRC-007 states the dead load has increased and 'the profile has flattened', and that suspenders were re-jacked to restore it. A modern photograph is therefore evidence about the modern bridge only, and this category is how that distinction stays visible."
+    },
+    {
+      "id": "context",
+      "label": "context",
+      "grants": "appearance",
+      "help": "A good overall view that settles no single component. Useful beside the model, weak as evidence."
+    }
+  ],
+  "subject_terms": [
+    "Williamsburg Bridge",
+    "Williamsburg"
+  ],
+  "shots": [
+    {
+      "subject": "bridge_elevation",
+      "commons_category": "Williamsburg Bridge",
+      "openverse": "Williamsburg Bridge elevation East River span",
+      "informs": [
+        "bridge"
+      ]
+    },
+    {
+      "subject": "main_cables",
+      "commons_category": null,
+      "openverse": "Williamsburg Bridge main cables suspenders",
+      "informs": [
+        "north_main_cable_inner",
+        "south_main_cable_inner"
+      ]
+    },
+    {
+      "subject": "tower_tops",
+      "commons_category": null,
+      "openverse": "Williamsburg Bridge tower top cable saddle steel",
+      "informs": [
+        "tower_manhattan_saddle_north_main_cable_inner",
+        "tower_brooklyn_saddle_north_main_cable_inner"
+      ]
+    },
+    {
+      "subject": "towers",
+      "commons_category": "Towers of the Williamsburg Bridge",
+      "openverse": "Williamsburg Bridge steel tower",
+      "informs": [
+        "tower_manhattan_leg_north_upper",
+        "tower_brooklyn_leg_north_upper"
+      ]
+    },
+    {
+      "subject": "anchorages",
+      "commons_category": null,
+      "openverse": "Williamsburg Bridge anchorage masonry cable",
+      "informs": [
+        "manhattan_anchorage",
+        "brooklyn_anchorage"
+      ]
+    },
+    {
+      "subject": "side_spans",
+      "commons_category": null,
+      "openverse": "Williamsburg Bridge side span approach trusswork",
+      "informs": [
+        "manhattan_approach",
+        "brooklyn_approach"
+      ]
+    },
+    {
+      "subject": "stiffening_truss",
+      "commons_category": null,
+      "openverse": "Williamsburg Bridge stiffening truss steel deck",
+      "informs": [
+        "stiffening_truss_north",
+        "stiffening_truss_south"
+      ]
+    },
+    {
+      "subject": "deck_and_transit",
+      "commons_category": null,
+      "openverse": "Williamsburg Bridge subway train roadway deck",
+      "informs": [
+        "deck_transit_bay",
+        "transit_track_1"
+      ]
+    },
+    {
+      "subject": "construction_history",
+      "commons_category": "Construction of the Williamsburg Bridge",
+      "openverse": "Williamsburg Bridge construction 1902 1903",
+      "informs": [
+        "bridge"
+      ]
+    },
+    {
+      "subject": "historical_views",
+      "commons_category": "Historical images of the Williamsburg Bridge",
+      "openverse": "Williamsburg Bridge 1903 historic photograph",
+      "informs": [
+        "bridge"
+      ]
+    }
+  ],
+  "outputs": {
+    "raw": "sources/photos/photos.raw.json",
+    "decisions": "sources/photos/review-decisions.json",
+    "survey": "viewer/public/photo-survey.json",
+    "review_sheet": "viewer/public/review/index.html"
+  }
+}

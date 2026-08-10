@@ -156,7 +156,7 @@
       "title": "No tracked file is a collapsed filesystem path written into the repository root",
       "mode": "assert",
       "status": "PASS",
-      "detail": "87 tracked files, none matching a collapsed-path shape"
+      "detail": "91 tracked files, none matching a collapsed-path shape"
     },
     {
       "id": "STT-001",
