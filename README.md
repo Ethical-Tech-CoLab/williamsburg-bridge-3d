@@ -1,6 +1,8 @@
 # Williamsburg Bridge — source-governed digital twin
 
-**▶ View it live: https://ethical-tech-colab.github.io/williamsburg-bridge-3d/**
+**▶ View it live: https://ethical-tech-colab.github.io/williamsburg-bridge-3d/** ·
+**[🔍 Photograph audit](https://ethical-tech-colab.github.io/williamsburg-bridge-3d/review/)** — 250
+openly-licensed photographs, **0 reviewed so far**, every one still `auto_screened`
 
 A browser-renderable, part-addressable 3D model of the Williamsburg Bridge in which **every part
 carries its provenance**, so a reader can ask of any surface — *how do you know that?* — and get a
