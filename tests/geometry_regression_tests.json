@@ -143,9 +143,9 @@
       "title": "Placeholder count has not regressed",
       "kind": "ratchet",
       "rule": "placeholder_ratchet",
-      "max_placeholders": 6,
+      "max_placeholders": 4,
       "mode": "assert",
-      "rationale": "Six placeholders at Milestone 1: CTL-101 to CTL-106. Raising this number requires editing the expectation and writing the argument for it here. Lowering it is the point of Milestone 2."
+      "rationale": "Four placeholders remain: CTL-102, CTL-103, CTL-104 and CTL-106. Lowered from six when SRC-007 retired the side-span length and the intermediate tower count. Raising this number requires editing the expectation and writing the argument for it here. Lowering it is the point of Milestone 2."
     },
     {
       "id": "GRT-015",

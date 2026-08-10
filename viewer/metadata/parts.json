@@ -5,7 +5,7 @@
   "bridge": "Williamsburg Bridge",
   "generated_by": "build_control_skeleton.py",
   "control_document": "GEOMETRY-CONTROL.md",
-  "control_document_sha256": "7af4357587ba15809d4b4ca0e31b1a26603cb78aa05fdbde5daaa70481d9df1e",
+  "control_document_sha256": "31f187e255905b71077218c7a7adfb58b548eb98083ee24172ce6bc197db9336",
   "units": "meters",
   "vertical_datum": "mean high water",
   "ho_scale_denominator": 87.1,
@@ -146,11 +146,12 @@
       "unit": "ft",
       "value_m": 20.4216,
       "source_ids": [
-        "SRC-004"
+        "SRC-004",
+        "SRC-007"
       ],
-      "confidence": "C",
+      "confidence": "A",
       "is_placeholder": false,
-      "notes": "\"The trusses are placed 67 ft apart\". Independently reported by SRC-007 per `HOW-TO-DESIGN.md` \u00a710, but this repository has not read SRC-007, so the grade stays `C`."
+      "notes": "\"The stiffening truss is 67 feet wide\" (SRC-007, read directly); \"The trusses are placed 67 ft apart\" (SRC-004)."
     },
     {
       "control_id": "CTL-010",
@@ -160,11 +161,12 @@
       "value_m": 12.192,
       "source_ids": [
         "SRC-004",
+        "SRC-007",
         "SRC-010"
       ],
-      "confidence": "B",
+      "confidence": "A",
       "is_placeholder": false,
-      "notes": "\"and measure 40 ft deep\" (SRC-004); \"Massive 40-ft-deep steel stiffening trusses carry the decks\" (SRC-010). **The first grade B control in this model** \u2014 two independent secondary records agreeing, which is exactly what B means."
+      "notes": "\"approximately 40 feet deep and is pinned at each main tower\" (SRC-007, read directly). Two secondary records agree. The \"pinned at each main tower\" clause answers OQ-011 in words, though no geometry models the connection yet."
     },
     {
       "control_id": "CTL-011",
@@ -518,15 +520,69 @@
       "notes": "37 hexagonal strands per cable. Not modelled at Milestone 1."
     },
     {
-      "control_id": "CTL-101",
+      "control_id": "CTL-038",
       "key": "side_span_tower_to_anchorage",
-      "value": 600.0,
+      "value": 596.5,
       "unit": "ft",
-      "value_m": 182.88,
-      "source_ids": [],
-      "confidence": "D",
-      "is_placeholder": true,
-      "notes": "**OQ-001, and now CNF-009.** SRC-010 states \"the relatively short (300 ft) side spans\" \u2014 the first side-span length any source read here has given. It is **not adopted**: it is roughly half the 570\u2013590 ft the anchorages are said to sit inland of the shore, and SRC-011 shows the towers standing essentially at the shoreline. It may describe one panel between a main tower and an intermediate tower rather than the whole span. This row therefore stays a deliberately round placeholder. Do not quote it, and do not quietly replace it with 300 either."
+      "value_m": 181.8132,
+      "source_ids": [
+        "SRC-007"
+      ],
+      "confidence": "A",
+      "is_placeholder": false,
+      "notes": "\"side spans each 596.5 feet\" (SRC-007), from the NYCDOT Director of East River Bridges. **Retires the placeholder that blocked more geometry than any other.** Confirms the 300 ft of SRC-010 describes something else \u2014 see CNF-009."
+    },
+    {
+      "control_id": "CTL-039",
+      "key": "intermediate_towers_per_side_span",
+      "value": 3.0,
+      "unit": "count",
+      "value_m": 3.0,
+      "source_ids": [
+        "SRC-007"
+      ],
+      "confidence": "A",
+      "is_placeholder": false,
+      "notes": "\"the side spans are each supported by three intermediate towers as well as at the anchorages and main towers\". Retires OQ-003."
+    },
+    {
+      "control_id": "CTL-040",
+      "key": "anchorage_length_along_bridge",
+      "value": 114.25,
+      "unit": "ft",
+      "value_m": 34.8234,
+      "source_ids": [
+        "SRC-007"
+      ],
+      "confidence": "A",
+      "is_placeholder": false,
+      "notes": "\"The anchorages are each 114.25 feet long.\" Settles which axis of the anchorage base rectangle runs along the bridge \u2014 see OQ-008 \u2014 and is much smaller than the 178/182 ft base dimensions, so those are the transverse ones."
+    },
+    {
+      "control_id": "CTL-041",
+      "key": "manhattan_approach_length",
+      "value": 2090.25,
+      "unit": "ft",
+      "value_m": 637.1082,
+      "source_ids": [
+        "SRC-007"
+      ],
+      "confidence": "A",
+      "is_placeholder": false,
+      "notes": "\"The Manhattan Approach viaduct is the longer of the two approach viaducts at 2,090.25 feet\"."
+    },
+    {
+      "control_id": "CTL-042",
+      "key": "brooklyn_approach_length",
+      "value": 1557.0,
+      "unit": "ft",
+      "value_m": 474.5736,
+      "source_ids": [
+        "SRC-007"
+      ],
+      "confidence": "A",
+      "is_placeholder": false,
+      "notes": "\"the Brooklyn Approach viaduct is approximately 1,557 feet long.\" The source says \"approximately\"; the value is used as stated and the qualifier is recorded here rather than in the value cell."
     },
     {
       "control_id": "CTL-102",
@@ -560,17 +616,6 @@
       "confidence": "D",
       "is_placeholder": true,
       "notes": "**OQ-005.** CTL-034 gives 80 ft above *street level*, and this model does not know street level at either anchorage. Deliberately round."
-    },
-    {
-      "control_id": "CTL-105",
-      "key": "intermediate_towers_per_side_span",
-      "value": 1.0,
-      "unit": "count",
-      "value_m": 1.0,
-      "source_ids": [],
-      "confidence": "D",
-      "is_placeholder": true,
-      "notes": "**OQ-003.** SRC-004 states intermediate towers support both side spans and describes their form, but states neither how many there are nor where they stand."
     },
     {
       "control_id": "CTL-106",
@@ -696,19 +741,20 @@
       ],
       "control_refs": [
         "CTL-001",
-        "CTL-101"
+        "CTL-038"
       ],
       "source_ids": [
         "SRC-001",
         "SRC-003",
         "SRC-004",
-        "SRC-010"
+        "SRC-010",
+        "SRC-007"
       ],
       "open_questions": [
         "OQ-001"
       ],
-      "confidence": "D",
-      "provenance": "INFERRED",
+      "confidence": "A",
+      "provenance": "DOCUMENTED",
       "material": "reference",
       "material_id": "MAT-001",
       "material_confidence": "D",
@@ -807,19 +853,20 @@
       ],
       "control_refs": [
         "CTL-001",
-        "CTL-101"
+        "CTL-038"
       ],
       "source_ids": [
         "SRC-001",
         "SRC-003",
         "SRC-004",
-        "SRC-010"
+        "SRC-010",
+        "SRC-007"
       ],
       "open_questions": [
         "OQ-001"
       ],
-      "confidence": "D",
-      "provenance": "INFERRED",
+      "confidence": "A",
+      "provenance": "DOCUMENTED",
       "material": "reference",
       "material_id": "MAT-001",
       "material_confidence": "D",
@@ -1616,7 +1663,7 @@
       ],
       "control_refs": [
         "CTL-001",
-        "CTL-101",
+        "CTL-038",
         "CTL-104",
         "CTL-030",
         "CTL-031"
@@ -1625,7 +1672,8 @@
         "SRC-001",
         "SRC-003",
         "SRC-004",
-        "SRC-010"
+        "SRC-010",
+        "SRC-007"
       ],
       "open_questions": [
         "OQ-001",
@@ -1651,7 +1699,7 @@
       ],
       "control_refs": [
         "CTL-001",
-        "CTL-101",
+        "CTL-038",
         "CTL-104",
         "CTL-032",
         "CTL-033"
@@ -1660,7 +1708,8 @@
         "SRC-001",
         "SRC-003",
         "SRC-004",
-        "SRC-010"
+        "SRC-010",
+        "SRC-007"
       ],
       "open_questions": [
         "OQ-001",
@@ -1962,7 +2011,7 @@
         "CTL-008",
         "CTL-010",
         "CTL-036",
-        "CTL-101",
+        "CTL-038",
         "CTL-103",
         "CTL-015",
         "CTL-016"
@@ -1971,7 +2020,8 @@
         "SRC-003",
         "SRC-004",
         "SRC-010",
-        "SRC-001"
+        "SRC-001",
+        "SRC-007"
       ],
       "open_questions": [
         "OQ-006",
@@ -2001,7 +2051,7 @@
         "CTL-008",
         "CTL-010",
         "CTL-036",
-        "CTL-101",
+        "CTL-038",
         "CTL-103",
         "CTL-015",
         "CTL-016"
@@ -2010,7 +2060,8 @@
         "SRC-003",
         "SRC-004",
         "SRC-010",
-        "SRC-001"
+        "SRC-001",
+        "SRC-007"
       ],
       "open_questions": [
         "OQ-006",
@@ -2040,7 +2091,7 @@
         "CTL-008",
         "CTL-010",
         "CTL-036",
-        "CTL-101",
+        "CTL-038",
         "CTL-103",
         "CTL-015",
         "CTL-016"
@@ -2049,7 +2100,8 @@
         "SRC-003",
         "SRC-004",
         "SRC-010",
-        "SRC-001"
+        "SRC-001",
+        "SRC-007"
       ],
       "open_questions": [
         "OQ-006",
@@ -2079,7 +2131,7 @@
         "CTL-008",
         "CTL-010",
         "CTL-036",
-        "CTL-101",
+        "CTL-038",
         "CTL-103",
         "CTL-015",
         "CTL-016"
@@ -2088,7 +2140,8 @@
         "SRC-003",
         "SRC-004",
         "SRC-010",
-        "SRC-001"
+        "SRC-001",
+        "SRC-007"
       ],
       "open_questions": [
         "OQ-006",
@@ -2118,7 +2171,7 @@
         "CTL-008",
         "CTL-010",
         "CTL-036",
-        "CTL-101",
+        "CTL-038",
         "CTL-103",
         "CTL-015",
         "CTL-016"
@@ -2127,7 +2180,8 @@
         "SRC-003",
         "SRC-004",
         "SRC-010",
-        "SRC-001"
+        "SRC-001",
+        "SRC-007"
       ],
       "open_questions": [
         "OQ-006",
@@ -2159,14 +2213,15 @@
         "CTL-008",
         "CTL-010",
         "CTL-036",
-        "CTL-101",
+        "CTL-038",
         "CTL-103"
       ],
       "source_ids": [
         "SRC-003",
         "SRC-004",
         "SRC-010",
-        "SRC-001"
+        "SRC-001",
+        "SRC-007"
       ],
       "open_questions": [
         "OQ-006",
@@ -2197,14 +2252,15 @@
         "CTL-008",
         "CTL-010",
         "CTL-036",
-        "CTL-101",
+        "CTL-038",
         "CTL-103"
       ],
       "source_ids": [
         "SRC-003",
         "SRC-004",
         "SRC-010",
-        "SRC-001"
+        "SRC-001",
+        "SRC-007"
       ],
       "open_questions": [
         "OQ-006",
@@ -2231,12 +2287,13 @@
         "CTL-009",
         "CTL-010",
         "CTL-003",
-        "CTL-101",
+        "CTL-038",
         "CTL-103",
         "CTL-001"
       ],
       "source_ids": [
         "SRC-004",
+        "SRC-007",
         "SRC-010",
         "SRC-001",
         "SRC-003"
@@ -2266,12 +2323,13 @@
         "CTL-009",
         "CTL-010",
         "CTL-003",
-        "CTL-101",
+        "CTL-038",
         "CTL-103",
         "CTL-001"
       ],
       "source_ids": [
         "SRC-004",
+        "SRC-007",
         "SRC-010",
         "SRC-001",
         "SRC-003"
@@ -2302,14 +2360,15 @@
         "CTL-011",
         "CTL-012",
         "CTL-003",
-        "CTL-101",
+        "CTL-038",
         "CTL-103"
       ],
       "source_ids": [
         "SRC-004",
         "SRC-001",
         "SRC-003",
-        "SRC-010"
+        "SRC-010",
+        "SRC-007"
       ],
       "open_questions": [
         "OQ-001"
@@ -2335,13 +2394,14 @@
         "CTL-002",
         "CTL-036",
         "CTL-008",
-        "CTL-101",
+        "CTL-038",
         "CTL-103"
       ],
       "source_ids": [
         "SRC-003",
         "SRC-004",
-        "SRC-010"
+        "SRC-010",
+        "SRC-007"
       ],
       "open_questions": [
         "OQ-006",
@@ -2368,13 +2428,14 @@
         "CTL-002",
         "CTL-036",
         "CTL-008",
-        "CTL-101",
+        "CTL-038",
         "CTL-103"
       ],
       "source_ids": [
         "SRC-003",
         "SRC-004",
-        "SRC-010"
+        "SRC-010",
+        "SRC-007"
       ],
       "open_questions": [
         "OQ-006",
@@ -2401,12 +2462,13 @@
         "CTL-008",
         "CTL-002",
         "CTL-103",
-        "CTL-101"
+        "CTL-038"
       ],
       "source_ids": [
         "SRC-004",
         "SRC-003",
-        "SRC-010"
+        "SRC-010",
+        "SRC-007"
       ],
       "open_questions": [
         "OQ-006"
@@ -2432,12 +2494,13 @@
         "CTL-008",
         "CTL-002",
         "CTL-103",
-        "CTL-101"
+        "CTL-038"
       ],
       "source_ids": [
         "SRC-004",
         "SRC-003",
-        "SRC-010"
+        "SRC-010",
+        "SRC-007"
       ],
       "open_questions": [
         "OQ-006"

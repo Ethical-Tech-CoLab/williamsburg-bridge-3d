@@ -17,6 +17,9 @@ sources/videos/*
 sources/photos/*
 !sources/photos/.gitkeep
 
+# Tavily search results. Leads, not sources - registration happens by hand in SOURCE-REGISTER.md.
+data/leads/
+
 # Never track anything that looks like a collapsed Windows path. curl strips the
 # backslashes in a -K config's output value, which turns C:\Users\...\file.jpg into a
 # single filename written into the current directory - i.e. straight into this repo.

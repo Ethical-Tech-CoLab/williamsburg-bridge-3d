@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "ho_scale_denominator": 87.1,
-  "control_document_sha256": "7af4357587ba15809d4b4ca0e31b1a26603cb78aa05fdbde5daaa70481d9df1e",
+  "control_document_sha256": "31f187e255905b71077218c7a7adfb58b548eb98083ee24172ce6bc197db9336",
   "controls": {
     "main_span_tower_to_tower": {
       "prototype_m": 487.68,
@@ -268,12 +268,36 @@
       "ho_ft": 0.0
     },
     "side_span_tower_to_anchorage": {
-      "prototype_m": 182.88,
-      "prototype_ft": 600.0,
-      "prototype_in": 7200.0,
-      "ho_mm": 2099.7,
-      "ho_in": 82.66,
-      "ho_ft": 6.89
+      "prototype_m": 181.8132,
+      "prototype_ft": 596.5,
+      "prototype_in": 7158.0,
+      "ho_mm": 2087.4,
+      "ho_in": 82.18,
+      "ho_ft": 6.85
+    },
+    "anchorage_length_along_bridge": {
+      "prototype_m": 34.8234,
+      "prototype_ft": 114.25,
+      "prototype_in": 1371.0,
+      "ho_mm": 399.8,
+      "ho_in": 15.74,
+      "ho_ft": 1.31
+    },
+    "manhattan_approach_length": {
+      "prototype_m": 637.1082,
+      "prototype_ft": 2090.25,
+      "prototype_in": 25083.0,
+      "ho_mm": 7314.7,
+      "ho_in": 287.98,
+      "ho_ft": 24.0
+    },
+    "brooklyn_approach_length": {
+      "prototype_m": 474.5736,
+      "prototype_ft": 1557.0,
+      "prototype_in": 18684.0,
+      "ho_mm": 5448.6,
+      "ho_in": 214.51,
+      "ho_ft": 17.88
     },
     "main_cable_elevation_at_midspan": {
       "prototype_m": 57.912,

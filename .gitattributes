@@ -1,0 +1,24 @@
+# Normalise line endings so the control document hashes identically everywhere.
+#
+# scripts/build_control_skeleton.py stamps the SHA-256 of GEOMETRY-CONTROL.md into every build
+# output, and STT-012 fails when the parts manifest disagrees with it. That check currently survives
+# a CRLF working copy only because Python's text-mode read applies universal newlines — verified,
+# not assumed. Relying on that is a thin margin: any future reader that opens the document in binary
+# mode, or any tool that hashes the bytes, would see a Windows checkout and a Linux CI runner
+# disagree for a reason that has nothing to do with geometry.
+*.md    text eol=lf
+*.py    text eol=lf
+*.json  text eol=lf
+*.ts    text eol=lf
+*.tsx   text eol=lf
+*.css   text eol=lf
+*.html  text eol=lf
+*.yml   text eol=lf
+
+# Binaries must never be touched by end-of-line conversion, which would corrupt them.
+*.glb   binary
+*.jpg   binary
+*.jpeg  binary
+*.png   binary
+*.pdf   binary
+*.mp4   binary

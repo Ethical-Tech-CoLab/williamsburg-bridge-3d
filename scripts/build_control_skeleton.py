@@ -285,11 +285,11 @@ def build(model: ControlModel) -> tuple[SkeletonBuilder, dict[str, Any]]:
     }
     station_grade = {
         "manhattan_approach_end": ("DRV-006", ["CTL-002"]),
-        "manhattan_anchorage": ("DRV-004", ["CTL-001", "CTL-101"]),
+        "manhattan_anchorage": ("DRV-004", ["CTL-001", "CTL-038"]),
         "manhattan_tower": ("DRV-002", ["CTL-001"]),
         "main_span_midpoint": ("DRV-001", ["CTL-001"]),
         "brooklyn_tower": ("DRV-003", ["CTL-001"]),
-        "brooklyn_anchorage": ("DRV-005", ["CTL-001", "CTL-101"]),
+        "brooklyn_anchorage": ("DRV-005", ["CTL-001", "CTL-038"]),
         "brooklyn_approach_end": ("DRV-006", ["CTL-002"]),
     }
 
@@ -398,7 +398,7 @@ def build(model: ControlModel) -> tuple[SkeletonBuilder, dict[str, Any]]:
                 "reference",
                 tuple(refs),
                 notes=f"Station marker, {rule}.",
-                open_questions=("OQ-001",) if "CTL-101" in refs else (),
+                open_questions=("OQ-001",) if "CTL-038" in refs else (),
                 primitives=[
                     ("line", [[(x, -y_deck, 0.0), (x, y_deck, 0.0)]]),
                     ("line", [[(x, 0.0, 0.0), (x, 0.0, z_tower_top)]]),
@@ -558,7 +558,7 @@ def build(model: ControlModel) -> tuple[SkeletonBuilder, dict[str, Any]]:
         xa = sign * x_anchor
         half_l = m.m(lkey) / 2.0
         half_w = m.m(wkey) / 2.0
-        refs = ("CTL-001", "CTL-101", "CTL-104") + (
+        refs = ("CTL-001", "CTL-038", "CTL-104") + (
             ("CTL-030", "CTL-031") if end == "manhattan" else ("CTL-032", "CTL-033")
         )
         b.add(
@@ -656,7 +656,7 @@ def build(model: ControlModel) -> tuple[SkeletonBuilder, dict[str, Any]]:
         "CTL-008",
         "CTL-010",
         "CTL-036",
-        "CTL-101",
+        "CTL-038",
         "CTL-103",
     )
     deck_thickness = m.m("floor_beam_depth")
@@ -736,7 +736,7 @@ def build(model: ControlModel) -> tuple[SkeletonBuilder, dict[str, Any]]:
             Part(
                 f"stiffening_truss_{side_name}",
                 "deck_system",
-                ("CTL-009", "CTL-010", "CTL-003", "CTL-101", "CTL-103", "CTL-001"),
+                ("CTL-009", "CTL-010", "CTL-003", "CTL-038", "CTL-103", "CTL-001"),
                 open_questions=("OQ-001", "OQ-011"),
                 notes=(
                     "Top and bottom chords of one stiffening truss, 67 ft from its partner and 40 "
@@ -758,7 +758,7 @@ def build(model: ControlModel) -> tuple[SkeletonBuilder, dict[str, Any]]:
         Part(
             "deck_floor_beam_set",
             "deck_system",
-            ("CTL-008", "CTL-011", "CTL-012", "CTL-003", "CTL-101", "CTL-103"),
+            ("CTL-008", "CTL-011", "CTL-012", "CTL-003", "CTL-038", "CTL-103"),
             open_questions=("OQ-001",),
             notes=(
                 f"{len(fb_segments)} transverse floor beams, CTL-011 deep and CTL-008 long, at "
@@ -796,7 +796,7 @@ def build(model: ControlModel) -> tuple[SkeletonBuilder, dict[str, Any]]:
             Part(
                 f"{end}_approach",
                 "approaches",
-                ("CTL-002", "CTL-036", "CTL-008", "CTL-101", "CTL-103"),
+                ("CTL-002", "CTL-036", "CTL-008", "CTL-038", "CTL-103"),
                 open_questions=("OQ-006", "OQ-001"),
                 notes=(
                     "Approach viaduct at CTL-036 grade. DRV-015 puts its far end well above street "
@@ -821,7 +821,7 @@ def build(model: ControlModel) -> tuple[SkeletonBuilder, dict[str, Any]]:
             Part(
                 f"deck_railing_{side_name}",
                 "details",
-                ("CTL-008", "CTL-002", "CTL-103", "CTL-101"),
+                ("CTL-008", "CTL-002", "CTL-103", "CTL-038"),
                 open_questions=("OQ-006",),
                 notes=(
                     "Heavy lattice railing on the deck edge (SRC-004). Height is not sourced, so "

@@ -29,7 +29,7 @@ here cannot grade anything, **including a source held locally in a sibling repos
 | SRC-004 | Wikipedia, *Williamsburg Bridge* (revision read 2026-08-09), sections Description, Deck, Caissons and towers, Cables, Anchorages | https://en.wikipedia.org/wiki/Williamsburg_Bridge | Tertiary encyclopaedia | C | CC BY-SA 4.0 | yes | C | Read directly via the MediaWiki API, not via a search snippet. Densely cited to works this repository has **not** opened; those underlying works are therefore *not* registered and this source may grade no higher than `C`. |
 | SRC-005 | Library of Congress item record for HAER survey `ny1263` (JSON API) | https://www.loc.gov/item/ny1263/?fo=json | Archival catalogue metadata | A | Public domain | yes | A | Establishes the survey identity: call number `HAER NY,31-NEYO,165-`, survey number **HAER NY-128**, 9 photographs, 3 data pages, 2 caption pages, **0 measured drawings**. |
 | SRC-006 | NYCDOT, *Bridges and Tunnels Annual Condition Report 2015* | https://www.nyc.gov/html/dot/downloads/pdf/dot_bridgereport15.pdf — retrieved 2026-08-09, not committed (28 MB; re-fetch from the URL) | Official condition report | A | © City of New York | yes | — | 307 pages, retrieved and searched. **Grades nothing.** It carries rehabilitation history and condition ratings but no span geometry. Registered so that the negative result is on the record and nobody re-fetches it. |
-| SRC-007 | Haight, R. and Patel, N., *Reconstruction of the Williamsburg Bridge*, AISC, 2005 | Not obtained; not reachable from `aisc.org` at the paths tried on 2026-08-09 | Engineering paper | A (potential) | Unknown | **no** | none yet | Named by `HOW-TO-DESIGN.md` §10 as the one real transverse source for this bridge, co-authored by the NYCDOT Director of East River Bridges. **Nothing in this model is graded on it**, because this repository has not read it. See section 4. |
+| SRC-007 | Haight, R. and Patel, J., *Reconstruction of New York City's Williamsburg Bridge*, AISC / World Steel Bridge Symposium, 2005 | https://www.aisc.org/media/nvvl5nm3/haight-2005-wsbs-final.pdf — found via Tavily 2026-08-10, full text extracted and read | Engineering paper | A | © AISC; quoted for scholarly commentary | **yes** | A | **Co-authored by Jay Patel, Director of East River Bridges at NYCDOT** — the owner's own engineer — with Roger Haight of Parsons, the reconstruction designer. This is the single most valuable source yet found for this bridge, and it states in one paragraph the side-span length, the intermediate tower count, the anchorage length and both approach lengths. Quoted in section 3. Earlier attempts to reach it by guessing AISC URLs failed; a Tavily search found it in one query. |
 | SRC-008 | 2017 NYC Topobathymetric LiDAR (1 ft DEM/DSM and classified point cloud) | NYC Open Data / NYS GIS clearinghouse / NOAA S3 `noaa-nos-coastal-lidar-pds` / OpenTopography | Remote sensing | A (potential) | Public domain | **no** | none yet | Aerial, so it sees the top of the deck only. The right tool for approach grade and ground profile; useless for anything underneath. See section 4. |
 | SRC-009 | NYCDOT record, shop and rehabilitation drawings | Not public — obtainable only by FOIL request to NYCDOT | Archival drawings | A (potential) | Unknown | **no** | none yet | The single highest-value outstanding action on this bridge. Long lead time. See section 4. |
 | SRC-010 | *The Historic Williamsburg Bridge in NYC Was the Longest Suspension Bridge in the World When It Opened* | https://www.historic-structures.com/ny/new_york/historic-williamsburg-bridge/ — read 2026-08-09, quoted in section 3 | Secondary compilation | C | © historic-structures.com, quoted for commentary | yes | B/C | A narrative history with a dense specification paragraph and a detailed construction account. Corroborates several figures previously resting on SRC-004 alone, which is what lets CTL-010 and two material rules reach grade `B`. It also states a **side-span length**, the first source read to do so — but see CNF-009 before using it. Uncited and unfootnoted, so it may not exceed `C`. |
@@ -168,6 +168,43 @@ above mean high water at the middle of the river" cannot mean the top of the str
 same article puts the tower tops at 333–335 ft. Read against SRC-001 ("clearance for ships, 135
 feet") and SRC-003 ("Clearance at center: 135 feet"), the 135 ft figure is the **navigation
 clearance beneath the span**, and this repository uses it only in that sense.
+
+### SRC-007 — Haight and Patel, AISC 2005, the dimensional paragraph
+
+> The main suspended span is 1,600 feet long, **with side spans each 596.5 feet**. The main span is
+> suspended [...] while **the side spans are each supported by three intermediate towers** as well as
+> at the anchorages and main towers. **The anchorages are each 114.25 feet long. The Manhattan
+> Approach viaduct is the longer of the two approach viaducts at 2,090.25 feet; the Brooklyn Approach
+> viaduct is approximately 1,557 feet long.** Four cables suspend the stiffening truss approximately
+> 135 feet above mean high water level in the East River. **The stiffening truss is 67 feet wide and
+> approximately 40 feet deep and is pinned at each main tower.**
+
+One paragraph, written by the bridge's owner-engineer and its reconstruction designer, that closes
+three open questions and settles two conflicts. It retires the largest placeholder in the model.
+
+**It also refuses to close the total length.** Adding the figures it states:
+
+```
+main span                    1600.00
++ two side spans (2 x 596.5) 2793.00   suspended structure
++ two anchorages (2 x 114.25) 3021.50
++ Manhattan approach 2090.25
++ Brooklyn approach  1557.00
+                             6668.75 ft
+```
+
+That is **639.25 ft short of the 7,308 ft** published by NYCDOT itself (CTL-002, grade `A`). The gap
+is too large to be rounding and too small to be a missing approach. Something is measured between
+different points in the two statements — which is exactly what CNF-014 suspects and what OQ-006
+asks. The model keeps both numbers and records the discrepancy rather than adjusting either.
+
+**A caution on the extraction.** This text was pulled from a PDF, and the extraction visibly
+interleaves column fragments — "The main span is suspended, REVIOUS WORK e Williamsburg Bridge began
+in the early 1990s, and the major construction tion contract involved..." is two columns run
+together. The quoted sentences above are each internally coherent and were checked to read cleanly,
+but `HOW-TO-DESIGN.md` §10 warns specifically that PDF extraction does not preserve spatial order.
+The figures are used; the *figure captions* and section arrangement in that paper are not, and the
+labelled transverse section it contains has not been read.
 
 ### SRC-010 — historic-structures.com
 

@@ -59,8 +59,8 @@ Sourced values only. Every row cites a registered, verified source.
 | CTL-006 | tower_height | 310 | ft | SRC-003, SRC-010 | A | Owner's figure, now independently corroborated by SRC-010 ("two all-steel towers reach a height of 310 ft"). **Neither source states a datum** — see CNF-002 and OQ-004. SRC-004 says 333 or 335 ft above MHW. Two sources now favour 310, but a second statement of the same undatumed number does not supply the datum. |
 | CTL-007 | transit_track_count | 2 | count | SRC-003, SRC-004 | A | "two rapid transit tracks (J, M, and Z subway lines) sandwiched in between" (SRC-003). **Not four** — see CNF-003 and NEG-003. |
 | CTL-008 | deck_width | 118 | ft | SRC-004 | C | Also the length of the transverse floor beams, which is a useful internal consistency check on the figure. |
-| CTL-009 | stiffening_truss_spacing | 67 | ft | SRC-004 | C | "The trusses are placed 67 ft apart". Independently reported by SRC-007 per `HOW-TO-DESIGN.md` §10, but this repository has not read SRC-007, so the grade stays `C`. |
-| CTL-010 | stiffening_truss_depth | 40 | ft | SRC-004, SRC-010 | B | "and measure 40 ft deep" (SRC-004); "Massive 40-ft-deep steel stiffening trusses carry the decks" (SRC-010). **The first grade B control in this model** — two independent secondary records agreeing, which is exactly what B means. |
+| CTL-009 | stiffening_truss_spacing | 67 | ft | SRC-004, SRC-007 | A | "The stiffening truss is 67 feet wide" (SRC-007, read directly); "The trusses are placed 67 ft apart" (SRC-004). |
+| CTL-010 | stiffening_truss_depth | 40 | ft | SRC-004, SRC-007, SRC-010 | A | "approximately 40 feet deep and is pinned at each main tower" (SRC-007, read directly). Two secondary records agree. The "pinned at each main tower" clause answers OQ-011 in words, though no geometry models the connection yet. |
 | CTL-011 | floor_beam_depth | 5 | ft | SRC-004 | C | Transverse floor beams. |
 | CTL-012 | floor_beam_spacing | 20 | ft | SRC-004 | C | Equal to the suspender spacing, which is what one would expect and is stated separately. |
 | CTL-013 | suspender_spacing_main_span | 20 | ft | SRC-004 | C | "suspender castings on the main cables, placed at intervals of 20 ft". Stated for the main span only. |
@@ -89,6 +89,11 @@ Sourced values only. Every row cites a registered, verified source.
 | CTL-036 | approach_grade | 0.03 | ratio | SRC-004 | C | "The approach spans, between the anchorages and either end of the bridge, have a 3 percent grade." |
 | CTL-037 | main_cable_strand_diameter | 3 | in | SRC-004 | C | 37 hexagonal strands per cable. Not modelled at Milestone 1. |
 
+| CTL-038 | side_span_tower_to_anchorage | 596.5 | ft | SRC-007 | A | "side spans each 596.5 feet" (SRC-007), from the NYCDOT Director of East River Bridges. **Retires the placeholder that blocked more geometry than any other.** Confirms the 300 ft of SRC-010 describes something else — see CNF-009. |
+| CTL-039 | intermediate_towers_per_side_span | 3 | count | SRC-007 | A | "the side spans are each supported by three intermediate towers as well as at the anchorages and main towers". Retires OQ-003. |
+| CTL-040 | anchorage_length_along_bridge | 114.25 | ft | SRC-007 | A | "The anchorages are each 114.25 feet long." Settles which axis of the anchorage base rectangle runs along the bridge — see OQ-008 — and is much smaller than the 178/182 ft base dimensions, so those are the transverse ones. |
+| CTL-041 | manhattan_approach_length | 2090.25 | ft | SRC-007 | A | "The Manhattan Approach viaduct is the longer of the two approach viaducts at 2,090.25 feet". |
+| CTL-042 | brooklyn_approach_length | 1557 | ft | SRC-007 | A | "the Brooklyn Approach viaduct is approximately 1,557 feet long." The source says "approximately"; the value is used as stated and the qualifier is recorded here rather than in the value cell. |
 ## 3. Placeholders
 
 **Every row here is grade `D`, cites no source, and is linked to an open question.** These numbers
@@ -98,11 +103,9 @@ as `ASSUMED` and excluded from dimension callouts.
 
 | Control ID | Key | Value | Unit | Source IDs | Confidence | Notes |
 |---|---|---:|---|---|---|---|
-| CTL-101 | side_span_tower_to_anchorage | 600 | ft | | D | **OQ-001, and now CNF-009.** SRC-010 states "the relatively short (300 ft) side spans" — the first side-span length any source read here has given. It is **not adopted**: it is roughly half the 570–590 ft the anchorages are said to sit inland of the shore, and SRC-011 shows the towers standing essentially at the shoreline. It may describe one panel between a main tower and an intermediate tower rather than the whole span. This row therefore stays a deliberately round placeholder. Do not quote it, and do not quietly replace it with 300 either. |
 | CTL-102 | main_cable_elevation_at_midspan | 190 | ft | | D | **OQ-002.** No source read states the cable sag. Chosen only to clear the deck: it must sit above the deck top, which derivation DRV-007 puts at 175 ft. The main cable profile is therefore `ASSUMED` in Z even though the cable's existence and count are grade `A`. |
 | CTL-103 | deck_elevation_at_anchorage | 140 | ft | | D | **OQ-006.** No source read gives the deck elevation where the suspended structure meets the anchorage. |
 | CTL-104 | anchorage_top_elevation | 90 | ft | | D | **OQ-005.** CTL-034 gives 80 ft above *street level*, and this model does not know street level at either anchorage. Deliberately round. |
-| CTL-105 | intermediate_towers_per_side_span | 1 | count | | D | **OQ-003.** SRC-004 states intermediate towers support both side spans and describes their form, but states neither how many there are nor where they stand. |
 | CTL-106 | tower_saddle_height | 8 | ft | | D | **OQ-009.** SRC-004 gives saddle plan dimensions (7.67 by 19 by 4 ft) but this repository has not established which figure is the height as installed. |
 
 ## 4. Derivation rules
@@ -115,8 +118,8 @@ listed here so that a reader can reproduce every coordinate in the model by hand
 | DRV-001 | `station_main_span_midpoint` | `x = 0` | origin definition | A |
 | DRV-002 | `station_manhattan_tower` | `x = -CTL-001 / 2` | CTL-001 | A |
 | DRV-003 | `station_brooklyn_tower` | `x = +CTL-001 / 2` | CTL-001 | A |
-| DRV-004 | `station_manhattan_anchorage` | `x = -(CTL-001 / 2 + CTL-101)` | CTL-001, CTL-101 | D |
-| DRV-005 | `station_brooklyn_anchorage` | `x = +(CTL-001 / 2 + CTL-101)` | CTL-001, CTL-101 | D |
+| DRV-004 | `station_manhattan_anchorage` | `x = -(CTL-001 / 2 + CTL-038)` | CTL-001, CTL-038 | D |
+| DRV-005 | `station_brooklyn_anchorage` | `x = +(CTL-001 / 2 + CTL-038)` | CTL-001, CTL-038 | D |
 | DRV-006 | `station_approach_end` | `x = ±CTL-002 / 2` | CTL-002 | A |
 | DRV-007 | `deck_top_elevation_at_midspan` | `z = CTL-003 + CTL-010` | CTL-003, CTL-010 | C |
 | DRV-008 | `deck_underside_elevation_at_midspan` | `z = CTL-003` | CTL-003 | A |
@@ -125,15 +128,15 @@ listed here so that a reader can reproduce every coordinate in the model by hand
 | DRV-011 | `deck_half_width` | `y = ±CTL-008 / 2` | CTL-008 | C |
 | DRV-012 | `cable_y_positions` | Four cables at `y = ±(CTL-021 / 2 ± s / 2)` is **not** used. The pair centres are taken as the truss lines (DRV-010) and `s` interpolates linearly along `x` between CTL-018 at the anchorage, CTL-019 at the tower and CTL-020 at mid-span. | CTL-009, CTL-018, CTL-019, CTL-020 | C |
 | DRV-013 | `suspender_stations` | Every `CTL-013` along `x` strictly between the two towers | CTL-001, CTL-013 | C |
-| DRV-014 | `deck_profile` | Linear from `DRV-007` at mid-span to `CTL-103` at each anchorage, then `CTL-036` downgrade outward to each approach end | CTL-003, CTL-010, CTL-103, CTL-036, CTL-002, CTL-101 | D |
-| DRV-015 | `approach_end_elevation` | `z = CTL-103 - CTL-036 x (CTL-002 / 2 - (CTL-001 / 2 + CTL-101))` | CTL-103, CTL-036, CTL-002, CTL-001, CTL-101 | D |
+| DRV-014 | `deck_profile` | Linear from `DRV-007` at mid-span to `CTL-103` at each anchorage, then `CTL-036` downgrade outward to each approach end | CTL-003, CTL-010, CTL-103, CTL-036, CTL-002, CTL-038 | D |
+| DRV-015 | `approach_end_elevation` | `z = CTL-103 - CTL-036 x (CTL-002 / 2 - (CTL-001 / 2 + CTL-038))` | CTL-103, CTL-036, CTL-002, CTL-001, CTL-038 | D |
 | DRV-016 | `tower_leg_y` | `y = ±CTL-021 / 2` | CTL-021 | C |
 | DRV-017 | `transit_track_y` | `y = ±CTL-017 / 2` | CTL-017 | C |
-| DRV-018 | `suspended_structure_length` | `CTL-001 + 2 x CTL-101` | CTL-001, CTL-101 | D |
+| DRV-018 | `suspended_structure_length` | `CTL-001 + 2 x CTL-038` | CTL-001, CTL-038 | D |
 
 **DRV-015 produces a result the model does not believe.** Carried through, the approaches descend
 only about 68 ft over their length and end roughly 72 ft above MHW, nowhere near street level. At
-least one of CTL-103, CTL-036 and the approach length implied by CTL-002 and CTL-101 is wrong. This
+least one of CTL-103, CTL-036 and the approach length implied by CTL-002 and CTL-038 is wrong. This
 is recorded as OQ-006 and reported by GRT-012 rather than being tuned away, because tuning it would
 mean choosing a number to make a picture look right.
 
@@ -141,9 +144,9 @@ mean choosing a number to make a picture look right.
 
 | ID | Question | Blocks | Retired by |
 |---|---|---|---|
-| OQ-001 | Does SRC-010's "300 ft side spans" describe the whole tower-to-anchorage span, or one panel of it? | CTL-101, and through it both anchorages, both side spans, the suspended structure length, and the approach lengths | SRC-009 (FOIL), or any source stating the span arrangement panel by panel |
+| OQ-001 | Does SRC-010's "300 ft side spans" describe the whole tower-to-anchorage span, or one panel of it? | CTL-038, and through it both anchorages, both side spans, the suspended structure length, and the approach lengths | SRC-009 (FOIL), or any source stating the span arrangement panel by panel |
 | OQ-002 | What is the main cable sag, or the cable elevation at mid-span? | CTL-102, the whole main cable profile, every suspender length | SRC-007, SRC-009, or a period engineering description |
-| OQ-003 | How many intermediate towers support each side span, and where do they stand? | CTL-105, all side-span support geometry, and the reading of CNF-009 | SRC-009. SRC-011 shows side-span structure but no frame covers a full side span end to end, so it cannot supply the count |
+| OQ-003 | How many intermediate towers support each side span, and where do they stand? | CTL-039, all side-span support geometry, and the reading of CNF-009 | SRC-009. SRC-011 shows side-span structure but no frame covers a full side span end to end, so it cannot supply the count |
 | OQ-004 | Is SRC-003's 310 ft tower height measured above mean high water, above the deck, or above the pier top? | The datum of CTL-006, and CNF-002 | A statement of datum from NYCDOT, or SRC-007 |
 | OQ-005 | What is street level at each anchorage, in MHW terms? | CTL-104; makes CTL-034's 80 ft usable | SRC-008 (LiDAR) |
 | OQ-006 | Between which two points is the 7,308 ft total length measured, and can it be reconciled with a 3% approach grade reaching street level? | CTL-002, CTL-103, DRV-015 | SRC-008, SRC-009. Sharpened by CNF-014: SRC-010 reads the same figure as "between approaches" rather than including them |

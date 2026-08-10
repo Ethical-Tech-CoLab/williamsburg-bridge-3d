@@ -1,26 +1,24 @@
 {
   "schema_version": "1.0",
   "generated_by": "build_control_skeleton.py",
-  "control_document_sha256": "7af4357587ba15809d4b4ca0e31b1a26603cb78aa05fdbde5daaa70481d9df1e",
-  "controls_total": 43,
-  "controls_sourced": 37,
+  "control_document_sha256": "31f187e255905b71077218c7a7adfb58b548eb98083ee24172ce6bc197db9336",
+  "controls_total": 46,
+  "controls_sourced": 42,
   "placeholders": [
-    "CTL-101",
     "CTL-102",
     "CTL-103",
     "CTL-104",
-    "CTL-105",
     "CTL-106"
   ],
   "parts_total": 57,
   "provenance_census": {
-    "DOCUMENTED": 9,
-    "INFERRED": 48
+    "DOCUMENTED": 11,
+    "INFERRED": 46
   },
   "confidence_census": {
-    "A": 7,
+    "A": 9,
     "C": 16,
-    "D": 34
+    "D": 32
   },
   "system_census": {
     "reference": 11,
@@ -34,11 +32,11 @@
   },
   "stations_m": {
     "manhattan_approach_end": -1113.7392,
-    "manhattan_anchorage": -426.72,
+    "manhattan_anchorage": -425.6532,
     "manhattan_tower": -243.84,
     "main_span_midpoint": 0.0,
     "brooklyn_tower": 243.84,
-    "brooklyn_anchorage": 426.72,
+    "brooklyn_anchorage": 425.6532,
     "brooklyn_approach_end": 1113.7392
   },
   "elevations_m": {
@@ -49,7 +47,7 @@
     "deck_top_at_midspan": 53.34,
     "main_cable_at_midspan": 57.912,
     "tower_top": 94.488,
-    "approach_end_derived": 22.0614
+    "approach_end_derived": 22.0294
   },
   "deck_chain_intervals_m": [
     [

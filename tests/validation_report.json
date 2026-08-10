@@ -1,5 +1,5 @@
 {
-  "control_document_sha256": "7af4357587ba15809d4b4ca0e31b1a26603cb78aa05fdbde5daaa70481d9df1e",
+  "control_document_sha256": "31f187e255905b71077218c7a7adfb58b548eb98083ee24172ce6bc197db9336",
   "passed": 35,
   "failed": 0,
   "report_only": 4,
@@ -79,28 +79,28 @@
       "title": "The sourced shoreline deck elevation falls inside the modelled deck elevation range",
       "mode": "report_only",
       "status": "REPORT",
-      "detail": "deck_elevation_at_shoreline = 37.186 m; modelled deck top runs 22.061 m to 53.340 m"
+      "detail": "deck_elevation_at_shoreline = 37.186 m; modelled deck top runs 22.029 m to 53.340 m"
     },
     {
       "id": "GRT-012",
       "title": "The derived approach-end elevation is reconcilable with street level",
       "mode": "report_only",
       "status": "REPORT",
-      "detail": "derived approach end sits 22.06 m above mean high water; a street-level approach would be at or below 6.00 m. See OQ-006."
+      "detail": "derived approach end sits 22.03 m above mean high water; a street-level approach would be at or below 6.00 m. See OQ-006."
     },
     {
       "id": "GRT-013",
       "title": "Census of MEASURED geometry",
       "mode": "report_only",
       "status": "REPORT",
-      "detail": "MEASURED=0  DOCUMENTED=9  INFERRED=48  ASSUMED=0"
+      "detail": "MEASURED=0  DOCUMENTED=11  INFERRED=46  ASSUMED=0"
     },
     {
       "id": "GRT-014",
       "title": "Placeholder count has not regressed",
       "mode": "assert",
       "status": "PASS",
-      "detail": "6 placeholders, ratchet allows at most 6"
+      "detail": "4 placeholders, ratchet allows at most 4"
     },
     {
       "id": "GRT-015",
@@ -114,7 +114,7 @@
       "title": "No control value appears as a literal in any script",
       "mode": "assert",
       "status": "PASS",
-      "detail": "14 control values of 100 or more, none present as a literal"
+      "detail": "17 control values of 100 or more, none present as a literal"
     },
     {
       "id": "GRT-017",
@@ -135,7 +135,7 @@
       "title": "The exported GLB is well-formed glTF 2.0 and carries per-part metadata",
       "mode": "assert",
       "status": "PASS",
-      "detail": "glTF 2.0, 66 nodes, 57 meshes, 58 carrying metadata, 1771756 bytes"
+      "detail": "glTF 2.0, 66 nodes, 57 meshes, 58 carrying metadata, 1742964 bytes"
     },
     {
       "id": "GRT-020",
@@ -177,7 +177,7 @@
       "title": "Every placeholder control cites no source",
       "mode": "assert",
       "status": "PASS",
-      "detail": "6 placeholders, none sourced"
+      "detail": "4 placeholders, none sourced"
     },
     {
       "id": "STT-004",
@@ -219,7 +219,7 @@
       "title": "Every unverified registered source appears in the verification queue",
       "mode": "assert",
       "status": "PASS",
-      "detail": "3 unread source(s), all in the verification queue"
+      "detail": "2 unread source(s), all in the verification queue"
     },
     {
       "id": "STT-010",
@@ -240,14 +240,14 @@
       "title": "The parts manifest was generated from the current GEOMETRY-CONTROL.md",
       "mode": "assert",
       "status": "PASS",
-      "detail": "parts.json built from 7af4357587ba, GEOMETRY-CONTROL.md is now 7af4357587ba"
+      "detail": "parts.json built from 31f187e25590, GEOMETRY-CONTROL.md is now 31f187e25590"
     },
     {
       "id": "STT-013",
       "title": "Every placeholder control is linked to a registered open question",
       "mode": "assert",
       "status": "PASS",
-      "detail": "all 6 placeholders name an open question"
+      "detail": "all 4 placeholders name an open question"
     },
     {
       "id": "STT-014",
@@ -268,7 +268,7 @@
       "title": "Census of controls whose evidence is a single source",
       "mode": "report_only",
       "status": "REPORT",
-      "detail": "29 controls rest on a single source; citations by source: SRC-004x35, SRC-003x7, SRC-010x7, SRC-001x4"
+      "detail": "33 controls rest on a single source; citations by source: SRC-004x35, SRC-003x7, SRC-010x7, SRC-007x7, SRC-001x4"
     },
     {
       "id": "STT-017",
