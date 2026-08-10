@@ -32,6 +32,19 @@ here cannot grade anything, **including a source held locally in a sibling repos
 | SRC-007 | Haight, R. and Patel, N., *Reconstruction of the Williamsburg Bridge*, AISC, 2005 | Not obtained; not reachable from `aisc.org` at the paths tried on 2026-08-09 | Engineering paper | A (potential) | Unknown | **no** | none yet | Named by `HOW-TO-DESIGN.md` §10 as the one real transverse source for this bridge, co-authored by the NYCDOT Director of East River Bridges. **Nothing in this model is graded on it**, because this repository has not read it. See section 4. |
 | SRC-008 | 2017 NYC Topobathymetric LiDAR (1 ft DEM/DSM and classified point cloud) | NYC Open Data / NYS GIS clearinghouse / NOAA S3 `noaa-nos-coastal-lidar-pds` / OpenTopography | Remote sensing | A (potential) | Public domain | **no** | none yet | Aerial, so it sees the top of the deck only. The right tool for approach grade and ground profile; useless for anything underneath. See section 4. |
 | SRC-009 | NYCDOT record, shop and rehabilitation drawings | Not public — obtainable only by FOIL request to NYCDOT | Archival drawings | A (potential) | Unknown | **no** | none yet | The single highest-value outstanding action on this bridge. Long lead time. See section 4. |
+| SRC-010 | *The Historic Williamsburg Bridge in NYC Was the Longest Suspension Bridge in the World When It Opened* | https://www.historic-structures.com/ny/new_york/historic-williamsburg-bridge/ — read 2026-08-09, quoted in section 3 | Secondary compilation | C | © historic-structures.com, quoted for commentary | yes | B/C | A narrative history with a dense specification paragraph and a detailed construction account. Corroborates several figures previously resting on SRC-004 alone, which is what lets CTL-010 and two material rules reach grade `B`. It also states a **side-span length**, the first source read to do so — but see CNF-009 before using it. Uncited and unfootnoted, so it may not exceed `C`. |
+| SRC-011 | *Aerial view of the Williamsburg Bridge in New York*, Alex Kane — watermarked preview, 960x540, 11.9 s, 30 fps | Envato Elements stock item 24580550. Local preview file only; **not committed, not redistributable** | Aerial video | B | © Alex Kane / Envato. Watermarked preview, licence not held | yes | B, **visual only** | Low, sweeping aerial passes of the Manhattan tower and the main span. **Grades no dimension and cannot** — no camera metadata, no scale control points, and a watermarked 960x540 preview. Registered for what it legitimately settles: arrangement and material. See section 3. |
+
+### Sources that may not grade a dimension
+
+`SRC-002` and `SRC-011` are **visual-only**. They show what exists and how it is arranged; they do not
+state a number, and nothing in this repository may take a length from them. `AGENT-INSTRUCTIONS.md`
+§8 puts it exactly: extracted video frames "help with continuity and detail orientation, but they
+should not override measured geometry unless scale control points exist." There are none here.
+
+Test **STT-017** enforces this: a `CTL-` row citing a visual-only source is a build failure. Material
+rules (`MAT-`) may cite them, because "that pier is masonry" is a claim a photograph can actually
+support.
 
 ## 2. Tier definitions
 
@@ -154,6 +167,57 @@ same article puts the tower tops at 333–335 ft. Read against SRC-001 ("clearan
 feet") and SRC-003 ("Clearance at center: 135 feet"), the 135 ft figure is the **navigation
 clearance beneath the span**, and this repository uses it only in that sense.
 
+### SRC-010 — historic-structures.com
+
+The specification paragraph:
+
+> When it opened, the Williamsburg Bridge was the longest suspension bridge in the world, with a
+> span of 1,600 ft and a total length between approaches of 7,308 ft. Its two all-steel towers reach
+> a height of 310 ft, supporting four steel 18-in.-diameter main cables. **Steel arches, not the
+> cables, support the side spans. Massive 40-ft-deep steel stiffening trusses carry the decks.**
+
+And, on cost and the side spans:
+
+> Its final cost came to $24.2 million, including land and approaches. Despite the increased costs,
+> economics guided much of the design. **Since the main cables don't support the relatively short
+> (300 ft) side spans, they were made to be shorter and lighter.** The towers, made from less
+> expensive and lighter steel rather than masonry, required smaller foundations.
+
+On the towers and cables:
+
+> Each of the bridge's two steel towers sit on two separate masonry piers. [...] Saddles atop the
+> towers support each of the four 4,344-ton main cables. Each cable consists of 37 strands of 208
+> wires, and nearly 17,500 miles of wire in the cables suspend the bridge 135 ft above the river.
+
+What this source does for the model: it independently corroborates the 1,600 ft span, the 7,308 ft
+length, the 310 ft tower height, the 18 in cable diameter, the 135 ft clearance, the 37×208 strand
+construction, and — the only one that changes a grade — the **40 ft stiffening truss depth**, which
+until now rested on SRC-004 alone. It also introduces five conflicts, CNF-009 to CNF-013.
+
+### SRC-011 — aerial video, what was actually observed
+
+Twelve frames were extracted at 1 fps and read. **No measurement was taken from them and none can
+be.** The observations are arrangement and material only:
+
+- **Each tower stands on two separate masonry piers**, one under each leg, rising independently out
+  of the water. This is visible unambiguously and is stated in words by SRC-010. It is the reason
+  the tower parts' transverse arrangement is no longer purely an inference from a caisson figure —
+  though the *spacing* remains one. See the note on CTL-021.
+- The piers are **dressed stone masonry**; the towers, the stiffening trusses and the deck framing
+  are **steel latticework**. This is what raises MAT-003 and MAT-010 to grade `B`.
+- The stiffening trusses are **painted a dark red**, in contrast to the grey towers and deck framing.
+  Recorded as an observation about livery, not material: the closed material vocabulary describes
+  what a thing is made of, not what colour it has been painted.
+- The deck reads, outboard to inboard, as an **upper walkway above an outer roadway**, then the deep
+  red truss enclosing the centre. Vehicles are visible on the outer roadway, below the walkway.
+- **The Manhattan tower stands at or very near the shoreline**, with parkland and streets beginning
+  immediately inland of its piers. Qualitative, but it bears directly on CNF-009: if the towers are
+  effectively at the shore, then a tower-to-anchorage distance ought to be close to the anchorage's
+  570–590 ft inland set-back, not 300 ft.
+
+That last point is an observation, not a measurement, and it is used only to keep a conflict open —
+never to settle one. Eyeballing a frame is exactly the move `HOW-TO-DESIGN.md` §11 warns about.
+
 ---
 
 ## 4. Verification queue
@@ -164,7 +228,7 @@ In priority order. Nothing here may grade a control until it moves to section 1 
 |---|---|---|---|
 | 1 | SRC-009 | **File the NYCDOT FOIL request for record, shop and rehabilitation drawings.** | Longest lead time, largest payoff. It is the only route to `A`-grade transverse geometry and would retire OQ-001, OQ-003, OQ-005 and OQ-007 at once. This is a request, not a research problem. |
 | 2 | SRC-007 | Obtain the AISC 2005 paper through a library or AISC membership. | `HOW-TO-DESIGN.md` reports it gives the stiffening truss as *"67 feet wide and approximately 40 feet deep and is pinned at each main tower"* and a labelled transverse section. SRC-004 independently states 67 ft / 40 ft, so reading SRC-007 would raise CTL-008 and CTL-009 from `C` toward `A`, and the "pinned at each main tower" clause bears directly on OQ-011. |
-| 3 | — | Identify a source that states the **side-span length** (tower to anchorage). | OQ-001. Every station outboard of the towers currently rests on a placeholder. This one number unlocks more geometry than any other. |
+| 3 | — | Settle **CNF-009**: does SRC-010's "300 ft side spans" describe the whole tower-to-anchorage span, or one panel between a main tower and an intermediate tower? | OQ-001 and OQ-003 together. This is now a sharper question than "find the side-span length", and answering it retires the largest placeholder in the model. |
 | 4 | SRC-008 | Retrieve the LiDAR tile covering the bridge corridor. | Would give a `MEASURED` deck-top profile and an approach ground profile, and would settle OQ-006. |
 | 5 | — | The works cited by SRC-004 behind the 67 ft / 40 ft / 97.5 ft / anchorage figures. | Reading them directly would let those controls cite a primary instead of an encyclopaedia. `HOW-TO-DESIGN.md` §11 records what trusting a secondary's gloss cost on the Manhattan Bridge. |
 
@@ -198,6 +262,12 @@ Conflicts are kept, not smoothed away. A model that hides source disagreement is
 | CNF-006 | Wires per main cable strand | **208** — SRC-004 | **"280, 281, or 282"** — SRC-004, explanatory note | **Open** | Not used by any control. Registered because a future cable-detail milestone will hit it. |
 | CNF-007 | HAER survey number | **NY-128** — SRC-001, SRC-005 | **NY-165** — `HOW-TO-DESIGN.md` §10 | **Settled** | NY-128. The document that carried the error is a method guide copied in from a sibling repository, not a source; it is registered as NEG-004. |
 | CNF-008 | Tower saddle weight | **32.5 short tons** — SRC-004 | **36 short tons** — SRC-004 | **Open** | Not used by any control. |
+| CNF-009 | **Side-span length, tower to anchorage** | **300 ft** — SRC-010 | **Not stated.** SRC-004 instead places the anchorages "570 ft or 590 ft inland of the shore" | **Open — and the 300 ft figure is deliberately NOT adopted** | This is the first source read to give a side-span length, and it is the answer to OQ-001 if it is right. It is not adopted, for three reasons. **First, arithmetic:** SRC-011 shows the towers standing at or very near the shoreline, so a tower-to-anchorage distance should be close to the anchorage's own 570–590 ft inland set-back. 300 ft is roughly half that, and the two cannot both describe the same distance. **Second, wording:** SRC-010 says "the relatively short (300 ft) side spans" in a sentence about cable economics, and SRC-004 states that *intermediate towers* stand within each side span. 300 ft may well be the length of one arch or truss panel between a main tower and an intermediate tower, not the whole tower-to-anchorage run — which would make both sources right and neither a side-span length. **Third, cost of being wrong:** adopting it moves both anchorages, both side spans and both approach lengths on the authority of one uncited compilation. CTL-101 therefore stays a grade `D` placeholder and OQ-001 stays open, now narrowed to a specific question: does 300 ft describe the whole side span or one panel of it? |
+| CNF-010 | Total construction cost | **$8 million** — SRC-001 | **$24.2 million "including land and approaches"** — SRC-010 | **Open** | Not used by any control. The qualifier probably explains most of the gap, and SRC-010 separately reports a $7 million initial estimate. Registered because a cost figure is the kind of number that gets quoted without its qualifier. |
+| CNF-011 | Main cable weight | **4,344 tons for the cables** — SRC-003 | **"each of the four 4,344-ton main cables"** — SRC-010 | **Open** | A factor of four apart, from the same number. SRC-003 lists it under "Weight of cables" for the bridge; SRC-010 attaches it to each cable. Not used by any control, but it is a clean example of why a figure is registered with its wording rather than as a bare quantity. |
+| CNF-012 | Total length of wire | **17,500 miles** — SRC-003, SRC-010 | **"Almost 19,000 mi of steel wire strands were manufactured"** — SRC-004 | **Settled by reading** | Not a contradiction: SRC-004 says *manufactured*, the others say installed in the cables. Registered so the difference is not later "corrected". |
+| CNF-013 | What supports the side spans | **"Steel arches, not the cables"** — SRC-010 | **Trusswork, carried on intermediate towers** — SRC-004 | **Open** | SRC-011 shows deep latticework of a form that could reasonably be described either way from the air. This matters more than it looks: it governs what the side-span geometry should actually be modelled as, and it is bound up with OQ-003. Nothing in the model depends on the answer yet, because no side-span structure is modelled beyond the deck chain. |
+| CNF-014 | What the 7,308 ft is measured between | **"including approaches"** — SRC-004; "Total length" — SRC-003 | **"total length between approaches"** — SRC-010 | **Open** | Two words, and they invert the meaning of a grade `A` control. CTL-002 keeps the "including approaches" reading, which two sources support against one, but this is direct evidence on OQ-006 and may be part of why the approach grade fails to reach street level. |
 
 ---
 
@@ -208,6 +278,8 @@ Conflicts are kept, not smoothed away. A model that hides source disagreement is
 | `sources/drawings/ny1263data.pdf` | SRC-001 | Public domain (US Government work) | Yes |
 | `sources/drawings/ny1263cap.pdf` | SRC-002 | Public domain (US Government work) | Yes |
 | *(not committed)* | SRC-003 | © City of New York | Retrieved 2026-08-09 and read. The passages relied on are quoted verbatim in section 3; the page itself is not redistributed. |
+| *(not committed)* | SRC-010 | © historic-structures.com | Read 2026-08-09. Passages quoted in section 3 for commentary; the page is not redistributed. |
+| *(not committed)* | SRC-011 | © Alex Kane / Envato | **A watermarked stock preview for which no licence is held.** Neither the video nor any frame extracted from it is committed to this repository, and `.gitignore` excludes `sources/videos/`. Only the written observations in section 3 are retained. If this material is ever to be used beyond arrangement and material observations, licence it first. |
 | *(not committed)* | SRC-006 | © City of New York | 28 MB. Retrieved, searched, and found to carry no span geometry. Re-fetch from the URL rather than committing it. |
 
 No mesh, photogrammetry, video or marketplace asset has been ingested. `sources/existing-meshes/`,

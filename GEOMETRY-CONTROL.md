@@ -51,16 +51,16 @@ Sourced values only. Every row cites a registered, verified source.
 
 | Control ID | Key | Value | Unit | Source IDs | Confidence | Notes |
 |---|---|---:|---|---|---|---|
-| CTL-001 | main_span_tower_to_tower | 1600 | ft | SRC-001, SRC-003, SRC-004 | A | "spans 1,600 feet between towers" (SRC-001); "Main span: 1,600 feet" (SRC-003). Three sources agree. The strongest number this bridge has. |
-| CTL-002 | total_length_including_approaches | 7308 | ft | SRC-003, SRC-004 | A | Owner's published figure. Conflicts with SRC-001's 7,200 ft — see CNF-001. Where the measurement starts and ends is not stated: OQ-006. |
-| CTL-003 | navigation_clearance_at_center | 135 | ft | SRC-001, SRC-003, SRC-004 | A | Clearance beneath the span at mid-river, above MHW. Fixes the underside of the structure at the origin. |
-| CTL-004 | main_cable_count | 4 | count | SRC-001, SRC-003, SRC-004 | A | "4 main cables" (SRC-001). Grouped in two pairs, north and south (SRC-004). |
-| CTL-005 | main_cable_diameter | 18 | in | SRC-001, SRC-003 | A | Nominal. SRC-004 gives 18 to 18.75 in; see CNF-004. |
-| CTL-006 | tower_height | 310 | ft | SRC-003 | A | Owner's figure. **Datum not stated by the source** — see CNF-002 and OQ-004. SRC-004 says 333 or 335 ft above MHW. |
+| CTL-001 | main_span_tower_to_tower | 1600 | ft | SRC-001, SRC-003, SRC-004, SRC-010 | A | "spans 1,600 feet between towers" (SRC-001); "Main span: 1,600 feet" (SRC-003). Four sources agree. The strongest number this bridge has. |
+| CTL-002 | total_length_including_approaches | 7308 | ft | SRC-003, SRC-004, SRC-010 | A | Owner's published figure. Conflicts with SRC-001's 7,200 ft — see CNF-001. SRC-010 gives the same number but says "between approaches" rather than including them, which inverts the meaning: CNF-014, and direct evidence on OQ-006. |
+| CTL-003 | navigation_clearance_at_center | 135 | ft | SRC-001, SRC-003, SRC-004, SRC-010 | A | Clearance beneath the span at mid-river, above MHW. Fixes the underside of the structure at the origin. |
+| CTL-004 | main_cable_count | 4 | count | SRC-001, SRC-003, SRC-004, SRC-010 | A | "4 main cables" (SRC-001). Grouped in two pairs, north and south (SRC-004). |
+| CTL-005 | main_cable_diameter | 18 | in | SRC-001, SRC-003, SRC-010 | A | Nominal. SRC-004 gives 18 to 18.75 in; see CNF-004. |
+| CTL-006 | tower_height | 310 | ft | SRC-003, SRC-010 | A | Owner's figure, now independently corroborated by SRC-010 ("two all-steel towers reach a height of 310 ft"). **Neither source states a datum** — see CNF-002 and OQ-004. SRC-004 says 333 or 335 ft above MHW. Two sources now favour 310, but a second statement of the same undatumed number does not supply the datum. |
 | CTL-007 | transit_track_count | 2 | count | SRC-003, SRC-004 | A | "two rapid transit tracks (J, M, and Z subway lines) sandwiched in between" (SRC-003). **Not four** — see CNF-003 and NEG-003. |
 | CTL-008 | deck_width | 118 | ft | SRC-004 | C | Also the length of the transverse floor beams, which is a useful internal consistency check on the figure. |
 | CTL-009 | stiffening_truss_spacing | 67 | ft | SRC-004 | C | "The trusses are placed 67 ft apart". Independently reported by SRC-007 per `HOW-TO-DESIGN.md` §10, but this repository has not read SRC-007, so the grade stays `C`. |
-| CTL-010 | stiffening_truss_depth | 40 | ft | SRC-004 | C | "and measure 40 ft deep". Three times the depth of the Brooklyn Bridge's, per the same passage. |
+| CTL-010 | stiffening_truss_depth | 40 | ft | SRC-004, SRC-010 | B | "and measure 40 ft deep" (SRC-004); "Massive 40-ft-deep steel stiffening trusses carry the decks" (SRC-010). **The first grade B control in this model** — two independent secondary records agreeing, which is exactly what B means. |
 | CTL-011 | floor_beam_depth | 5 | ft | SRC-004 | C | Transverse floor beams. |
 | CTL-012 | floor_beam_spacing | 20 | ft | SRC-004 | C | Equal to the suspender spacing, which is what one would expect and is stated separately. |
 | CTL-013 | suspender_spacing_main_span | 20 | ft | SRC-004 | C | "suspender castings on the main cables, placed at intervals of 20 ft". Stated for the main span only. |
@@ -71,7 +71,7 @@ Sourced values only. Every row cites a registered, verified source.
 | CTL-018 | cable_pair_spacing_at_anchorage | 34 | ft | SRC-004 | C | Spacing *within* a pair, at the anchorage. |
 | CTL-019 | cable_pair_spacing_at_tower_top | 22 | ft | SRC-004 | C | Spacing within a pair, at the saddles. |
 | CTL-020 | cable_pair_spacing_at_midspan | 4 | ft | SRC-004 | C | The cables are "cradled" together at mid-span to resist wind. This is the transverse geometry that makes this bridge look like itself. |
-| CTL-021 | tower_leg_center_spacing | 97.5 | ft | SRC-004 | C | Stated of the caisson pair centres. The legs stand on those foundations, so this is taken as the transverse spacing of the two legs of each tower. That step is an inference, and every part relying on it is marked accordingly. |
+| CTL-021 | tower_leg_center_spacing | 97.5 | ft | SRC-004 | C | Stated of the caisson pair centres. SRC-010 states that each tower "sit[s] on two separate masonry piers" and SRC-011 shows exactly that, so the two-legs-on-two-piers *arrangement* is now well supported. The *spacing* is still taken from a caisson figure, which remains an inference: the legs are known to stand on those foundations, not known to stand on their centres. Parts using this row stay `INFERRED` for that reason. |
 | CTL-022 | tower_leg_plan_length_we | 40 | ft | SRC-004 | C | "each leg forms a rectangle measuring 40 ft west–east". |
 | CTL-023 | tower_leg_plan_width_ns | 24 | ft | SRC-004 | C | "and 24 ft north–south". |
 | CTL-024 | tower_pier_top_elevation | 23 | ft | SRC-004 | C | Masonry pier top, above MHW. The one solidly-datumed elevation in the whole document. |
@@ -98,7 +98,7 @@ as `ASSUMED` and excluded from dimension callouts.
 
 | Control ID | Key | Value | Unit | Source IDs | Confidence | Notes |
 |---|---|---:|---|---|---|---|
-| CTL-101 | side_span_tower_to_anchorage | 600 | ft | | D | **OQ-001.** No source read by this repository states the side-span length. Deliberately round. This single number places both anchorages, both side spans, and the ends of the suspended structure — it is the highest-value unknown in the model and item 3 in the verification queue. Do not quote it. |
+| CTL-101 | side_span_tower_to_anchorage | 600 | ft | | D | **OQ-001, and now CNF-009.** SRC-010 states "the relatively short (300 ft) side spans" — the first side-span length any source read here has given. It is **not adopted**: it is roughly half the 570–590 ft the anchorages are said to sit inland of the shore, and SRC-011 shows the towers standing essentially at the shoreline. It may describe one panel between a main tower and an intermediate tower rather than the whole span. This row therefore stays a deliberately round placeholder. Do not quote it, and do not quietly replace it with 300 either. |
 | CTL-102 | main_cable_elevation_at_midspan | 190 | ft | | D | **OQ-002.** No source read states the cable sag. Chosen only to clear the deck: it must sit above the deck top, which derivation DRV-007 puts at 175 ft. The main cable profile is therefore `ASSUMED` in Z even though the cable's existence and count are grade `A`. |
 | CTL-103 | deck_elevation_at_anchorage | 140 | ft | | D | **OQ-006.** No source read gives the deck elevation where the suspended structure meets the anchorage. |
 | CTL-104 | anchorage_top_elevation | 90 | ft | | D | **OQ-005.** CTL-034 gives 80 ft above *street level*, and this model does not know street level at either anchorage. Deliberately round. |
@@ -141,12 +141,12 @@ mean choosing a number to make a picture look right.
 
 | ID | Question | Blocks | Retired by |
 |---|---|---|---|
-| OQ-001 | What is the side-span length from each tower to its anchorage? | CTL-101, and through it both anchorages, both side spans, the suspended structure length, and the approach lengths | SRC-009 (FOIL), or any source stating the span arrangement |
+| OQ-001 | Does SRC-010's "300 ft side spans" describe the whole tower-to-anchorage span, or one panel of it? | CTL-101, and through it both anchorages, both side spans, the suspended structure length, and the approach lengths | SRC-009 (FOIL), or any source stating the span arrangement panel by panel |
 | OQ-002 | What is the main cable sag, or the cable elevation at mid-span? | CTL-102, the whole main cable profile, every suspender length | SRC-007, SRC-009, or a period engineering description |
-| OQ-003 | How many intermediate towers support each side span, and where do they stand? | CTL-105, all side-span support geometry | SRC-009 |
+| OQ-003 | How many intermediate towers support each side span, and where do they stand? | CTL-105, all side-span support geometry, and the reading of CNF-009 | SRC-009. SRC-011 shows side-span structure but no frame covers a full side span end to end, so it cannot supply the count |
 | OQ-004 | Is SRC-003's 310 ft tower height measured above mean high water, above the deck, or above the pier top? | The datum of CTL-006, and CNF-002 | A statement of datum from NYCDOT, or SRC-007 |
 | OQ-005 | What is street level at each anchorage, in MHW terms? | CTL-104; makes CTL-034's 80 ft usable | SRC-008 (LiDAR) |
-| OQ-006 | Between which two points is the 7,308 ft total length measured, and can it be reconciled with a 3% approach grade reaching street level? | CTL-002, CTL-103, DRV-015 | SRC-008, SRC-009 |
+| OQ-006 | Between which two points is the 7,308 ft total length measured, and can it be reconciled with a 3% approach grade reaching street level? | CTL-002, CTL-103, DRV-015 | SRC-008, SRC-009. Sharpened by CNF-014: SRC-010 reads the same figure as "between approaches" rather than including them |
 | OQ-007 | What is the transverse width and position of each of the five deck sections? | The deck cross-section; currently only the outermost width (CTL-015) and the track spacing (CTL-017) are sourced | SRC-007's labelled section, SRC-009 |
 | OQ-008 | Which axis of each anchorage's base rectangle runs along the bridge? | The plan orientation of CTL-030 to CTL-033 | SRC-009, or a georeferenced aerial |
 | OQ-009 | What is the installed height of a main cable saddle? | CTL-106 | SRC-007, SRC-009 |
@@ -189,14 +189,14 @@ claim about what the bridge is made of. The material vocabulary is closed and is
 |---|---|---|---|---|---|
 | MAT-001 | `reference_*` | reference | | D | Datum planes, axes and station markers. Not part of the bridge; graded `D` because they are drawing furniture, not structure. |
 | MAT-002 | `*anchorage*` | masonry | SRC-004 | C | "massive masonry anchorages"; "The above-ground sections of the anchorages were clad with masonry." |
-| MAT-003 | `tower_*_pier_*` | masonry | SRC-004 | C | "Each foundation supports a masonry pier", clad in limestone below mean low water and granite above. |
+| MAT-003 | `tower_*_pier_*` | masonry | SRC-004, SRC-010, SRC-011 | B | "Each foundation supports a masonry pier" (SRC-004); "two separate masonry piers" (SRC-010); dressed stone piers plainly visible in SRC-011. A photograph cannot give a dimension, but it can settle what a thing is made of. |
 | MAT-004 | `*main_cable*` | steel_wire | SRC-001, SRC-004 | A | "4 main cables 18 inches in diameter" (SRC-001); steel wire strands (SRC-004). |
 | MAT-005 | `*suspender*` | steel_wire | SRC-004 | C | Seven strands of rope per suspender. |
-| MAT-006 | `tower_*` | steel_structural | SRC-001, SRC-004 | A | "steel towers" (SRC-001). Buck chose steel over stone deliberately; see SRC-004. |
+| MAT-006 | `tower_*` | steel_structural | SRC-001, SRC-004, SRC-010 | A | "steel towers" (SRC-001). Buck chose steel over stone deliberately; see SRC-004. Confirmed visually in SRC-011. |
 | MAT-007 | `*roadway*` | roadway_surface | SRC-003, SRC-004 | C | Four two-lane roadways (SRC-003). Originally wooden blocks, now orthotropic decks from Contracts 5 and 7. |
 | MAT-008 | `*walkway*` | roadway_surface | SRC-003 | C | "A walkway and a bikeway also run across the bridge." |
 | MAT-009 | `*track*` | steel_structural | SRC-003, SRC-004 | A | Two rapid transit tracks, standard gauge. |
-| MAT-010 | `*truss*` | steel_structural | SRC-004 | C | Stiffening trusses, 67 ft apart and 40 ft deep. |
+| MAT-010 | `*truss*` | steel_structural | SRC-004, SRC-010, SRC-011 | B | Stiffening trusses, 67 ft apart and 40 ft deep. "Massive 40-ft-deep steel stiffening trusses" (SRC-010), and steel latticework in SRC-011. Note from SRC-011: they are painted a dark red, unlike the grey towers. That is livery, not material, and the vocabulary here describes what a thing is made of. |
 | MAT-011 | `*floor_beam*` | steel_structural | SRC-004 | C | Transverse floor beams, 5 ft deep and 118 ft long. |
 | MAT-012 | `*railing*` | steel_structural | SRC-004 | C | "heavy lattice railings on the north and south edges of the deck". |
 | MAT-013 | `*approach*` | steel_structural | SRC-004 | C | "viaducts with braced columns and masonry foundations"; the extreme ends were masonry. The mixed construction is not resolved at this milestone. |

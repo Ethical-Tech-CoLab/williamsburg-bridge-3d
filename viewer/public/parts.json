@@ -5,7 +5,7 @@
   "bridge": "Williamsburg Bridge",
   "generated_by": "build_control_skeleton.py",
   "control_document": "GEOMETRY-CONTROL.md",
-  "control_document_sha256": "a477b82e36610717c9a39eee6e48de1c258194f3a91f483e1078762daf9d4a4f",
+  "control_document_sha256": "224bb2584e6840058aee29c56a6d5c5118242e9fa69abe5c520d5278537bf1fb",
   "units": "meters",
   "vertical_datum": "mean high water",
   "ho_scale_denominator": 87.1,
@@ -29,11 +29,12 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "confidence": "A",
       "is_placeholder": false,
-      "notes": "\"spans 1,600 feet between towers\" (SRC-001); \"Main span: 1,600 feet\" (SRC-003). Three sources agree. The strongest number this bridge has."
+      "notes": "\"spans 1,600 feet between towers\" (SRC-001); \"Main span: 1,600 feet\" (SRC-003). Four sources agree. The strongest number this bridge has."
     },
     {
       "control_id": "CTL-002",
@@ -43,11 +44,12 @@
       "value_m": 2227.4784,
       "source_ids": [
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "confidence": "A",
       "is_placeholder": false,
-      "notes": "Owner's published figure. Conflicts with SRC-001's 7,200 ft \u2014 see CNF-001. Where the measurement starts and ends is not stated: OQ-006."
+      "notes": "Owner's published figure. Conflicts with SRC-001's 7,200 ft \u2014 see CNF-001. SRC-010 gives the same number but says \"between approaches\" rather than including them, which inverts the meaning: CNF-014, and direct evidence on OQ-006."
     },
     {
       "control_id": "CTL-003",
@@ -58,7 +60,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "confidence": "A",
       "is_placeholder": false,
@@ -73,7 +76,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "confidence": "A",
       "is_placeholder": false,
@@ -87,7 +91,8 @@
       "value_m": 0.4572,
       "source_ids": [
         "SRC-001",
-        "SRC-003"
+        "SRC-003",
+        "SRC-010"
       ],
       "confidence": "A",
       "is_placeholder": false,
@@ -100,11 +105,12 @@
       "unit": "ft",
       "value_m": 94.488,
       "source_ids": [
-        "SRC-003"
+        "SRC-003",
+        "SRC-010"
       ],
       "confidence": "A",
       "is_placeholder": false,
-      "notes": "Owner's figure. **Datum not stated by the source** \u2014 see CNF-002 and OQ-004. SRC-004 says 333 or 335 ft above MHW."
+      "notes": "Owner's figure, now independently corroborated by SRC-010 (\"two all-steel towers reach a height of 310 ft\"). **Neither source states a datum** \u2014 see CNF-002 and OQ-004. SRC-004 says 333 or 335 ft above MHW. Two sources now favour 310, but a second statement of the same undatumed number does not supply the datum."
     },
     {
       "control_id": "CTL-007",
@@ -153,11 +159,12 @@
       "unit": "ft",
       "value_m": 12.192,
       "source_ids": [
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
-      "confidence": "C",
+      "confidence": "B",
       "is_placeholder": false,
-      "notes": "\"and measure 40 ft deep\". Three times the depth of the Brooklyn Bridge's, per the same passage."
+      "notes": "\"and measure 40 ft deep\" (SRC-004); \"Massive 40-ft-deep steel stiffening trusses carry the decks\" (SRC-010). **The first grade B control in this model** \u2014 two independent secondary records agreeing, which is exactly what B means."
     },
     {
       "control_id": "CTL-011",
@@ -300,7 +307,7 @@
       ],
       "confidence": "C",
       "is_placeholder": false,
-      "notes": "Stated of the caisson pair centres. The legs stand on those foundations, so this is taken as the transverse spacing of the two legs of each tower. That step is an inference, and every part relying on it is marked accordingly."
+      "notes": "Stated of the caisson pair centres. SRC-010 states that each tower \"sit[s] on two separate masonry piers\" and SRC-011 shows exactly that, so the two-legs-on-two-piers *arrangement* is now well supported. The *spacing* is still taken from a caisson figure, which remains an inference: the legs are known to stand on those foundations, not known to stand on their centres. Parts using this row stay `INFERRED` for that reason."
     },
     {
       "control_id": "CTL-022",
@@ -519,7 +526,7 @@
       "source_ids": [],
       "confidence": "D",
       "is_placeholder": true,
-      "notes": "**OQ-001.** No source read by this repository states the side-span length. Deliberately round. This single number places both anchorages, both side spans, and the ends of the suspended structure \u2014 it is the highest-value unknown in the model and item 3 in the verification queue. Do not quote it."
+      "notes": "**OQ-001, and now CNF-009.** SRC-010 states \"the relatively short (300 ft) side spans\" \u2014 the first side-span length any source read here has given. It is **not adopted**: it is roughly half the 570\u2013590 ft the anchorages are said to sit inland of the shore, and SRC-011 shows the towers standing essentially at the shoreline. It may describe one panel between a main tower and an intermediate tower rather than the whole span. This row therefore stays a deliberately round placeholder. Do not quote it, and do not quietly replace it with 300 either."
     },
     {
       "control_id": "CTL-102",
@@ -591,7 +598,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [],
       "confidence": "A",
@@ -639,7 +647,8 @@
         "CTL-006"
       ],
       "source_ids": [
-        "SRC-003"
+        "SRC-003",
+        "SRC-010"
       ],
       "open_questions": [],
       "confidence": "A",
@@ -664,7 +673,8 @@
       ],
       "source_ids": [
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [],
       "confidence": "A",
@@ -691,7 +701,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-001"
@@ -719,7 +730,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [],
       "confidence": "A",
@@ -745,7 +757,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [],
       "confidence": "A",
@@ -771,7 +784,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [],
       "confidence": "A",
@@ -798,7 +812,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-001"
@@ -825,7 +840,8 @@
       ],
       "source_ids": [
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [],
       "confidence": "A",
@@ -851,7 +867,8 @@
       ],
       "source_ids": [
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [],
       "confidence": "C",
@@ -882,7 +899,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-003"
@@ -891,7 +909,7 @@
       "provenance": "INFERRED",
       "material": "masonry",
       "material_id": "MAT-003",
-      "material_confidence": "C",
+      "material_confidence": "B",
       "prototype_units": "meters",
       "ho_scale_units": "millimeters",
       "last_modified_by_agent": "build_control_skeleton.py",
@@ -915,7 +933,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [],
       "confidence": "C",
@@ -947,7 +966,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-004"
@@ -980,7 +1000,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-003"
@@ -989,7 +1010,7 @@
       "provenance": "INFERRED",
       "material": "masonry",
       "material_id": "MAT-003",
-      "material_confidence": "C",
+      "material_confidence": "B",
       "prototype_units": "meters",
       "ho_scale_units": "millimeters",
       "last_modified_by_agent": "build_control_skeleton.py",
@@ -1013,7 +1034,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [],
       "confidence": "C",
@@ -1045,7 +1067,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-004"
@@ -1077,7 +1100,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-004"
@@ -1108,7 +1132,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-009"
@@ -1139,7 +1164,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-009"
@@ -1170,7 +1196,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-009"
@@ -1201,7 +1228,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-009"
@@ -1234,7 +1262,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-003"
@@ -1243,7 +1272,7 @@
       "provenance": "INFERRED",
       "material": "masonry",
       "material_id": "MAT-003",
-      "material_confidence": "C",
+      "material_confidence": "B",
       "prototype_units": "meters",
       "ho_scale_units": "millimeters",
       "last_modified_by_agent": "build_control_skeleton.py",
@@ -1267,7 +1296,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [],
       "confidence": "C",
@@ -1299,7 +1329,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-004"
@@ -1332,7 +1363,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-003"
@@ -1341,7 +1373,7 @@
       "provenance": "INFERRED",
       "material": "masonry",
       "material_id": "MAT-003",
-      "material_confidence": "C",
+      "material_confidence": "B",
       "prototype_units": "meters",
       "ho_scale_units": "millimeters",
       "last_modified_by_agent": "build_control_skeleton.py",
@@ -1365,7 +1397,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [],
       "confidence": "C",
@@ -1397,7 +1430,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-004"
@@ -1429,7 +1463,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-004"
@@ -1460,7 +1495,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-009"
@@ -1491,7 +1527,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-009"
@@ -1522,7 +1559,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-009"
@@ -1553,7 +1591,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-009"
@@ -1585,7 +1624,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-001",
@@ -1619,7 +1659,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-001",
@@ -1655,7 +1696,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-002",
@@ -1690,7 +1732,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-002",
@@ -1725,7 +1768,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-002",
@@ -1760,7 +1804,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-002",
@@ -1792,7 +1837,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-002"
@@ -1823,7 +1869,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-002"
@@ -1854,7 +1901,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-002"
@@ -1885,7 +1933,8 @@
       "source_ids": [
         "SRC-001",
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-002"
@@ -1921,6 +1970,7 @@
       "source_ids": [
         "SRC-003",
         "SRC-004",
+        "SRC-010",
         "SRC-001"
       ],
       "open_questions": [
@@ -1959,6 +2009,7 @@
       "source_ids": [
         "SRC-003",
         "SRC-004",
+        "SRC-010",
         "SRC-001"
       ],
       "open_questions": [
@@ -1997,6 +2048,7 @@
       "source_ids": [
         "SRC-003",
         "SRC-004",
+        "SRC-010",
         "SRC-001"
       ],
       "open_questions": [
@@ -2035,6 +2087,7 @@
       "source_ids": [
         "SRC-003",
         "SRC-004",
+        "SRC-010",
         "SRC-001"
       ],
       "open_questions": [
@@ -2073,6 +2126,7 @@
       "source_ids": [
         "SRC-003",
         "SRC-004",
+        "SRC-010",
         "SRC-001"
       ],
       "open_questions": [
@@ -2111,6 +2165,7 @@
       "source_ids": [
         "SRC-003",
         "SRC-004",
+        "SRC-010",
         "SRC-001"
       ],
       "open_questions": [
@@ -2148,6 +2203,7 @@
       "source_ids": [
         "SRC-003",
         "SRC-004",
+        "SRC-010",
         "SRC-001"
       ],
       "open_questions": [
@@ -2181,6 +2237,7 @@
       ],
       "source_ids": [
         "SRC-004",
+        "SRC-010",
         "SRC-001",
         "SRC-003"
       ],
@@ -2192,7 +2249,7 @@
       "provenance": "INFERRED",
       "material": "steel_structural",
       "material_id": "MAT-010",
-      "material_confidence": "C",
+      "material_confidence": "B",
       "prototype_units": "meters",
       "ho_scale_units": "millimeters",
       "last_modified_by_agent": "build_control_skeleton.py",
@@ -2215,6 +2272,7 @@
       ],
       "source_ids": [
         "SRC-004",
+        "SRC-010",
         "SRC-001",
         "SRC-003"
       ],
@@ -2226,7 +2284,7 @@
       "provenance": "INFERRED",
       "material": "steel_structural",
       "material_id": "MAT-010",
-      "material_confidence": "C",
+      "material_confidence": "B",
       "prototype_units": "meters",
       "ho_scale_units": "millimeters",
       "last_modified_by_agent": "build_control_skeleton.py",
@@ -2250,7 +2308,8 @@
       "source_ids": [
         "SRC-004",
         "SRC-001",
-        "SRC-003"
+        "SRC-003",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-001"
@@ -2281,7 +2340,8 @@
       ],
       "source_ids": [
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-006",
@@ -2313,7 +2373,8 @@
       ],
       "source_ids": [
         "SRC-003",
-        "SRC-004"
+        "SRC-004",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-006",
@@ -2344,7 +2405,8 @@
       ],
       "source_ids": [
         "SRC-004",
-        "SRC-003"
+        "SRC-003",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-006"
@@ -2374,7 +2436,8 @@
       ],
       "source_ids": [
         "SRC-004",
-        "SRC-003"
+        "SRC-003",
+        "SRC-010"
       ],
       "open_questions": [
         "OQ-006"

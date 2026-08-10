@@ -148,6 +148,15 @@
       "rule": "single_source_census",
       "mode": "report_only",
       "rationale": "Most of this model rests on SRC-004 alone. Surfacing the concentration is more useful than pretending it is not there."
+    },
+    {
+      "id": "STT-017",
+      "title": "No control dimension cites a visual-only source",
+      "kind": "traceability",
+      "rule": "no_visual_source_grades_a_dimension",
+      "visual_types": ["video", "photo"],
+      "mode": "assert",
+      "rationale": "A photograph or a video shows what exists and how it is arranged; it does not state a number. AGENT-INSTRUCTIONS.md section 8 allows extracted frames to help with continuity and orientation but not to override geometry without scale control points, and SRC-011 is a watermarked 960x540 preview with no camera metadata and no control points. Material rules are deliberately exempt: 'that pier is masonry' is a claim a photograph can support. Verified to fail when a CTL- row is given SRC-011 as a source."
     }
   ]
 }

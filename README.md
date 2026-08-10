@@ -6,8 +6,8 @@ A browser-renderable, part-addressable 3D model of the Williamsburg Bridge in wh
 carries its provenance**, so a reader can ask of any surface — *how do you know that?* — and get a
 real answer, including "we do not".
 
-**Milestone 1: control skeleton and viewer.** 57 parts, 43 controls, 9 sources, 11 open questions,
-8 registered conflicts, 32 tests passing.
+**Milestone 1: control skeleton and viewer.** 57 parts, 43 controls, 11 sources, 11 open questions,
+14 registered conflicts, 33 tests passing.
 
 To run it locally instead:
 
@@ -52,9 +52,10 @@ This is the honest state of the model, and it is the most useful thing in this R
 | Parts | 57 |
 | Controls | 43 (37 sourced, 6 placeholders) |
 | Geometry provenance | **0 measured · 9 documented · 48 inferred · 0 assumed** |
-| Source confidence | 7 `A` · 0 `B` · 16 `C` · 34 `D` |
+| Source confidence (parts) | 7 `A` · 0 `B` · 16 `C` · 34 `D` |
+| Sources | 11 registered, 8 read |
 | Open questions | 11 |
-| Registered conflicts | 8 |
+| Registered conflicts | 14 |
 
 **Turn off `INFERRED` in the viewer and the bridge disappears**, leaving the reference frame: the
 centreline, the station markers and the mean-high-water plane. That emptiness is published rather
@@ -76,15 +77,22 @@ Nine photographs, three data pages, two caption pages. That is the whole survey.
 
 ### The highest-value unknown
 
-**Nobody has read a source that states the side-span length** — the distance from each tower to its
-anchorage (OQ-001). `CTL-101` stands in for it at a deliberately round 600 ft so that it cannot be
-mistaken for a measurement. That one number places both anchorages, both side spans, the ends of the
-suspended structure, and the lengths of both approaches. Finding it is item 3 in the verification
-queue.
+**The side-span length — the distance from each tower to its anchorage — is still not settled**
+(OQ-001). `CTL-101` stands in for it at a deliberately round 600 ft so that it cannot be mistaken
+for a measurement. That one number places both anchorages, both side spans, the ends of the
+suspended structure, and the lengths of both approaches.
 
-The single highest-value *action*, though, is item 1: **file the NYCDOT FOIL request** for record,
-shop and rehabilitation drawings. It is a request, not a research problem, it has a long lead time,
-and it would retire four open questions at once.
+A source has since been read that *does* state one — "the relatively short (300 ft) side spans"
+(SRC-010) — and it is **deliberately not adopted**. It is roughly half the 570–590 ft the same
+model's other source puts between each anchorage and the shore, and aerial footage shows the towers
+standing essentially at the shoreline. It may well describe one panel between a main tower and an
+intermediate tower rather than the whole span. Registered as CNF-009, with OQ-001 rewritten from
+"what is the side-span length" to the sharper "does 300 ft describe the span or a panel of it".
+That is the more useful question, and it is now item 3 in the verification queue.
+
+The single highest-value *action* remains item 1: **file the NYCDOT FOIL request** for record, shop
+and rehabilitation drawings. It is a request, not a research problem, it has a long lead time, and
+it would retire four open questions at once.
 
 ---
 
@@ -190,6 +198,7 @@ reports success both before and after a fix is worse than no guard at all.
 | **GRT-010** no longitudinal gap in the deck chain | Truncating the deck at the anchorage faces — the bug that shipped twice on the Manhattan Bridge, leaving the roadway and every track terminating in mid-air. Fails with the exact gap reported. |
 | **GRT-007** two transit tracks, no third or fourth | Setting the track count to four. Fails naming `transit_track_3` and `transit_track_4`. |
 | **STT-012** the manifest matches the control document | Editing `GEOMETRY-CONTROL.md` without rebuilding. Fails with both hashes. |
+| **STT-017** no visual-only source grades a dimension | Letting a watermarked 960×540 stock video grade the deck width. Fails naming the control and the source. |
 
 The deck-continuity test measures the longitudinal extent of the **geometry the build actually
 emitted**, not a declared constant, so it tests the model rather than a promise about it.

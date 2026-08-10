@@ -1,6 +1,6 @@
 {
-  "control_document_sha256": "a477b82e36610717c9a39eee6e48de1c258194f3a91f483e1078762daf9d4a4f",
-  "passed": 32,
+  "control_document_sha256": "224bb2584e6840058aee29c56a6d5c5118242e9fa69abe5c520d5278537bf1fb",
+  "passed": 33,
   "failed": 0,
   "report_only": 4,
   "results": [
@@ -135,7 +135,7 @@
       "title": "The exported GLB is well-formed glTF 2.0 and carries per-part metadata",
       "mode": "assert",
       "status": "PASS",
-      "detail": "glTF 2.0, 66 nodes, 57 meshes, 58 carrying metadata, 1771196 bytes"
+      "detail": "glTF 2.0, 66 nodes, 57 meshes, 58 carrying metadata, 1771756 bytes"
     },
     {
       "id": "GRT-020",
@@ -149,7 +149,7 @@
       "title": "Every source cited by a control exists in the source register",
       "mode": "assert",
       "status": "PASS",
-      "detail": "9 sources registered"
+      "detail": "11 sources registered"
     },
     {
       "id": "STT-002",
@@ -226,7 +226,7 @@
       "title": "The parts manifest was generated from the current GEOMETRY-CONTROL.md",
       "mode": "assert",
       "status": "PASS",
-      "detail": "parts.json built from a477b82e3661, GEOMETRY-CONTROL.md is now a477b82e3661"
+      "detail": "parts.json built from 224bb2584e68, GEOMETRY-CONTROL.md is now 224bb2584e68"
     },
     {
       "id": "STT-013",
@@ -254,7 +254,14 @@
       "title": "Census of controls whose evidence is a single source",
       "mode": "report_only",
       "status": "REPORT",
-      "detail": "31 controls rest on a single source; citations by source: SRC-004x35, SRC-003x7, SRC-001x4"
+      "detail": "29 controls rest on a single source; citations by source: SRC-004x35, SRC-003x7, SRC-010x7, SRC-001x4"
+    },
+    {
+      "id": "STT-017",
+      "title": "No control dimension cites a visual-only source",
+      "mode": "assert",
+      "status": "PASS",
+      "detail": "2 visual-only source(s) (SRC-002, SRC-011), none grading a dimension"
     }
   ]
 }

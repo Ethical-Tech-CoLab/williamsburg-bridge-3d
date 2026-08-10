@@ -9,9 +9,11 @@ viewer/dist/
 *.log
 
 # Retrieved source material that is too large or not redistributable.
-# SOURCE-REGISTER.md records the URL for every one of these.
+# SOURCE-REGISTER.md records the URL or the stock item for every one of these.
 sources/dot_bridgereport15.pdf
 sources/*.html
+sources/videos/*
+!sources/videos/.gitkeep
 
 # Generated model artifacts are intentionally COMMITTED, not ignored:
 #   mesh/glb/*, viewer/public/*.glb, viewer/public/parts.json,

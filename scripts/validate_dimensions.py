@@ -84,14 +84,19 @@ class Context:
             raise ValueError(
                 "SOURCE-REGISTER.md section 1 has no 'Verified' column"
             ) from exc
+        try:
+            type_col = columns.index("type")
+        except ValueError as exc:
+            raise ValueError("SOURCE-REGISTER.md section 1 has no 'Type' column") from exc
         for row in re.finditer(r"^\|\s*(SRC-\d+)\s*\|(.+)$", self.register_text, re.M):
             cells = [c.strip() for c in row.group(2).split("|")]
-            if len(cells) <= verified_col:
+            if len(cells) <= max(verified_col, type_col):
                 raise ValueError(f"{row.group(1)} has fewer columns than the section 1 header")
             verified = cells[verified_col].strip().strip("*").lower()
             self.sources[row.group(1)] = {
                 "title": cells[0] if cells else "",
                 "verified": verified,
+                "type": cells[type_col].strip().lower(),
             }
         self.negative_controls = set(re.findall(r"^\|\s*(NEG-\d+)\s*\|", self.register_text, re.M))
         self.queue_text = self.register_text.split("## 4. Verification queue", 1)[-1].split(
@@ -530,6 +535,32 @@ def _t_single(ctx: Context, _spec) -> tuple[bool, str]:
     top = sorted(counts.items(), key=lambda kv: -kv[1])
     spread = ", ".join(f"{s}x{n}" for s, n in top)
     return True, f"{single} controls rest on a single source; citations by source: {spread}"
+
+
+@measure("no_visual_source_grades_a_dimension")
+def _t_visual(ctx: Context, spec) -> tuple[bool, str]:
+    """A photograph or a video may not put a number in the control document.
+
+    Materials are exempt by construction: this walks control rows only, and MAT- rows are parsed
+    separately. Verified to fail when SRC-011 is added as a source on a CTL- row.
+    """
+    keywords = [k.lower() for k in spec["visual_types"]]
+    visual = {
+        sid
+        for sid, meta in ctx.sources.items()
+        if any(k in meta.get("type", "") for k in keywords)
+    }
+    bad = [
+        f"{c.control_id} cites visual-only {s}"
+        for c in ctx.model.controls.values()
+        for s in c.source_ids
+        if s in visual
+    ]
+    return not bad, (
+        "; ".join(bad)
+        if bad
+        else f"{len(visual)} visual-only source(s) ({', '.join(sorted(visual))}), none grading a dimension"
+    )
 
 
 # --------------------------------------------------------------------------- runner
