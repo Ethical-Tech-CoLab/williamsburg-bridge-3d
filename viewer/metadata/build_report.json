@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_by": "build_control_skeleton.py",
-  "control_document_sha256": "224bb2584e6840058aee29c56a6d5c5118242e9fa69abe5c520d5278537bf1fb",
+  "control_document_sha256": "7af4357587ba15809d4b4ca0e31b1a26603cb78aa05fdbde5daaa70481d9df1e",
   "controls_total": 43,
   "controls_sourced": 37,
   "placeholders": [

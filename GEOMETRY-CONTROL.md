@@ -199,7 +199,7 @@ claim about what the bridge is made of. The material vocabulary is closed and is
 | MAT-010 | `*truss*` | steel_structural | SRC-004, SRC-010, SRC-011 | B | Stiffening trusses, 67 ft apart and 40 ft deep. "Massive 40-ft-deep steel stiffening trusses" (SRC-010), and steel latticework in SRC-011. Note from SRC-011: they are painted a dark red, unlike the grey towers. That is livery, not material, and the vocabulary here describes what a thing is made of. |
 | MAT-011 | `*floor_beam*` | steel_structural | SRC-004 | C | Transverse floor beams, 5 ft deep and 118 ft long. |
 | MAT-012 | `*railing*` | steel_structural | SRC-004 | C | "heavy lattice railings on the north and south edges of the deck". |
-| MAT-013 | `*approach*` | steel_structural | SRC-004 | C | "viaducts with braced columns and masonry foundations"; the extreme ends were masonry. The mixed construction is not resolved at this milestone. |
+| MAT-013 | `*approach*` | steel_structural | SRC-004, SRC-012 | B | "viaducts with braced columns and masonry foundations" (SRC-004), and riveted steel lattice bents on masonry footings throughout SRC-012. The extreme ends were masonry, so the mixed construction is still unresolved at this milestone; the steel is what the geometry currently represents. |
 | MAT-014 | `deck_*` | steel_structural | SRC-004 | C | Any remaining deck-system envelope geometry. |
 
 ## 8. Provenance derivation

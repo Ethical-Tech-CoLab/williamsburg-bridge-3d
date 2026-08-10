@@ -1,5 +1,5 @@
 {
-  "control_document_sha256": "224bb2584e6840058aee29c56a6d5c5118242e9fa69abe5c520d5278537bf1fb",
+  "control_document_sha256": "7af4357587ba15809d4b4ca0e31b1a26603cb78aa05fdbde5daaa70481d9df1e",
   "passed": 34,
   "failed": 0,
   "report_only": 4,
@@ -156,7 +156,7 @@
       "title": "Every source cited by a control exists in the source register",
       "mode": "assert",
       "status": "PASS",
-      "detail": "11 sources registered"
+      "detail": "13 sources registered"
     },
     {
       "id": "STT-002",
@@ -233,7 +233,7 @@
       "title": "The parts manifest was generated from the current GEOMETRY-CONTROL.md",
       "mode": "assert",
       "status": "PASS",
-      "detail": "parts.json built from 224bb2584e68, GEOMETRY-CONTROL.md is now 224bb2584e68"
+      "detail": "parts.json built from 7af4357587ba, GEOMETRY-CONTROL.md is now 7af4357587ba"
     },
     {
       "id": "STT-013",
@@ -268,7 +268,7 @@
       "title": "No control dimension cites a visual-only source",
       "mode": "assert",
       "status": "PASS",
-      "detail": "2 visual-only source(s) (SRC-002, SRC-011), none grading a dimension"
+      "detail": "3 visual-only source(s) (SRC-002, SRC-011, SRC-012), none grading a dimension"
     }
   ]
 }

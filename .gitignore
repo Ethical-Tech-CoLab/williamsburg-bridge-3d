@@ -14,6 +14,15 @@ sources/dot_bridgereport15.pdf
 sources/*.html
 sources/videos/*
 !sources/videos/.gitkeep
+sources/photos/*
+!sources/photos/.gitkeep
+
+# Never track anything that looks like a collapsed Windows path. curl strips the
+# backslashes in a -K config's output value, which turns C:\Users\...\file.jpg into a
+# single filename written into the current directory - i.e. straight into this repo.
+# HOW-TO-DESIGN.md section 11 records the same accident with a relative curl -o loop.
+Users*AppData*
+C[A-Z]Users*
 
 # Generated model artifacts are intentionally COMMITTED, not ignored:
 #   mesh/glb/*, viewer/public/*.glb, viewer/public/parts.json,

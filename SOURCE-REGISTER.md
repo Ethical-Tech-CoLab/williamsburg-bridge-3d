@@ -34,6 +34,8 @@ here cannot grade anything, **including a source held locally in a sibling repos
 | SRC-009 | NYCDOT record, shop and rehabilitation drawings | Not public — obtainable only by FOIL request to NYCDOT | Archival drawings | A (potential) | Unknown | **no** | none yet | The single highest-value outstanding action on this bridge. Long lead time. See section 4. |
 | SRC-010 | *The Historic Williamsburg Bridge in NYC Was the Longest Suspension Bridge in the World When It Opened* | https://www.historic-structures.com/ny/new_york/historic-williamsburg-bridge/ — read 2026-08-09, quoted in section 3 | Secondary compilation | C | © historic-structures.com, quoted for commentary | yes | B/C | A narrative history with a dense specification paragraph and a detailed construction account. Corroborates several figures previously resting on SRC-004 alone, which is what lets CTL-010 and two material rules reach grade `B`. It also states a **side-span length**, the first source read to do so — but see CNF-009 before using it. Uncited and unfootnoted, so it may not exceed `C`. |
 | SRC-011 | *Aerial view of the Williamsburg Bridge in New York*, Alex Kane — watermarked preview, 960x540, 11.9 s, 30 fps | Envato Elements stock item 24580550. Local preview file only; **not committed, not redistributable** | Aerial video | B | © Alex Kane / Envato. Watermarked preview, licence not held | yes | B, **visual only** | Low, sweeping aerial passes of the Manhattan tower and the main span. **Grades no dimension and cannot** — no camera metadata, no scale control points, and a watermarked 960x540 preview. Registered for what it legitimately settles: arrangement and material. See section 3. |
+| SRC-012 | HistoricBridges.org, *Williamsburg Bridge photo gallery* (gallery 2) | https://historicbridges.org/bridges/browser/photosviewer.php?bridgebrowser=newyork/williamsburg/&gallerynum=2&gallerysize=2 | Modern detail photographs | B | © HistoricBridges.org, all rights reserved | yes | B, **visual only** | 684 photographs, systematically shot, at up to 6000x4000. Reviewed in full by contact sheet on 2026-08-09; six examined at full size. **Not redistributed and not committed** — retrieved to a temporary directory outside the repository, read, and deleted. The gallery is almost entirely uncaptioned, so it makes no textual claim at all: it is pure visual detail. Observations in section 3. |
+| SRC-013 | Bridge commission dedication tablet, mounted on the structure | The bridge itself. Read from SRC-012 photographs `7699` and `7702` at 6000x4000 | Period primary, on-structure inscription | A | The inscription is a public monument text; the photographs of it are © HistoricBridges.org | yes | A for chronology, **none for geometry** | The bridge's own bronze tablet, naming both bridge commissions and their dates. A genuine period primary that has been read directly rather than through a citation — and it carries **no dimensions whatsoever**. Transcribed in section 3. |
 
 ### Sources that may not grade a dimension
 
@@ -218,6 +220,63 @@ be.** The observations are arrangement and material only:
 That last point is an observation, not a measurement, and it is used only to keep a conflict open —
 never to settle one. Eyeballing a frame is exactly the move `HOW-TO-DESIGN.md` §11 warns about.
 
+### SRC-012 — HistoricBridges.org gallery, what 684 photographs actually settled
+
+All 684 were reviewed by contact sheet; six were pulled at 6000x4000. The set is systematic and
+close-range — the underside of the side spans, the intermediate bents, truss connections, rivet
+patterns, railings, the transit bay with trains in it, ornamental ironwork. It is the best available
+material on **how this bridge is put together**. It is also uncaptioned, so it asserts nothing in
+words, and it carries no scale. Under STT-017 it grades no dimension.
+
+What it settles, and what it does not:
+
+- **The side spans are carried on multi-column steel lattice bents** standing on masonry footings,
+  with a deep riveted truss at deck level. Photographs `7051`, `7057` (from beneath, showing several
+  bents in a row) and `7066` (the deck truss in elevation) are unambiguous on this.
+- **This narrows CNF-013 but does not close it.** The deck-level structure is a truss, not an arch;
+  SRC-004 is right about that and SRC-010's "steel arches" is at best loose. There *is* arched portal
+  bracing within the bents, which may be what SRC-010's author had in mind. Recorded as a narrowing,
+  not a resolution.
+- **It does not answer OQ-003.** No single frame covers a side span end to end, so the number of
+  intermediate towers per side span still cannot be counted. Counting bents across several
+  photographs taken from different positions would be inventing a result.
+- **Material evidence is strong**: riveted steel latticework throughout, masonry footings under the
+  bents, and the approach viaduct visibly of the same construction. This is what raises MAT-013.
+- The stiffening truss is confirmed as painted dark red and the tower steel grey, matching SRC-011.
+
+### SRC-013 — the bridge's own dedication tablet, transcribed
+
+Read from SRC-012 photographs `7699` and `7702`, which between them cover the whole tablet. Square
+brackets mark text obscured by graffiti or falling outside the frame.
+
+> **FIRST COMMISSION**
+> APPOINTED JUNE 1895 ·
+> ANDREW D· BAIRD · PRES · SALEM H· WALES · VICE-PRES · LEWIS [NIXON]
+> FRANCIS B· THURBER · SEC'Y · RICHARD DEEVES · TREAS · SMITH E· [LANE]
+> JAMES A· SPERRY · HENRY BATTERMAN
+> W· L· STRONG · EX-OFFICIO
+> C· A· SCHIEREN · EX-OFFICIO · F· W· WURSTER · EX-OFFICIO
+>
+> **SECOND COMMISSION**
+> APPOINTED JAN· 19· 1898 ·
+> LEWIS NIXON · PRES · JAMES W· BOYLE · VICE-PRES ·
+> SMITH E· LANE · SEC'Y 1899 · JAMES D· BELL · SEC'Y 1901
+> JULIAN D· FAIRCHILD · TREASURER ·
+> JOHN W· WEBER · THOS· S· MOORE
+> R· A· VAN WYCK · EX-OFFICIO
+>
+> SECOND COMMISSION SUCCEEDED BY
+> DEPARTMENT OF BRIDGES OF NEW YORK JANUARY 1· 1902 ·
+
+**This is a period primary source read directly, and it grades nothing in this model.** It fixes
+three dates — the first commission June 1895, the second 19 January 1898, and the transfer to the
+Department of Bridges on 1 January 1902 — and names the men responsible. It states no dimension, no
+material and no arrangement. It is registered because it is the only primary this repository has
+read *on the structure itself*, and because it is a clean illustration of the rule: a Tier A source
+is not a dimension. Worth knowing for a future milestone: bridges of this period often carry a
+second tablet giving lengths and costs, and this one is mounted on the walkway trusswork where such
+a companion would be.
+
 ---
 
 ## 4. Verification queue
@@ -266,7 +325,7 @@ Conflicts are kept, not smoothed away. A model that hides source disagreement is
 | CNF-010 | Total construction cost | **$8 million** — SRC-001 | **$24.2 million "including land and approaches"** — SRC-010 | **Open** | Not used by any control. The qualifier probably explains most of the gap, and SRC-010 separately reports a $7 million initial estimate. Registered because a cost figure is the kind of number that gets quoted without its qualifier. |
 | CNF-011 | Main cable weight | **4,344 tons for the cables** — SRC-003 | **"each of the four 4,344-ton main cables"** — SRC-010 | **Open** | A factor of four apart, from the same number. SRC-003 lists it under "Weight of cables" for the bridge; SRC-010 attaches it to each cable. Not used by any control, but it is a clean example of why a figure is registered with its wording rather than as a bare quantity. |
 | CNF-012 | Total length of wire | **17,500 miles** — SRC-003, SRC-010 | **"Almost 19,000 mi of steel wire strands were manufactured"** — SRC-004 | **Settled by reading** | Not a contradiction: SRC-004 says *manufactured*, the others say installed in the cables. Registered so the difference is not later "corrected". |
-| CNF-013 | What supports the side spans | **"Steel arches, not the cables"** — SRC-010 | **Trusswork, carried on intermediate towers** — SRC-004 | **Open** | SRC-011 shows deep latticework of a form that could reasonably be described either way from the air. This matters more than it looks: it governs what the side-span geometry should actually be modelled as, and it is bound up with OQ-003. Nothing in the model depends on the answer yet, because no side-span structure is modelled beyond the deck chain. |
+| CNF-013 | What supports the side spans | **"Steel arches, not the cables"** — SRC-010 | **Trusswork, carried on intermediate towers** — SRC-004 | **Open, but narrowed toward SRC-004** | SRC-012 photographs `7051`, `7057` and `7066` show multi-column steel lattice bents on masonry footings carrying a deep riveted truss at deck level. The deck-level structure is a truss, not an arch. There is arched portal bracing *within* the bents, which may be what SRC-010's author meant, so the conflict is narrowed rather than closed. This matters because it governs what the side-span geometry should be modelled as, and it is bound up with OQ-003. Nothing in the model depends on the answer yet: no side-span structure is modelled beyond the deck chain. |
 | CNF-014 | What the 7,308 ft is measured between | **"including approaches"** — SRC-004; "Total length" — SRC-003 | **"total length between approaches"** — SRC-010 | **Open** | Two words, and they invert the meaning of a grade `A` control. CTL-002 keeps the "including approaches" reading, which two sources support against one, but this is direct evidence on OQ-006 and may be part of why the approach grade fails to reach street level. |
 
 ---
@@ -281,6 +340,8 @@ Conflicts are kept, not smoothed away. A model that hides source disagreement is
 | *(not committed)* | SRC-003 | © City of New York | Retrieved 2026-08-09 and read. The passages relied on are quoted verbatim in section 3; the page itself is not redistributed. |
 | *(not committed)* | SRC-010 | © historic-structures.com | Read 2026-08-09. Passages quoted in section 3 for commentary; the page is not redistributed. |
 | *(not committed)* | SRC-011 | © Alex Kane / Envato | **A watermarked stock preview for which no licence is held.** Neither the video nor any frame extracted from it is committed to this repository, and `.gitignore` excludes `sources/videos/`. Only the written observations in section 3 are retained. If this material is ever to be used beyond arrangement and material observations, licence it first. |
+| *(not committed)* | SRC-012 | © HistoricBridges.org, all rights reserved | 684 photographs retrieved on 2026-08-09 to a temporary directory **outside this repository**, reviewed by contact sheet, six examined at full size, and then deleted. Nothing from this source is committed, served or republished. Only the written observations in section 3 are retained. `.gitignore` excludes `sources/photos/` and `sources/videos/` so a copy cannot be added by accident. |
+| *(not committed)* | SRC-013 | Inscription text transcribed here; the photographs read from are © HistoricBridges.org | The transcription in section 3 is this repository's own work from those photographs. No photograph of the tablet is committed. |
 | *(not committed)* | SRC-006 | © City of New York | 28 MB. Retrieved, searched, and found to carry no span geometry. Re-fetch from the URL rather than committing it. |
 
 No mesh, photogrammetry, video or marketplace asset has been ingested. `sources/existing-meshes/`,
