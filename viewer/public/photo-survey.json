@@ -1,0 +1,1724 @@
+{
+ "contract_version": "1.0.0",
+ "module_id": "williamsburg-bridge-3d",
+ "campaign": {
+  "campaign_id": "williamsburg-bridge-3d-photo-survey",
+  "title": "Williamsburg Bridge \u2014 vertical arrangement evidence"
+ },
+ "observations": [
+  {
+   "observation_id": "obs-03cf18ad46c9",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Domino_Sugar_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Domino_Sugar_-_panoramio.jpg/1280px-Domino_Sugar_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "exif_gps",
+   "captured_precision": "day",
+   "license": "CC-BY-3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "attribution_text": "kajikawa (Creative Commons Attribution 3.0)",
+   "rights_holder": "kajikawa",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: cable_profile, anchorage.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:Domino Sugar - panoramio.jpg | https://commons.wikimedia.org/wiki/File:Domino_Sugar_-_panoramio.jpg",
+   "position": {
+    "lon": -73.97158051,
+    "lat": 40.71348953
+   },
+   "captured_at": "2007-09-21",
+   "categories": [
+    "cable_profile",
+    "anchorage"
+   ],
+   "category": "cable_profile",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "member_arrangement"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-03d7604f3b1a",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Jews_praying_on_Williamsburg_Bridge%2C_New_York_City%2C_on_New_Year%27s_Day_LCCN90709368.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Jews_praying_on_Williamsburg_Bridge%2C_New_York_City%2C_on_New_Year%27s_Day_LCCN90709368.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "position_source": "unknown",
+   "captured_precision": "year",
+   "license": "public-domain",
+   "attribution_text": "George Grantham Bain Collection (Public domain)",
+   "rights_holder": "George Grantham Bain Collection",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: historic.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:Jews praying on Williamsburg Bridge, New York City, on New Year's Day LCCN90709368.jpg | https://commons.wikimedia.org/wiki/File:Jews_praying_on_Williamsburg_Bridge,_New_York_City,_on_New_Year%27s_Day_LCCN90709368.jpg",
+   "captured_at": "1909",
+   "categories": [
+    "historic"
+   ],
+   "category": "historic",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "fitting_existence"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-06ed6fc1b73e",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Mapillary_%28a3_XsPSEXRWmtreEiLQQhA%29_%28mdroads%29_2017-11-25_18H44M24S176.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Mapillary_%28a3_XsPSEXRWmtreEiLQQhA%29_%28mdroads%29_2017-11-25_18H44M24S176.jpg/1280px-Mapillary_%28a3_XsPSEXRWmtreEiLQQhA%29_%28mdroads%29_2017-11-25_18H44M24S176.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "day",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "attribution_text": "mdroads (Creative Commons Attribution-ShareAlike 4.0)",
+   "rights_holder": "mdroads",
+   "usage": "derive_appearance",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: material.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:Mapillary (a3 XsPSEXRWmtreEiLQQhA) (mdroads) 2017-11-25 18H44M24S176.jpg | https://commons.wikimedia.org/wiki/File:Mapillary_(a3_XsPSEXRWmtreEiLQQhA)_(mdroads)_2017-11-25_18H44M24S176.jpg",
+   "captured_at": "2017-11-25",
+   "categories": [
+    "material"
+   ],
+   "category": "material",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "surface_material"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-08295c604db3",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Manhattan%2C_New_York%2C_NY%2C_USA_-_panoramio_-_Sergei_Gussev_%2823%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Manhattan%2C_New_York%2C_NY%2C_USA_-_panoramio_-_Sergei_Gussev_%2823%29.jpg/1280px-Manhattan%2C_New_York%2C_NY%2C_USA_-_panoramio_-_Sergei_Gussev_%2823%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "exif_gps",
+   "captured_precision": "year",
+   "license": "CC-BY-3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "attribution_text": "Sergei Gussev (Creative Commons Attribution 3.0)",
+   "rights_holder": "Sergei Gussev",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: saddle, cable_cradling, material.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:Manhattan, New York, NY, USA - panoramio - Sergei Gussev (23).jpg | https://commons.wikimedia.org/wiki/File:Manhattan,_New_York,_NY,_USA_-_panoramio_-_Sergei_Gussev_(23).jpg",
+   "position": {
+    "lon": -73.970261,
+    "lat": 40.712986
+   },
+   "captured_at": "2016",
+   "categories": [
+    "saddle",
+    "cable_cradling",
+    "material"
+   ],
+   "category": "saddle",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "member_arrangement",
+      "surface_material"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-094d5ee127f3",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/East_River_Park_td_%282025-11-21%29_016f_-_Delancey_Street_Bridge%2C_Basketball_Courts.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/East_River_Park_td_%282025-11-21%29_016f_-_Delancey_Street_Bridge%2C_Basketball_Courts.jpg/1280px-East_River_Park_td_%282025-11-21%29_016f_-_Delancey_Street_Bridge%2C_Basketball_Courts.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "exact",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "attribution_text": "Tdorante10 (Creative Commons Attribution-ShareAlike 4.0)",
+   "rights_holder": "Tdorante10",
+   "usage": "derive_appearance",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: anchorage, material.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:East River Park td (2025-11-21) 016f - Delancey Street Bridge, Basketball Courts.jpg | https://commons.wikimedia.org/wiki/File:East_River_Park_td_(2025-11-21)_016f_-_Delancey_Street_Bridge,_Basketball_Courts.jpg",
+   "captured_at": "2025-11-21T15:14:40",
+   "categories": [
+    "anchorage",
+    "material"
+   ],
+   "category": "anchorage",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "member_arrangement",
+      "surface_material"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-0971312f0d97",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/New_York_City_-_-i---i-_%2829922613005%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/New_York_City_-_-i---i-_%2829922613005%29.jpg/1280px-New_York_City_-_-i---i-_%2829922613005%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "day",
+   "license": "CC-BY-2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "attribution_text": "Sergei Gussev (Creative Commons Attribution 2.0)",
+   "rights_holder": "Sergei Gussev",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: material.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:New York City - -i---i- (29922613005).jpg | https://commons.wikimedia.org/wiki/File:New_York_City_-_-i---i-_(29922613005).jpg",
+   "captured_at": "2016-09-24",
+   "categories": [
+    "material"
+   ],
+   "category": "material",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "surface_material"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-0d8561c716c6",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/12D_-_N.Y._City_%28Aerial_Set%29._NYPL1532605.tiff?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/12D_-_N.Y._City_%28Aerial_Set%29._NYPL1532605.tiff/lossy-page1-1280px-12D_-_N.Y._City_%28Aerial_Set%29._NYPL1532605.tiff.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "year",
+   "license": "CC0-1.0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "attribution_text": "Fairchild Aerial Camera Corporation -- Photographer ;Tuttle, Arthur S. (Arthur Smith), 1865-1949  -- Engineer; New York (N.Y.). Bureau of Engineering -- Author (CC0 1.0 Universal)",
+   "rights_holder": "Fairchild Aerial Camera Corporation -- Photographer ;Tuttle, Arthur S. (Arthur Smith), 1865-1949  -- Engineer; New York (N.Y.). Bureau of Engineering -- Author",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: context.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:12D - N.Y. City (Aerial Set). NYPL1532605.tiff | https://commons.wikimedia.org/wiki/File:12D_-_N.Y._City_(Aerial_Set)._NYPL1532605.tiff",
+   "captured_at": "1924",
+   "categories": [
+    "context"
+   ],
+   "category": "context",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "other"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-0dcb31884d44",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Manhattan%2C_New_York%2C_NY%2C_USA_-_panoramio_-_Sergei_Gussev_%2824%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Manhattan%2C_New_York%2C_NY%2C_USA_-_panoramio_-_Sergei_Gussev_%2824%29.jpg/1280px-Manhattan%2C_New_York%2C_NY%2C_USA_-_panoramio_-_Sergei_Gussev_%2824%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "exif_gps",
+   "captured_precision": "year",
+   "license": "CC-BY-3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "attribution_text": "Sergei Gussev (Creative Commons Attribution 3.0)",
+   "rights_holder": "Sergei Gussev",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: material.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:Manhattan, New York, NY, USA - panoramio - Sergei Gussev (24).jpg | https://commons.wikimedia.org/wiki/File:Manhattan,_New_York,_NY,_USA_-_panoramio_-_Sergei_Gussev_(24).jpg",
+   "position": {
+    "lon": -73.969506,
+    "lat": 40.7128
+   },
+   "captured_at": "2016",
+   "categories": [
+    "material"
+   ],
+   "category": "material",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "surface_material"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-0df0d6604e82",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Mapillary_%28a3_XsPSEXRWmtreEiLQQhA%29_%28mdroads%29_2017-11-25_18H44M20S167.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Mapillary_%28a3_XsPSEXRWmtreEiLQQhA%29_%28mdroads%29_2017-11-25_18H44M20S167.jpg/1280px-Mapillary_%28a3_XsPSEXRWmtreEiLQQhA%29_%28mdroads%29_2017-11-25_18H44M20S167.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "day",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "attribution_text": "mdroads (Creative Commons Attribution-ShareAlike 4.0)",
+   "rights_holder": "mdroads",
+   "usage": "derive_appearance",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: material.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:Mapillary (a3 XsPSEXRWmtreEiLQQhA) (mdroads) 2017-11-25 18H44M20S167.jpg | https://commons.wikimedia.org/wiki/File:Mapillary_(a3_XsPSEXRWmtreEiLQQhA)_(mdroads)_2017-11-25_18H44M20S167.jpg",
+   "captured_at": "2017-11-25",
+   "categories": [
+    "material"
+   ],
+   "category": "material",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "surface_material"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-0e292df24e33",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Mapillary_%28a3_XsPSEXRWmtreEiLQQhA%29_%28mdroads%29_2017-11-25_18H44M21S193.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Mapillary_%28a3_XsPSEXRWmtreEiLQQhA%29_%28mdroads%29_2017-11-25_18H44M21S193.jpg/1280px-Mapillary_%28a3_XsPSEXRWmtreEiLQQhA%29_%28mdroads%29_2017-11-25_18H44M21S193.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "day",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "attribution_text": "mdroads (Creative Commons Attribution-ShareAlike 4.0)",
+   "rights_holder": "mdroads",
+   "usage": "derive_appearance",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: material.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:Mapillary (a3 XsPSEXRWmtreEiLQQhA) (mdroads) 2017-11-25 18H44M21S193.jpg | https://commons.wikimedia.org/wiki/File:Mapillary_(a3_XsPSEXRWmtreEiLQQhA)_(mdroads)_2017-11-25_18H44M21S193.jpg",
+   "captured_at": "2017-11-25",
+   "categories": [
+    "material"
+   ],
+   "category": "material",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "surface_material"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-10564c0eb233",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Williamsburg_Bridge_-_after_fire_-_1903_newspaper.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Williamsburg_Bridge_-_after_fire_-_1903_newspaper.jpg/1280px-Williamsburg_Bridge_-_after_fire_-_1903_newspaper.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "day",
+   "license": "public-domain",
+   "attribution_text": "new york tribune (Public domain)",
+   "rights_holder": "new york tribune",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: historic.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:Williamsburg Bridge - after fire - 1903 newspaper.jpg | https://commons.wikimedia.org/wiki/File:Williamsburg_Bridge_-_after_fire_-_1903_newspaper.jpg",
+   "captured_at": "1903-12-06",
+   "categories": [
+    "historic"
+   ],
+   "category": "historic",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "fitting_existence"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-19f4eec4050c",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/New_York_City_-_-i---i-_%2829295348464%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/New_York_City_-_-i---i-_%2829295348464%29.jpg/1280px-New_York_City_-_-i---i-_%2829295348464%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "day",
+   "license": "CC-BY-2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "attribution_text": "Sergei Gussev (Creative Commons Attribution 2.0)",
+   "rights_holder": "Sergei Gussev",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: saddle, material.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:New York City - -i---i- (29295348464).jpg | https://commons.wikimedia.org/wiki/File:New_York_City_-_-i---i-_(29295348464).jpg",
+   "captured_at": "2016-09-24",
+   "categories": [
+    "saddle",
+    "material"
+   ],
+   "category": "saddle",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "member_arrangement",
+      "surface_material"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-1c97d038b0c0",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/New_steel_power_bridge_...._From_Manhattan_E._to_Brooklyn%2C_from_Robert_N._Dennis_collection_of_stereoscopic_views.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/New_steel_power_bridge_...._From_Manhattan_E._to_Brooklyn%2C_from_Robert_N._Dennis_collection_of_stereoscopic_views.jpg/1280px-New_steel_power_bridge_...._From_Manhattan_E._to_Brooklyn%2C_from_Robert_N._Dennis_collection_of_stereoscopic_views.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "year",
+   "license": "public-domain",
+   "attribution_text": "Unknown artistUnknown artist (Public domain)",
+   "rights_holder": "Unknown artistUnknown artist",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: historic.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:New steel power bridge .... From Manhattan E. to Brooklyn, from Robert N. Dennis collection of stereoscopic views.jpg | https://commons.wikimedia.org/wiki/File:New_steel_power_bridge_...._From_Manhattan_E._to_Brooklyn,_from_Robert_N._Dennis_collection_of_stereoscopic_views.jpg",
+   "captured_at": "1858",
+   "categories": [
+    "historic"
+   ],
+   "category": "historic",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "fitting_existence"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-1d11d54b5b9c",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Lower_East_Side%2C_New_York%2C_NY%2C_USA_-_panoramio_-_Sergei_Gussev_%2823%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Lower_East_Side%2C_New_York%2C_NY%2C_USA_-_panoramio_-_Sergei_Gussev_%2823%29.jpg/1280px-Lower_East_Side%2C_New_York%2C_NY%2C_USA_-_panoramio_-_Sergei_Gussev_%2823%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "exif_gps",
+   "captured_precision": "year",
+   "license": "CC-BY-3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "attribution_text": "Sergei Gussev (Creative Commons Attribution 3.0)",
+   "rights_holder": "Sergei Gussev",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: saddle, material.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:Lower East Side, New York, NY, USA - panoramio - Sergei Gussev (23).jpg | https://commons.wikimedia.org/wiki/File:Lower_East_Side,_New_York,_NY,_USA_-_panoramio_-_Sergei_Gussev_(23).jpg",
+   "position": {
+    "lon": -73.97515,
+    "lat": 40.714481
+   },
+   "captured_at": "2016",
+   "categories": [
+    "saddle",
+    "material"
+   ],
+   "category": "saddle",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "member_arrangement",
+      "surface_material"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-1ef3032cda27",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/New_East_River_Bridge_from_Brooklyn_det.4a09796u.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/New_East_River_Bridge_from_Brooklyn_det.4a09796u.jpg/1280px-New_East_River_Bridge_from_Brooklyn_det.4a09796u.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "exif_gps",
+   "captured_precision": "exact",
+   "license": "public-domain",
+   "attribution_text": "Detroit Publishing Co.w, publisher. (Public domain)",
+   "rights_holder": "Detroit Publishing Co.w, publisher.",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: historic.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:New East River Bridge from Brooklyn det.4a09796u.jpg | https://commons.wikimedia.org/wiki/File:New_East_River_Bridge_from_Brooklyn_det.4a09796u.jpg",
+   "position": {
+    "lon": -73.9675,
+    "lat": 40.71171667
+   },
+   "captured_at": "1900-00-00T00:00:00",
+   "categories": [
+    "historic"
+   ],
+   "category": "historic",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "fitting_existence"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-214573eff813",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/35/NY_Williamsburg_A.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/NY_Williamsburg_A.JPG/1280px-NY_Williamsburg_A.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "exact",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "attribution_text": "Bjoertvedt (Creative Commons Attribution-ShareAlike 4.0)",
+   "rights_holder": "Bjoertvedt",
+   "usage": "derive_appearance",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "auto_screened",
+    "notes": "Harvested for 'bridge_elevation'. No person has looked at this yet."
+   },
+   "notes": "File:NY Williamsburg A.JPG | https://commons.wikimedia.org/wiki/File:NY_Williamsburg_A.JPG",
+   "captured_at": "2013-10-06T13:18:45"
+  },
+  {
+   "observation_id": "obs-26c4594766aa",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/2016_One_World_Observatory_view_east_of_Williamsburg_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/2016_One_World_Observatory_view_east_of_Williamsburg_Bridge.jpg/1280px-2016_One_World_Observatory_view_east_of_Williamsburg_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "exif_gps",
+   "captured_precision": "day",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "attribution_text": "Beyond My Ken (Creative Commons Attribution-ShareAlike 4.0)",
+   "rights_holder": "Beyond My Ken",
+   "usage": "derive_appearance",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: cable_cradling, cable_profile.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:2016 One World Observatory view east of Williamsburg Bridge.jpg | https://commons.wikimedia.org/wiki/File:2016_One_World_Observatory_view_east_of_Williamsburg_Bridge.jpg",
+   "position": {
+    "lon": -74.013204,
+    "lat": 40.712995
+   },
+   "captured_at": "2016-02-18",
+   "categories": [
+    "cable_cradling",
+    "cable_profile"
+   ],
+   "category": "cable_cradling",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "member_arrangement"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-2998cfc808aa",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Manhattan_and_Williamsburg_Bridges_from_East_River_02_%289443067618%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Manhattan_and_Williamsburg_Bridges_from_East_River_02_%289443067618%29.jpg/1280px-Manhattan_and_Williamsburg_Bridges_from_East_River_02_%289443067618%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "day",
+   "license": "CC-BY-SA-3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "attribution_text": "Joe Mabel (on Flickr as Joe Mabel from Seattle, US) (Creative Commons Attribution-ShareAlike 3.0)",
+   "rights_holder": "Joe Mabel (on Flickr as Joe Mabel from Seattle, US)",
+   "usage": "derive_appearance",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: cable_cradling.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:Manhattan and Williamsburg Bridges from East River 02 (9443067618).jpg | https://commons.wikimedia.org/wiki/File:Manhattan_and_Williamsburg_Bridges_from_East_River_02_(9443067618).jpg",
+   "captured_at": "2013-07-30",
+   "categories": [
+    "cable_cradling"
+   ],
+   "category": "cable_cradling",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "member_arrangement"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-2ef72cc3007e",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Upload_%288118145540%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Upload_%288118145540%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "position_source": "exif_gps",
+   "captured_precision": "exact",
+   "license": "CC-BY-2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "attribution_text": "Alec Perkins from Hoboken, USA (Creative Commons Attribution 2.0)",
+   "rights_holder": "Alec Perkins from Hoboken, USA",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: historic.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:Upload (8118145540).jpg | https://commons.wikimedia.org/wiki/File:Upload_(8118145540).jpg",
+   "position": {
+    "lon": -73.972363,
+    "lat": 40.713565
+   },
+   "captured_at": "2012-10-24T00:34",
+   "categories": [
+    "historic"
+   ],
+   "category": "historic",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "fitting_existence"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-2f770c914ce7",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/02/East_River_Park_td_%282025-11-21%29_044_-_Delancey_Street_Basketball_Courts.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/East_River_Park_td_%282025-11-21%29_044_-_Delancey_Street_Basketball_Courts.jpg/1280px-East_River_Park_td_%282025-11-21%29_044_-_Delancey_Street_Basketball_Courts.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "exact",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "attribution_text": "Tdorante10 (Creative Commons Attribution-ShareAlike 4.0)",
+   "rights_holder": "Tdorante10",
+   "usage": "derive_appearance",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: anchorage.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:East River Park td (2025-11-21) 044 - Delancey Street Basketball Courts.jpg | https://commons.wikimedia.org/wiki/File:East_River_Park_td_(2025-11-21)_044_-_Delancey_Street_Basketball_Courts.jpg",
+   "captured_at": "2025-11-21T15:48:30",
+   "categories": [
+    "anchorage"
+   ],
+   "category": "anchorage",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "member_arrangement"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-300088b8a520",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Williamsburg_Bridge_from_Brooklyn.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Williamsburg_Bridge_from_Brooklyn.png/1280px-Williamsburg_Bridge_from_Brooklyn.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "exact",
+   "license": "public-domain",
+   "attribution_text": "Detroit Publishing Company Photograph Collection (Public domain)",
+   "rights_holder": "Detroit Publishing Company Photograph Collection",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: historic.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:Williamsburg Bridge from Brooklyn.png | https://commons.wikimedia.org/wiki/File:Williamsburg_Bridge_from_Brooklyn.png",
+   "captured_at": "1900-00-00T00:00:00",
+   "categories": [
+    "historic"
+   ],
+   "category": "historic",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "fitting_existence"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-346feaca187c",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/New_York_City-_East_River_Bridge_LCCN2003678102.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/New_York_City-_East_River_Bridge_LCCN2003678102.jpg/1280px-New_York_City-_East_River_Bridge_LCCN2003678102.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "year",
+   "license": "public-domain",
+   "attribution_text": "Miscellaneous Items in High Demand, PPOC, Library of Congress (Public domain)",
+   "rights_holder": "Miscellaneous Items in High Demand, PPOC, Library of Congress",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: historic.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:New York City- East River Bridge LCCN2003678102.jpg | https://commons.wikimedia.org/wiki/File:New_York_City-_East_River_Bridge_LCCN2003678102.jpg",
+   "captured_at": "1903",
+   "categories": [
+    "historic"
+   ],
+   "category": "historic",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "fitting_existence"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-3736068d837c",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/New_Bridge_over_the_East_River_in_course_of_construction%2C_New_York_%28NYPL_b11708041-G91F188_058F%29.tiff?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/New_Bridge_over_the_East_River_in_course_of_construction%2C_New_York_%28NYPL_b11708041-G91F188_058F%29.tiff/lossy-page1-1280px-New_Bridge_over_the_East_River_in_course_of_construction%2C_New_York_%28NYPL_b11708041-G91F188_058F%29.tiff.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "exact",
+   "license": "public-domain",
+   "attribution_text": "Scan by NYPL (Public domain)",
+   "rights_holder": "Scan by NYPL",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: historic.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:New Bridge over the East River in course of construction, New York (NYPL b11708041-G91F188 058F).tiff | https://commons.wikimedia.org/wiki/File:New_Bridge_over_the_East_River_in_course_of_construction,_New_York_(NYPL_b11708041-G91F188_058F).tiff",
+   "captured_at": "2016-07-11T06:04:44",
+   "categories": [
+    "historic"
+   ],
+   "category": "historic",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "fitting_existence"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-379198a71547",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Above_Williamsburg_Bridge_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Above_Williamsburg_Bridge_crop.jpg/1280px-Above_Williamsburg_Bridge_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "day",
+   "license": "public-domain",
+   "attribution_text": "Sullynyflhi; cropped by Beyond My Ken (talk) 05:50, 16 October 2010 (UTC) (Public domain)",
+   "rights_holder": "Sullynyflhi; cropped by Beyond My Ken (talk) 05:50, 16 October 2010 (UTC)",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: cable_profile.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:Above Williamsburg Bridge crop.jpg | https://commons.wikimedia.org/wiki/File:Above_Williamsburg_Bridge_crop.jpg",
+   "captured_at": "2007-05-22",
+   "categories": [
+    "cable_profile"
+   ],
+   "category": "cable_profile",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "member_arrangement"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-3ee2854aa7fa",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/East_River_Park_td_%282025-11-21%29_063_-_Delancey_Street_Basketball_Courts%2C_Williamsburg_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/East_River_Park_td_%282025-11-21%29_063_-_Delancey_Street_Basketball_Courts%2C_Williamsburg_Bridge.jpg/1280px-East_River_Park_td_%282025-11-21%29_063_-_Delancey_Street_Basketball_Courts%2C_Williamsburg_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "exact",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "attribution_text": "Tdorante10 (Creative Commons Attribution-ShareAlike 4.0)",
+   "rights_holder": "Tdorante10",
+   "usage": "derive_appearance",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: context.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:East River Park td (2025-11-21) 063 - Delancey Street Basketball Courts, Williamsburg Bridge.jpg | https://commons.wikimedia.org/wiki/File:East_River_Park_td_(2025-11-21)_063_-_Delancey_Street_Basketball_Courts,_Williamsburg_Bridge.jpg",
+   "captured_at": "2025-11-21T16:56:59",
+   "categories": [
+    "context"
+   ],
+   "category": "context",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "other"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-560abba85779",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Above_Williamsburg_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Above_Williamsburg_Bridge.jpg/1280px-Above_Williamsburg_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "day",
+   "license": "public-domain",
+   "attribution_text": "Sullynyflhi (Public domain)",
+   "rights_holder": "Sullynyflhi",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: cable_profile.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:Above Williamsburg Bridge.jpg | https://commons.wikimedia.org/wiki/File:Above_Williamsburg_Bridge.jpg",
+   "captured_at": "2007-05-22",
+   "categories": [
+    "cable_profile"
+   ],
+   "category": "cable_profile",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "member_arrangement"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-6223caf9a9ca",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Williamsburg_Bridge_%286215384497%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Williamsburg_Bridge_%286215384497%29.jpg/1280px-Williamsburg_Bridge_%286215384497%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "exif_gps",
+   "captured_precision": "exact",
+   "license": "CC-BY-2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "attribution_text": "Tony Hisgett from Birmingham, UK (Creative Commons Attribution 2.0)",
+   "rights_holder": "Tony Hisgett from Birmingham, UK",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "auto_screened",
+    "notes": "Harvested for 'area_geosearch'. No person has looked at this yet."
+   },
+   "notes": "File:Williamsburg Bridge (6215384497).jpg | https://commons.wikimedia.org/wiki/File:Williamsburg_Bridge_(6215384497).jpg",
+   "position": {
+    "lon": -73.973243,
+    "lat": 40.713988
+   },
+   "captured_at": "2011-09-16T13:19"
+  },
+  {
+   "observation_id": "obs-628777ff7f80",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/18/M_on_Williamsburg_Bridge_vc.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/M_on_Williamsburg_Bridge_vc.jpg/1280px-M_on_Williamsburg_Bridge_vc.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "exact",
+   "license": "CC-BY-2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "attribution_text": "David Wilson from Oak Park, Illinois, USA (Creative Commons Attribution 2.0)",
+   "rights_holder": "David Wilson from Oak Park, Illinois, USA",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "auto_screened",
+    "notes": "Harvested for 'area_geosearch'. No person has looked at this yet."
+   },
+   "notes": "File:M on Williamsburg Bridge vc.jpg | https://commons.wikimedia.org/wiki/File:M_on_Williamsburg_Bridge_vc.jpg",
+   "captured_at": "2022-05-25T08:44"
+  },
+  {
+   "observation_id": "obs-663021032ed0",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/East_River_Park_td_%282025-11-21%29_015b_-_Delancey_Street_Bridge%2C_Basketball_Courts.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/East_River_Park_td_%282025-11-21%29_015b_-_Delancey_Street_Bridge%2C_Basketball_Courts.jpg/1280px-East_River_Park_td_%282025-11-21%29_015b_-_Delancey_Street_Bridge%2C_Basketball_Courts.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "exif_gps",
+   "captured_precision": "exact",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "attribution_text": "Tdorante10 (Creative Commons Attribution-ShareAlike 4.0)",
+   "rights_holder": "Tdorante10",
+   "usage": "derive_appearance",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: truss.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:East River Park td (2025-11-21) 015b - Delancey Street Bridge, Basketball Courts.jpg | https://commons.wikimedia.org/wiki/File:East_River_Park_td_(2025-11-21)_015b_-_Delancey_Street_Bridge,_Basketball_Courts.jpg",
+   "position": {
+    "lon": -73.976111,
+    "lat": 40.714167
+   },
+   "captured_at": "2025-11-21T15:14:39",
+   "categories": [
+    "truss"
+   ],
+   "category": "truss",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "member_arrangement"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-6ba19da166ec",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/61/New_East_River_Bridge%2C_1903.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/New_East_River_Bridge%2C_1903.jpg/1280px-New_East_River_Bridge%2C_1903.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "year",
+   "license": "public-domain",
+   "attribution_text": "Unknown authorUnknown author (Public domain)",
+   "rights_holder": "Unknown authorUnknown author",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: historic.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:New East River Bridge, 1903.jpg | https://commons.wikimedia.org/wiki/File:New_East_River_Bridge,_1903.jpg",
+   "captured_at": "1903",
+   "categories": [
+    "historic"
+   ],
+   "category": "historic",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "fitting_existence"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-6d164725f4af",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Williamsburg_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Williamsburg_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "position_source": "unknown",
+   "captured_precision": "year",
+   "license": "public-domain",
+   "attribution_text": "Unknown authorUnknown author (Public domain)",
+   "rights_holder": "Unknown authorUnknown author",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: historic.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:Williamsburg Bridge.jpg | https://commons.wikimedia.org/wiki/File:Williamsburg_Bridge.jpg",
+   "captured_at": "1902",
+   "categories": [
+    "historic"
+   ],
+   "category": "historic",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "fitting_existence"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-82405bd22a67",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Williamsburg_Bridge_Tower_%2851306379554%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Williamsburg_Bridge_Tower_%2851306379554%29.jpg/1280px-Williamsburg_Bridge_Tower_%2851306379554%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "exact",
+   "license": "CC-BY-2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "attribution_text": "Eden, Janine and Jim from New York City (Creative Commons Attribution 2.0)",
+   "rights_holder": "Eden, Janine and Jim from New York City",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: material, saddle.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:Williamsburg Bridge Tower (51306379554).jpg | https://commons.wikimedia.org/wiki/File:Williamsburg_Bridge_Tower_(51306379554).jpg",
+   "captured_at": "2021-07-11T19:35",
+   "categories": [
+    "material",
+    "saddle"
+   ],
+   "category": "material",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "member_arrangement",
+      "surface_material"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-843be3332b59",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Williamsburg_Bridge%2C_New_York_City%2C_20231001_1055_0985.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Williamsburg_Bridge%2C_New_York_City%2C_20231001_1055_0985.jpg/1280px-Williamsburg_Bridge%2C_New_York_City%2C_20231001_1055_0985.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "exact",
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "attribution_text": "Jakub Ha\u0142un (Creative Commons Attribution 4.0)",
+   "rights_holder": "Jakub Ha\u0142un",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: cable_profile, cable_cradling.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:Williamsburg Bridge, New York City, 20231001 1055 0985.jpg | https://commons.wikimedia.org/wiki/File:Williamsburg_Bridge,_New_York_City,_20231001_1055_0985.jpg",
+   "captured_at": "2023-10-01T10:55:23",
+   "categories": [
+    "cable_profile",
+    "cable_cradling"
+   ],
+   "category": "cable_profile",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "member_arrangement"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-88aa1475f014",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Williamsburg_Bridge_%2822300964668%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Williamsburg_Bridge_%2822300964668%29.jpg/1280px-Williamsburg_Bridge_%2822300964668%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "exact",
+   "license": "CC-BY-2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "attribution_text": "Mika Stetsovski (Creative Commons Attribution 2.0)",
+   "rights_holder": "Mika Stetsovski",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: saddle.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:Williamsburg Bridge (22300964668).jpg | https://commons.wikimedia.org/wiki/File:Williamsburg_Bridge_(22300964668).jpg",
+   "captured_at": "2015-10-26T14:49",
+   "categories": [
+    "saddle"
+   ],
+   "category": "saddle",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "member_arrangement"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-913e0ad53fb2",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/LOOKING_NORTH_TO_LOWER_MANHATTAN._BROOKLYN_IN_THE_FOREGROUND._WILLIAMSBURG_BRIDGE_CROSSES_EAST_RIVER_FROM_BROOKLYN..._-_NARA_-_548320.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/LOOKING_NORTH_TO_LOWER_MANHATTAN._BROOKLYN_IN_THE_FOREGROUND._WILLIAMSBURG_BRIDGE_CROSSES_EAST_RIVER_FROM_BROOKLYN..._-_NARA_-_548320.jpg/1280px-LOOKING_NORTH_TO_LOWER_MANHATTAN._BROOKLYN_IN_THE_FOREGROUND._WILLIAMSBURG_BRIDGE_CROSSES_EAST_RIVER_FROM_BROOKLYN..._-_NARA_-_548320.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "exact",
+   "license": "public-domain",
+   "attribution_text": "Chester Higgins, Jr. (Public domain)",
+   "rights_holder": "Chester Higgins, Jr.",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: historic.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:LOOKING NORTH TO LOWER MANHATTAN. BROOKLYN IN THE FOREGROUND. WILLIAMSBURG BRIDGE CROSSES EAST RIVER FROM BROOKLYN... - NARA - 548320.jpg | https://commons.wikimedia.org/wiki/File:LOOKING_NORTH_TO_LOWER_MANHATTAN._BROOKLYN_IN_THE_FOREGROUND._WILLIAMSBURG_BRIDGE_CROSSES_EAST_RIVER_FROM_BROOKLYN..._-_NARA_-_548320.jpg",
+   "captured_at": "1973-05-00T00:00:00",
+   "categories": [
+    "historic"
+   ],
+   "category": "historic",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "fitting_existence"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-9b893e95d484",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Williamsburg_Bridge_-_making_center_section_-_1903_newspaper.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Williamsburg_Bridge_-_making_center_section_-_1903_newspaper.jpg/1280px-Williamsburg_Bridge_-_making_center_section_-_1903_newspaper.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "day",
+   "license": "public-domain",
+   "attribution_text": "new york tribune (Public domain)",
+   "rights_holder": "new york tribune",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: historic.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:Williamsburg Bridge - making center section - 1903 newspaper.jpg | https://commons.wikimedia.org/wiki/File:Williamsburg_Bridge_-_making_center_section_-_1903_newspaper.jpg",
+   "captured_at": "1903-12-06",
+   "categories": [
+    "historic"
+   ],
+   "category": "historic",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "fitting_existence"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-a17353dfb690",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Williamsburg_Bridge%2C_New_York_City%2C_20231001_1054_0981.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Williamsburg_Bridge%2C_New_York_City%2C_20231001_1054_0981.jpg/1280px-Williamsburg_Bridge%2C_New_York_City%2C_20231001_1054_0981.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "exact",
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "attribution_text": "Jakub Ha\u0142un (Creative Commons Attribution 4.0)",
+   "rights_holder": "Jakub Ha\u0142un",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: cable_profile, cable_cradling.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:Williamsburg Bridge, New York City, 20231001 1054 0981.jpg | https://commons.wikimedia.org/wiki/File:Williamsburg_Bridge,_New_York_City,_20231001_1054_0981.jpg",
+   "captured_at": "2023-10-01T10:54:36",
+   "categories": [
+    "cable_profile",
+    "cable_cradling"
+   ],
+   "category": "cable_profile",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "member_arrangement"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-a2db59cf7f2b",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/East_River_Park_td_%282025-11-21%29_051_-_Delancey_Street_Basketball_Courts.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/East_River_Park_td_%282025-11-21%29_051_-_Delancey_Street_Basketball_Courts.jpg/1280px-East_River_Park_td_%282025-11-21%29_051_-_Delancey_Street_Basketball_Courts.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "exact",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "attribution_text": "Tdorante10 (Creative Commons Attribution-ShareAlike 4.0)",
+   "rights_holder": "Tdorante10",
+   "usage": "derive_appearance",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: material.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:East River Park td (2025-11-21) 051 - Delancey Street Basketball Courts.jpg | https://commons.wikimedia.org/wiki/File:East_River_Park_td_(2025-11-21)_051_-_Delancey_Street_Basketball_Courts.jpg",
+   "captured_at": "2025-11-21T16:34:12",
+   "categories": [
+    "material"
+   ],
+   "category": "material",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "surface_material"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-a941a59ba34a",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Williamsburg_Bridge_June_2022_006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Williamsburg_Bridge_June_2022_006.jpg/1280px-Williamsburg_Bridge_June_2022_006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "exif_gps",
+   "captured_precision": "exact",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "attribution_text": "Kidfly182 (Creative Commons Attribution-ShareAlike 4.0)",
+   "rights_holder": "Kidfly182",
+   "usage": "derive_appearance",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: material.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:Williamsburg Bridge June 2022 006.jpg | https://commons.wikimedia.org/wiki/File:Williamsburg_Bridge_June_2022_006.jpg",
+   "position": {
+    "lon": -73.968042,
+    "lat": 40.712986
+   },
+   "captured_at": "2022-06-28T13:39:22",
+   "categories": [
+    "material"
+   ],
+   "category": "material",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "surface_material"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-a986c38811ba",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Williamsburg_Bridge_2_%286215925482%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Williamsburg_Bridge_2_%286215925482%29.jpg/1280px-Williamsburg_Bridge_2_%286215925482%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "exif_gps",
+   "captured_precision": "exact",
+   "license": "CC-BY-2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "attribution_text": "Tony Hisgett from Birmingham, UK (Creative Commons Attribution 2.0)",
+   "rights_holder": "Tony Hisgett from Birmingham, UK",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: cable_profile, cable_cradling.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:Williamsburg Bridge 2 (6215925482).jpg | https://commons.wikimedia.org/wiki/File:Williamsburg_Bridge_2_(6215925482).jpg",
+   "position": {
+    "lon": -73.973243,
+    "lat": 40.713988
+   },
+   "captured_at": "2011-09-16T13:53",
+   "categories": [
+    "cable_profile",
+    "cable_cradling"
+   ],
+   "category": "cable_profile",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "member_arrangement"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-ac64b451a22a",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Aerial_view_of_East_River%2C_Lower_Manhattan%2C_New_York_Harbor%2C_1981.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Aerial_view_of_East_River%2C_Lower_Manhattan%2C_New_York_Harbor%2C_1981.jpg/1280px-Aerial_view_of_East_River%2C_Lower_Manhattan%2C_New_York_Harbor%2C_1981.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "month",
+   "license": "CC-BY-SA-3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "attribution_text": "GeorgeLouis (Creative Commons Attribution-ShareAlike 3.0)",
+   "rights_holder": "GeorgeLouis",
+   "usage": "derive_appearance",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: context, historic.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:Aerial view of East River, Lower Manhattan, New York Harbor, 1981.jpg | https://commons.wikimedia.org/wiki/File:Aerial_view_of_East_River,_Lower_Manhattan,_New_York_Harbor,_1981.jpg",
+   "captured_at": "1981-05",
+   "categories": [
+    "context",
+    "historic"
+   ],
+   "category": "context",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "fitting_existence",
+      "other"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-b4ef997acb2b",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Williamsburg_Bridge_%2820873097009%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Williamsburg_Bridge_%2820873097009%29.jpg/1280px-Williamsburg_Bridge_%2820873097009%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "exact",
+   "license": "CC-BY-SA-2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "attribution_text": "Ma\u00eblick (Creative Commons Attribution-ShareAlike 2.0)",
+   "rights_holder": "Ma\u00eblick",
+   "usage": "derive_appearance",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: material.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:Williamsburg Bridge (20873097009).jpg | https://commons.wikimedia.org/wiki/File:Williamsburg_Bridge_(20873097009).jpg",
+   "captured_at": "2015-03-08T12:29",
+   "categories": [
+    "material"
+   ],
+   "category": "material",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "surface_material"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-b51fa88416e6",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/New_York_-_Williamsburg_bridge_through_New_York_Financial_District_-_NARA_-_68146005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/New_York_-_Williamsburg_bridge_through_New_York_Financial_District_-_NARA_-_68146005.jpg/1280px-New_York_-_Williamsburg_bridge_through_New_York_Financial_District_-_NARA_-_68146005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "year",
+   "license": "public-domain",
+   "attribution_text": "Unknown authorUnknown author or not provided (Public domain)",
+   "rights_holder": "Unknown authorUnknown author or not provided",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "auto_screened",
+    "notes": "Harvested for 'bridge_elevation'. No person has looked at this yet."
+   },
+   "notes": "File:New York - Williamsburg bridge through New York Financial District - NARA - 68146005.jpg | https://commons.wikimedia.org/wiki/File:New_York_-_Williamsburg_bridge_through_New_York_Financial_District_-_NARA_-_68146005.jpg",
+   "captured_at": "1917"
+  },
+  {
+   "observation_id": "obs-c64af04149b2",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/East_River_Park_td_%282025-11-21%29_034_-_Delancey_Street_Basketball_Courts.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/East_River_Park_td_%282025-11-21%29_034_-_Delancey_Street_Basketball_Courts.jpg/1280px-East_River_Park_td_%282025-11-21%29_034_-_Delancey_Street_Basketball_Courts.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "exact",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "attribution_text": "Tdorante10 (Creative Commons Attribution-ShareAlike 4.0)",
+   "rights_holder": "Tdorante10",
+   "usage": "derive_appearance",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: material.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:East River Park td (2025-11-21) 034 - Delancey Street Basketball Courts.jpg | https://commons.wikimedia.org/wiki/File:East_River_Park_td_(2025-11-21)_034_-_Delancey_Street_Basketball_Courts.jpg",
+   "captured_at": "2025-11-21T15:31:08",
+   "categories": [
+    "material"
+   ],
+   "category": "material",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "surface_material"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-ca6bbefa76a2",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Aerial_view_of_MTA_Subway_Trains_on_Williamsburg_Bridge%2C_The_East_River%2C_Downtown_Manhattan%2C_Williamsburg_Brooklyn%2C_420_Kent%2C_Brooklyn_Shipyard%2C_Williamsburg_Bank%2C_New_York_City%2C_USA.webm?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Aerial_view_of_MTA_Subway_Trains_on_Williamsburg_Bridge%2C_The_East_River%2C_Downtown_Manhattan%2C_Williamsburg_Brooklyn%2C_420_Kent%2C_Brooklyn_Shipyard%2C_Williamsburg_Bank%2C_New_York_City%2C_USA.webm/1280px--thumbnail.webm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo",
+   "position_source": "unknown",
+   "captured_precision": "day",
+   "license": "CC-BY-3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "attribution_text": "the Dronalist (Creative Commons Attribution 3.0)",
+   "rights_holder": "the Dronalist",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: context.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:Aerial view of MTA Subway Trains on Williamsburg Bridge, The East River, Downtown Manhattan, Williamsburg Brooklyn, 420 Kent, Brooklyn Shipyard, Williamsburg Bank, New York City, USA.webm | https://commons.wikimedia.org/wiki/File:Aerial_view_of_MTA_Subway_Trains_on_Williamsburg_Bridge,_The_East_River,_Downtown_Manhattan,_Williamsburg_Brooklyn,_420_Kent,_Brooklyn_Shipyard,_Williamsburg_Bank,_New_York_City,_USA.webm",
+   "captured_at": "2022-03-26",
+   "categories": [
+    "context"
+   ],
+   "category": "context",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "other"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-d1a87e29b5db",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/LGBWilliamsburgBridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/LGBWilliamsburgBridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "position_source": "unknown",
+   "captured_precision": "exact",
+   "license": "CC-BY-SA-3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "attribution_text": "unknown (Creative Commons Attribution-ShareAlike 3.0)",
+   "rights_holder": "unknown",
+   "usage": "derive_appearance",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: context.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:LGBWilliamsburgBridge.jpg | https://commons.wikimedia.org/wiki/File:LGBWilliamsburgBridge.jpg",
+   "captured_at": "2008-02-25T07:37:59",
+   "categories": [
+    "context"
+   ],
+   "category": "context",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "other"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-dc0fb39fa831",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Domino_Park%2C_Brooklyn_-_20220615_-_02_-_view_southward_featuring_Williamsburg_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Domino_Park%2C_Brooklyn_-_20220615_-_02_-_view_southward_featuring_Williamsburg_Bridge.jpg/1280px-Domino_Park%2C_Brooklyn_-_20220615_-_02_-_view_southward_featuring_Williamsburg_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "exact",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "attribution_text": "Andre Carrotflower (Creative Commons Attribution-ShareAlike 4.0)",
+   "rights_holder": "Andre Carrotflower",
+   "usage": "derive_appearance",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: material.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:Domino Park, Brooklyn - 20220615 - 02 - view southward featuring Williamsburg Bridge.jpg | https://commons.wikimedia.org/wiki/File:Domino_Park,_Brooklyn_-_20220615_-_02_-_view_southward_featuring_Williamsburg_Bridge.jpg",
+   "captured_at": "2022-06-15T19:18:33",
+   "categories": [
+    "material"
+   ],
+   "category": "material",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "surface_material"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-e0af366b2dca",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Williamsburg_Bridge_June_2022_003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Williamsburg_Bridge_June_2022_003.jpg/1280px-Williamsburg_Bridge_June_2022_003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "exact",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "attribution_text": "Kidfly182 (Creative Commons Attribution-ShareAlike 4.0)",
+   "rights_holder": "Kidfly182",
+   "usage": "derive_appearance",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: material.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:Williamsburg Bridge June 2022 003.jpg | https://commons.wikimedia.org/wiki/File:Williamsburg_Bridge_June_2022_003.jpg",
+   "captured_at": "2022-06-28T13:38:05",
+   "categories": [
+    "material"
+   ],
+   "category": "material",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "surface_material"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-e57a4dcfd01d",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/31/MANHATTAN%2C_NEW_YORK_AND_THE_EAST_RIVER._TRANSPORTATION_IN_AN_URBAN_AND_INDUSTRIAL_AREA_LIKE_NEW_YORK_PRODUCES..._-_NARA_-_555734.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/MANHATTAN%2C_NEW_YORK_AND_THE_EAST_RIVER._TRANSPORTATION_IN_AN_URBAN_AND_INDUSTRIAL_AREA_LIKE_NEW_YORK_PRODUCES..._-_NARA_-_555734.jpg/1280px-MANHATTAN%2C_NEW_YORK_AND_THE_EAST_RIVER._TRANSPORTATION_IN_AN_URBAN_AND_INDUSTRIAL_AREA_LIKE_NEW_YORK_PRODUCES..._-_NARA_-_555734.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "exact",
+   "license": "public-domain",
+   "attribution_text": "Hope Alexander (Public domain)",
+   "rights_holder": "Hope Alexander",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: historic.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:MANHATTAN, NEW YORK AND THE EAST RIVER. TRANSPORTATION IN AN URBAN AND INDUSTRIAL AREA LIKE NEW YORK PRODUCES... - NARA - 555734.jpg | https://commons.wikimedia.org/wiki/File:MANHATTAN,_NEW_YORK_AND_THE_EAST_RIVER._TRANSPORTATION_IN_AN_URBAN_AND_INDUSTRIAL_AREA_LIKE_NEW_YORK_PRODUCES..._-_NARA_-_555734.jpg",
+   "captured_at": "1974-05-00T00:00:00",
+   "categories": [
+    "historic"
+   ],
+   "category": "historic",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "fitting_existence"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-e5db976e9d73",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/East_River_Park_td_%282025-11-21%29_054_-_Delancey_Street_Basketball_Courts%2C_Williamsburg_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/East_River_Park_td_%282025-11-21%29_054_-_Delancey_Street_Basketball_Courts%2C_Williamsburg_Bridge.jpg/1280px-East_River_Park_td_%282025-11-21%29_054_-_Delancey_Street_Basketball_Courts%2C_Williamsburg_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "exact",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "attribution_text": "Tdorante10 (Creative Commons Attribution-ShareAlike 4.0)",
+   "rights_holder": "Tdorante10",
+   "usage": "derive_appearance",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: intermediate_tower, material.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:East River Park td (2025-11-21) 054 - Delancey Street Basketball Courts, Williamsburg Bridge.jpg | https://commons.wikimedia.org/wiki/File:East_River_Park_td_(2025-11-21)_054_-_Delancey_Street_Basketball_Courts,_Williamsburg_Bridge.jpg",
+   "captured_at": "2025-11-21T16:34:24",
+   "categories": [
+    "intermediate_tower",
+    "material"
+   ],
+   "category": "intermediate_tower",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "member_arrangement",
+      "surface_material"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-f55817de77a8",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/New_York-from_WTC-02-East_River-1980-gje.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/New_York-from_WTC-02-East_River-1980-gje.jpg/1280px-New_York-from_WTC-02-East_River-1980-gje.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "day",
+   "license": "CC-BY-SA-4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "attribution_text": "Gerd Eichmann (Creative Commons Attribution-ShareAlike 4.0)",
+   "rights_holder": "Gerd Eichmann",
+   "usage": "derive_appearance",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: historic.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:New York-from WTC-02-East River-1980-gje.jpg | https://commons.wikimedia.org/wiki/File:New_York-from_WTC-02-East_River-1980-gje.jpg",
+   "captured_at": "1980-03-29",
+   "categories": [
+    "historic"
+   ],
+   "category": "historic",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "fitting_existence"
+     ]
+    }
+   ]
+  },
+  {
+   "observation_id": "obs-fa62e7d1707b",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/New_York_-_Docks-New_York_Harbor_-_NARA_-_68146236.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/New_York_-_Docks-New_York_Harbor_-_NARA_-_68146236.jpg/1280px-New_York_-_Docks-New_York_Harbor_-_NARA_-_68146236.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "position_source": "unknown",
+   "captured_precision": "day",
+   "license": "public-domain",
+   "attribution_text": "14th Photo Section, Air Service, U.S. Army (Public domain)",
+   "rights_holder": "14th Photo Section, Air Service, U.S. Army",
+   "usage": "redistribute",
+   "source_collection": "Wikimedia Commons",
+   "review": {
+    "status": "accepted",
+    "reviewer": "yorhodes",
+    "notes": "Reviewed by a person. This judgement overrides any automatic screen. Kept for: historic.",
+    "grants_confidence": "B"
+   },
+   "notes": "File:New York - Docks-New York Harbor - NARA - 68146236.jpg | https://commons.wikimedia.org/wiki/File:New_York_-_Docks-New_York_Harbor_-_NARA_-_68146236.jpg",
+   "captured_at": "1924-07-29",
+   "categories": [
+    "historic"
+   ],
+   "category": "historic",
+   "observes": [
+    {
+     "asset_id": "urn:d3d:williamsburg-bridge-3d:bridge",
+     "aspect": [
+      "fitting_existence"
+     ]
+    }
+   ]
+  }
+ ],
+ "provenance": {
+  "module_id": "williamsburg-bridge-3d",
+  "generated_by": "photo-survey/build_corpus@1.0.0",
+  "generated_at": "2026-08-11T01:37:52Z"
+ },
+ "frame_id": "nyc-harbor-enu"
+}

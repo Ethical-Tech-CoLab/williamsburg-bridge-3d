@@ -103,7 +103,7 @@ as `ASSUMED` and excluded from dimension callouts.
 
 | Control ID | Key | Value | Unit | Source IDs | Confidence | Notes |
 |---|---|---:|---|---|---|---|
-| CTL-102 | main_cable_elevation_at_midspan | 190 | ft | | D | **OQ-002.** No source read states the cable sag. Chosen only to clear the deck: it must sit above the deck top, which derivation DRV-007 puts at 175 ft. The main cable profile is therefore `ASSUMED` in Z even though the cable's existence and count are grade `A`. |
+| CTL-102 | main_cable_elevation_at_midspan | 190 | ft | | D | **OQ-002, and now CNF-015.** No source read states the cable sag. This value was chosen only to clear the deck top, which DRV-007 puts at 175 ft — and reviewed photographs (SRC-014) show the cable meeting the deck framing at mid-span with no clearance at all, which SRC-004 supports by saying the cables are "connected to the ends of large plate girders" there. **The 15 ft clearance this row creates is known to be wrong in kind.** It is not corrected, because a photograph cannot supply an elevation and no read source states one; it stays a placeholder with the contradiction recorded against it. |
 | CTL-103 | deck_elevation_at_anchorage | 140 | ft | | D | **OQ-006.** No source read gives the deck elevation where the suspended structure meets the anchorage. |
 | CTL-104 | anchorage_top_elevation | 90 | ft | | D | **OQ-005.** CTL-034 gives 80 ft above *street level*, and this model does not know street level at either anchorage. Deliberately round. |
 | CTL-106 | tower_saddle_height | 8 | ft | | D | **OQ-009.** SRC-004 gives saddle plan dimensions (7.67 by 19 by 4 ft) but this repository has not established which figure is the height as installed. |
@@ -145,7 +145,7 @@ mean choosing a number to make a picture look right.
 | ID | Question | Blocks | Retired by |
 |---|---|---|---|
 | OQ-001 | Does SRC-010's "300 ft side spans" describe the whole tower-to-anchorage span, or one panel of it? | CTL-038, and through it both anchorages, both side spans, the suspended structure length, and the approach lengths | SRC-009 (FOIL), or any source stating the span arrangement panel by panel |
-| OQ-002 | What is the main cable sag, or the cable elevation at mid-span? | CTL-102, the whole main cable profile, every suspender length | SRC-007, SRC-009, or a period engineering description |
+| OQ-002 | The cable appears to MEET the deck framing at mid-span rather than clearing it. At what elevation do they meet? | CTL-102, the whole main cable profile, every suspender length | A period engineering description, or SRC-009. Narrowed by SRC-014: seven reviewed elevations show no clearance at mid-span, and SRC-004 says the cables are "connected to the ends of large plate girders" there. See CNF-015. |
 | OQ-003 | How many intermediate towers support each side span, and where do they stand? | CTL-039, all side-span support geometry, and the reading of CNF-009 | SRC-009. SRC-011 shows side-span structure but no frame covers a full side span end to end, so it cannot supply the count |
 | OQ-004 | Is SRC-003's 310 ft tower height measured above mean high water, above the deck, or above the pier top? | The datum of CTL-006, and CNF-002 | A statement of datum from NYCDOT, or SRC-007 |
 | OQ-005 | What is street level at each anchorage, in MHW terms? | CTL-104; makes CTL-034's 80 ft usable | SRC-008 (LiDAR) |

@@ -1,6 +1,7 @@
 {
   "module_id": "williamsburg-bridge-3d",
   "campaign_name": "Williamsburg Bridge — vertical arrangement evidence",
+  "frame_id": "nyc-harbor-enu",
   "purpose": "Every remaining placeholder in this model is an ELEVATION. CTL-102 main cable elevation at midspan, CTL-103 deck elevation at anchorage, CTL-104 anchorage top elevation, CTL-106 saddle height. The plan is sourced end to end since SRC-007 gave the side spans, the intermediate towers and both approach lengths; the vertical is still guesswork. A photograph CANNOT measure any of those - the grant vocabulary has no 'dimension' for exactly that reason, and a sag figure has to come from a period engineering document. What a photograph CAN do is settle the ARRANGEMENT those placeholders assume, and several of those assumptions are currently untested. Does the cable low point at midspan sit above or below the top of the stiffening truss? The model places it 15 ft above; nothing sourced says so. Do the four cables visibly cradle together at midspan, as SRC-004 describes? Where does a cable enter the anchorage relative to the deck? A reviewer answering those turns four assumptions into either confirmations or contradictions, and a contradiction is worth more than the placeholder it kills. This campaign is also expected to FAIL to answer the sag itself; per the tooling's own warning, an empty category is a measurement, and that result should be reported rather than hidden.",
   "user_agent": "williamsburg-bridge-3d/1.0 (https://github.com/Ethical-Tech-CoLab/williamsburg-bridge-3d; openly-licensed imagery survey) Python-urllib/3.12",
   "per_shot_limit": 60,
@@ -33,13 +34,13 @@
       "help": "The top of a main tower where the cables cross it. CTL-106 saddle height is a placeholder. SRC-004 gives plan dimensions and Structure Magazine says the saddles are 19 ft long, but nothing read states how tall one stands above the tower top, and the model guesses. A photograph settles how much saddle is visible above the steelwork."
     },
     {
-      "id": "anchorage_face",
+      "id": "anchorage",
       "label": "anchorage",
       "grants": "arrangement",
       "help": "Where a main cable enters an anchorage. CTL-103 and CTL-104 are both placeholders: the deck elevation at the anchorage and the anchorage top elevation are guesses. A view showing the cable, the anchorage top and the deck in one frame constrains both, without measuring either."
     },
     {
-      "id": "truss_elevation",
+      "id": "truss",
       "label": "stiffening truss in elevation",
       "grants": "arrangement",
       "help": "A side-on view of the stiffening truss. SRC-007 gives 67 ft wide and about 40 ft deep and says it is pinned at each main tower (OQ-011). The model draws top and bottom chords only, with no web members, and nothing has confirmed the truss form."
@@ -57,7 +58,7 @@
       "help": "Riveted steel, masonry pier facing, cable wrapping, deck surface. Several MAT- rules still rest on a single tertiary source."
     },
     {
-      "id": "period",
+      "id": "historic",
       "label": "period or construction view",
       "grants": "existence",
       "help": "Anything showing the bridge under construction or before the 1990s reconstruction. The cable profile TODAY is not the profile as built: SRC-007 states the dead load has increased and 'the profile has flattened', and that suspenders were re-jacked to restore it. A modern photograph is therefore evidence about the modern bridge only, and this category is how that distinction stays visible."

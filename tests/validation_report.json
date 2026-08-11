@@ -1,5 +1,5 @@
 {
-  "control_document_sha256": "31f187e255905b71077218c7a7adfb58b548eb98083ee24172ce6bc197db9336",
+  "control_document_sha256": "8ea5a61ed45281be5e7ca50be2259b1dacd8fa749b1adf33dcf8085942063a4f",
   "passed": 35,
   "failed": 0,
   "report_only": 4,
@@ -156,14 +156,14 @@
       "title": "No tracked file is a collapsed filesystem path written into the repository root",
       "mode": "assert",
       "status": "PASS",
-      "detail": "91 tracked files, none matching a collapsed-path shape"
+      "detail": "95 tracked files, none matching a collapsed-path shape"
     },
     {
       "id": "STT-001",
       "title": "Every source cited by a control exists in the source register",
       "mode": "assert",
       "status": "PASS",
-      "detail": "13 sources registered"
+      "detail": "14 sources registered"
     },
     {
       "id": "STT-002",
@@ -240,7 +240,7 @@
       "title": "The parts manifest was generated from the current GEOMETRY-CONTROL.md",
       "mode": "assert",
       "status": "PASS",
-      "detail": "parts.json built from 31f187e25590, GEOMETRY-CONTROL.md is now 31f187e25590"
+      "detail": "parts.json built from 8ea5a61ed452, GEOMETRY-CONTROL.md is now 8ea5a61ed452"
     },
     {
       "id": "STT-013",
@@ -275,7 +275,7 @@
       "title": "No control dimension cites a visual-only source",
       "mode": "assert",
       "status": "PASS",
-      "detail": "3 visual-only source(s) (SRC-002, SRC-011, SRC-012), none grading a dimension"
+      "detail": "4 visual-only source(s) (SRC-002, SRC-011, SRC-012, SRC-014), none grading a dimension"
     }
   ]
 }

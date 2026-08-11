@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "ho_scale_denominator": 87.1,
-  "control_document_sha256": "31f187e255905b71077218c7a7adfb58b548eb98083ee24172ce6bc197db9336",
+  "control_document_sha256": "8ea5a61ed45281be5e7ca50be2259b1dacd8fa749b1adf33dcf8085942063a4f",
   "controls": {
     "main_span_tower_to_tower": {
       "prototype_m": 487.68,

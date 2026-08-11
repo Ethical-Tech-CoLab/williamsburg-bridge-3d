@@ -1,0 +1,19 @@
+{
+ "tool": "photo-survey/build_corpus@1.0.0",
+ "module_id": "williamsburg-bridge-3d",
+ "accepted": 48,
+ "auto_screened": 4,
+ "refused_by_review": 198,
+ "by_category": {
+  "cable_profile": 7,
+  "anchorage": 3,
+  "historic": 16,
+  "material": 17,
+  "saddle": 5,
+  "cable_cradling": 6,
+  "context": 5,
+  "truss": 1,
+  "intermediate_tower": 1
+ },
+ "grants_note": "An accepted photograph supports material, arrangement, existence, condition and appearance, and grants confidence B at best. It does NOT carry a dimension: without scale control in the frame a photograph cannot measure. Dimensional claims stay with measured drawings and primary documents."
+}

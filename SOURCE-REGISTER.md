@@ -36,6 +36,7 @@ here cannot grade anything, **including a source held locally in a sibling repos
 | SRC-011 | *Aerial view of the Williamsburg Bridge in New York*, Alex Kane — watermarked preview, 960x540, 11.9 s, 30 fps | Envato Elements stock item 24580550. Local preview file only; **not committed, not redistributable** | Aerial video | B | © Alex Kane / Envato. Watermarked preview, licence not held | yes | B, **visual only** | Low, sweeping aerial passes of the Manhattan tower and the main span. **Grades no dimension and cannot** — no camera metadata, no scale control points, and a watermarked 960x540 preview. Registered for what it legitimately settles: arrangement and material. See section 3. |
 | SRC-012 | HistoricBridges.org, *Williamsburg Bridge photo gallery* (gallery 2) | https://historicbridges.org/bridges/browser/photosviewer.php?bridgebrowser=newyork/williamsburg/&gallerynum=2&gallerysize=2 | Modern detail photographs | B | © HistoricBridges.org, all rights reserved | yes | B, **visual only** | 684 photographs, systematically shot, at up to 6000x4000. Reviewed in full by contact sheet on 2026-08-09; six examined at full size. **Not redistributed and not committed** — retrieved to a temporary directory outside the repository, read, and deleted. The gallery is almost entirely uncaptioned, so it makes no textual claim at all: it is pure visual detail. Observations in section 3. |
 | SRC-013 | Bridge commission dedication tablet, mounted on the structure | The bridge itself. Read from SRC-012 photographs `7699` and `7702` at 6000x4000 | Period primary, on-structure inscription | A | The inscription is a public monument text; the photographs of it are © HistoricBridges.org | yes | A for chronology, **none for geometry** | The bridge's own bronze tablet, naming both bridge commissions and their dates. A genuine period primary that has been read directly rather than through a citation — and it carries **no dimensions whatsoever**. Transcribed in section 3. |
+| SRC-014 | Reviewed photograph corpus, `viewer/public/photo-survey.json` | Wikimedia Commons, harvested and reviewed 2026-08-10 with the shared `photo-survey` tooling. Manifest committed; **no image bytes stored**, the review sheet hotlinks | Reviewed photographs | B | Per image, recorded per record. Licence-first: 2 refused for an unreadable licence | yes | B, **visual only** | 250 harvested, **246 decided by a person**, 48 accepted. Categories: material 17, historic 16, cable_profile 7, cable_cradling 6, saddle 5, context 5, anchorage 3, truss 1, intermediate_tower 1. The corpus validates against the shared photo-survey contract. Like SRC-002 and SRC-011 it is **visual only** and STT-017 keeps it away from every dimension. Its findings are in section 3. |
 
 ### Sources that may not grade a dimension
 
@@ -316,6 +317,50 @@ a companion would be.
 
 ---
 
+### SRC-014 — what a reviewed photograph corpus settled, and the assumption it broke
+
+The campaign was aimed at the four remaining placeholders, all of which are elevations, and it was
+written knowing a photograph cannot measure one. The grant vocabulary has no `dimension` in it. What
+it could do was test the *arrangement* each placeholder assumes — and one of those assumptions did
+not survive.
+
+**The finding: the model's cable clearance at midspan is contradicted.**
+
+`CTL-102` puts the main cable low point at 190 ft and derivation DRV-007 puts the deck top at 175
+ft, so the model draws the cable **15 ft clear above the deck at midspan**. That figure was invented
+to stop the cable intersecting the deck, and the notes said so.
+
+Seven accepted photographs are full-span elevations. In them the cables descend from each tower and
+**converge with the top of the stiffening truss at midspan, with no clearance visible**; the
+suspenders shorten to nothing as they approach the centre. Two independent frames — one from the
+Brooklyn shore, one an aerial — show the same arrangement.
+
+This is not a measurement, and it does not give a sag. But it is corroborated by a sourced sentence
+that was already in the register and whose significance was missed:
+
+> The main cables are "cradled" together at the center of the span, which was intended to strengthen
+> the bridge against wind pressure, **and are connected to the ends of large plate girders**.
+> — SRC-004
+
+A cable *connected to* the deck framing at midspan is not a cable floating 15 ft above it. Read
+together, the photographs and that clause say the model's clearance is wrong in kind, not merely in
+size. **CTL-102 stays a grade `D` placeholder** — nothing here states an elevation — but OQ-002 is
+narrowed from "what is the sag?" to the sharper and more answerable "the cable appears to meet the
+deck at midspan; at what elevation do they meet?", and CNF-015 records the contradiction.
+
+**What the other categories settled.** `cable_cradling` (6 accepted) confirms the transverse
+convergence SRC-004 describes and the model draws, which until now rested on one tertiary source.
+`saddle` (5) shows how little of the saddle stands above the tower steel, relevant to CTL-106.
+`historic` (16) separates archival views from the modern bridge — which matters here, because
+SRC-007 states the profile has *flattened* since construction and was re-jacked toward its original
+shape, so a modern photograph is evidence about the modern cable profile only.
+
+**What it failed to settle, which is also a result.** `intermediate_tower` and `truss` drew one
+accepted photograph each, and `anchorage` three. The side-span structure and the anchorage
+elevations remain thinly evidenced. Per the tooling's own warning, a category that finishes a review
+nearly empty is a measurement: people photograph this bridge from the water and the walkway, not
+from beneath its side spans.
+
 ## 4. Verification queue
 
 In priority order. Nothing here may grade a control until it moves to section 1 with `Verified: yes`.
@@ -363,7 +408,8 @@ Conflicts are kept, not smoothed away. A model that hides source disagreement is
 | CNF-011 | Main cable weight | **4,344 tons for the cables** — SRC-003 | **"each of the four 4,344-ton main cables"** — SRC-010 | **Open** | A factor of four apart, from the same number. SRC-003 lists it under "Weight of cables" for the bridge; SRC-010 attaches it to each cable. Not used by any control, but it is a clean example of why a figure is registered with its wording rather than as a bare quantity. |
 | CNF-012 | Total length of wire | **17,500 miles** — SRC-003, SRC-010 | **"Almost 19,000 mi of steel wire strands were manufactured"** — SRC-004 | **Settled by reading** | Not a contradiction: SRC-004 says *manufactured*, the others say installed in the cables. Registered so the difference is not later "corrected". |
 | CNF-013 | What supports the side spans | **"Steel arches, not the cables"** — SRC-010 | **Trusswork, carried on intermediate towers** — SRC-004 | **Open, but narrowed toward SRC-004** | SRC-012 photographs `7051`, `7057` and `7066` show multi-column steel lattice bents on masonry footings carrying a deep riveted truss at deck level. The deck-level structure is a truss, not an arch. There is arched portal bracing *within* the bents, which may be what SRC-010's author meant, so the conflict is narrowed rather than closed. This matters because it governs what the side-span geometry should be modelled as, and it is bound up with OQ-003. Nothing in the model depends on the answer yet: no side-span structure is modelled beyond the deck chain. |
-| CNF-014 | What the 7,308 ft is measured between | **"including approaches"** — SRC-004; "Total length" — SRC-003 | **"total length between approaches"** — SRC-010 | **Open** | Two words, and they invert the meaning of a grade `A` control. CTL-002 keeps the "including approaches" reading, which two sources support against one, but this is direct evidence on OQ-006 and may be part of why the approach grade fails to reach street level. |
+| CNF-014 | What the 7,308 ft is measured between | **"including approaches"** — SRC-004; "Total length" — SRC-003 | **"total length between approaches"** — SRC-010 | **Open** | Two words, and they invert the meaning of a grade `A` control. CTL-002 keeps the "including approaches" reading, which two sources support against one, but this is direct evidence on OQ-006 and may be part of why the approach grade fails to reach street level. SRC-007's component figures sum to 6,668.75 ft, 639.25 ft short of 7,308, which sharpens the question without answering it. |
+| CNF-015 | Main cable elevation at midspan relative to the deck | **15 ft clear above the deck top** — this model's own placeholder CTL-102, which is grade `D` and states no source | **Cable meets the deck framing at midspan** — SRC-014 photographs, corroborated by SRC-004's "connected to the ends of large plate girders" | **Open, and the model is the weaker side** | Seven reviewed full-span elevations show the cables converging with the top of the stiffening truss at midspan with no visible clearance, and the suspenders shortening to nothing. A cable *connected to* the deck framing is not a cable floating above it. The model is not corrected, because a photograph cannot supply an elevation and nothing read states one — but the placeholder is now known to be wrong in kind, not merely uncertain in size, and OQ-002 is rewritten accordingly. This is the first conflict in this repository where **the model itself is one of the two positions**, and it is registered that way deliberately. |
 
 ---
 

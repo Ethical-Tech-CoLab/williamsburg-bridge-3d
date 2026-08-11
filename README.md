@@ -66,7 +66,7 @@ This is the honest state of the model, and it is the most useful thing in this R
 | Controls | 46 (42 sourced, 4 placeholders) |
 | Geometry provenance | **0 measured · 11 documented · 46 inferred · 0 assumed** |
 | Source confidence (parts) | 9 `A` · 0 `B` · 16 `C` · 32 `D` |
-| Sources | 13 registered, 10 read |
+| Sources | 14 registered, 11 read |
 | Open questions | 11 |
 | Registered conflicts | 14 |
 
